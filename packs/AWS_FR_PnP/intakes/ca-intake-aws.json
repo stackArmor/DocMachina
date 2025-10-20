@@ -1,0 +1,12 @@
+{
+  "title": "Assessment, Authorization, and Monitoring (CA) Intake",
+  "questions": [
+    {
+      "name": "atIntakeField1",
+      "label": "CA: Placeholder question for Assessment, Authorization, and Monitoring",
+      "type": "text",
+      "mandatory": true,
+      "placeholder": "Enter the required retention period (e.g., 90 days)"
+    }
+  ]
+}

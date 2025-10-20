@@ -1,0 +1,16 @@
+{
+  "questions": [
+    {
+      "name": "learningManagementSystem",
+      "label": "Learning Management System",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "trainingDeliveryMethod",
+      "label": "Training Delivery Method",
+      "type": "text",
+      "mandatory": false
+    },
+	]
+}
