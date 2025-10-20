@@ -1,0 +1,567 @@
+:root {
+    /* Your new core palette */
+    --primary-color: #19183B;   /* Dark Navy Blue (Authoritative, Primary Actions) */
+    --secondary-color: #708993; /* Dark Teal (Accent, Secondary Buttons/Controls) */
+    --accent-color: #38DFCA;    /* Dusty Olive Green (Subtle Highlights, Text Links) */
+    --warning-color: #B45253;   /* Pale Gold/Sand (Notification/Warning background) */
+    --muted-green: #7c9885;     /* Muted Sage (Use sparingly for borders/dividers) */
+
+    /* Standard colors retained for contrast and utility */
+    --background-color: #F9F5FO; /* Light Gray Background */
+    --text-color: #343a40;       /* Dark Gray Text (Excellent contrast) */
+    --border-color: #E8DFCA;     /* Standard Light Border */
+    --padding: 20px;
+    --max-width: 1000px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Use a professional, system-native font stack for an offline desktop look */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Add a pseudo-element to control image opacity without affecting content */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/background.png'); /* Same image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.05; /* Very faint - adjust between 0.03 and 0.15 */
+    z-index: -1; /* Puts it behind all content */
+    pointer-events: none; /* Ensures it doesn't interfere with clicks */
+}
+
+.text-micro {
+    font-size: 0.65em; 
+    line-height: 1.4;
+}
+
+/* --- Header --- */
+header {
+    background-color: var(--primary-color); 
+    color: white;
+    padding: 15px var(--padding);
+    display: flex; 
+    justify-content: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 6px solid #B84D19;
+}
+
+/* --- Header Layout Update --- */
+#header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--max-width);
+    width: 100%;
+}
+
+/* This container will hold the logo, title, and subtitle */
+#header-brand-section {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo and text */
+}
+
+/* Style the logo */
+#logo-icon {
+    height: 40px; /* Adjust as needed */
+    width: auto;
+    /* Optional: Add a slight filter to make it pop against the dark header */
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.4));
+}
+
+#header-title-container {
+    display: flex;
+    flex-direction: column; /* Stack the title and version vertically */
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#header-content h1 {
+    margin: 0;
+    /* FIX: Adjusted font size to smaller 1.5em */
+    font-size: 1.5em; 
+    font-weight: 600;
+}
+
+#app-version {
+    font-size: 0.75em; /* Make it much smaller */
+    font-weight: 300; /* Lighter weight */
+    margin-top: -5px; /* Pull it closer to the h1 */
+    opacity: 0.7; /* Make it slightly muted */
+}
+
+#persistent-nav {
+    display: flex;
+    gap: 10px;
+}
+#persistent-nav button {
+    /* Reset button styles to look like a clean menu item */
+    background: none; /* No background color */
+    color: white; /* White text */
+    padding: 5px 10px; /* Smaller padding */
+    border: 1px solid transparent; /* No visible border initially */
+    font-weight: 400; /* Lighter weight */
+    transition: all 0.2s ease-in-out;
+}
+
+#persistent-nav button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle white overlay on hover */
+    border-color: rgba(255, 255, 255, 0.2); /* Subtle light border on hover */
+    transform: none; /* Remove the lift effect */
+    box-shadow: none; /* Remove the shadow */
+}
+
+#persistent-nav button:active {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly darker press state */
+    transform: none;
+    box-shadow: none;
+}
+
+/* Apply a primary style to one button for emphasis, e.g., the 'New Customer' button */
+#persistent-nav .primary {
+    background-color: var(--secondary-color); /* Use Dark Teal for primary nav button */
+    border-color: var(--secondary-color);
+}
+
+#persistent-nav .primary:hover {
+    background-color: var(--accent-color); /* Hover to Dusty Olive Green */
+    border-color: var(--accent-color);
+}
+
+main {
+    max-width: var(--max-width);
+    /* Increased vertical margin for breathing room */
+    margin: 50px auto; 
+    padding: 0 var(--padding);
+}
+
+h2 {
+    /* Lighter border for a modern look */
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+    /* Lighter font weight */
+    font-weight: 500; 
+}
+
+/* --- Landing Page Grid Layout --- */
+.landing-page-grid {
+	display: grid !important; 
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    /* FIX: Added align-items: stretch to make columns equal height */
+    align-items: stretch;
+}
+
+#landing-left-column,
+#landing-right-column {
+    display: flex;
+    flex-direction: column;
+}
+
+#pack-selection {
+    padding: 30px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    /* FIX: Added flex-grow: 1 to fill height */
+    flex-grow: 1; 
+}
+
+/* Subtitle style for the pack selection instructions */
+#pack-selection .subtitle { 
+    font-size: 1.1em; 
+    color: #B84D19; 
+    margin-bottom: 15px; /* Adds the desired white space */
+    font-weight: 400;
+}
+
+#customer-management-area {
+    padding: 30px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    /* FIX: Added flex-grow: 1 to fill height and display: flex for internal layout */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#customer-management-area .button-list {
+    align-items: flex-start;
+}
+
+/* --- Buttons and Inputs --- */
+.button-list {
+    /* MODIFIED: Change to row layout for the buttons */
+    display: flex;
+    flex-direction: row; /* Change column to row */
+    flex-wrap: wrap; /* Allow wrapping if there are too many buttons */
+    /* Slightly tighter gap */
+    gap: 12px; 
+}
+
+/* NEW: Constrain the width of buttons within the button-list */
+.button-list button {
+    max-width: 200px; /* Adjust this value to your preferred max width */
+    width: auto; /* Let content or max-width define the size */
+}
+
+/* You might also want to change how the pack buttons appear in the list: */
+/* MODIFIED: Ensure pack buttons also don't take full width (if they use .button-list) */
+button.pack-button {
+    /* ... existing styles ... */
+    text-align: center; /* Center the text for narrower buttons */
+    /* NEW: Constrain max-width for list presentation */
+    max-width: 300px;
+    width: 100%;
+} 
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    /* Unified transition for all effects */
+    transition: all 0.2s ease-in-out; 
+    font-weight: 500;
+}
+
+button:hover {
+    /* Subtle lift and shadow for a tactile feel */
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    /* Pressed down effect */
+    transform: translateY(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5) inset;
+}
+
+button.pack-button {
+    background-color: #708993;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    box-shadow: none; /* Override general button shadow */
+}
+
+button.pack-button:hover {
+    /* Dark Navy fill on hover */
+    background-color: var(--primary-color);
+    color: white;
+    /* Remove shadow/lift on hover for list items */
+    transform: none; 
+    box-shadow: none;
+}
+
+button.primary {
+    background-color: var(--primary-color); /* Dark Navy */
+    color: white;
+}
+
+button.primary:hover {
+    background-color: #023351; /* Slightly darker Navy */
+}
+
+button.secondary {
+    background-color: var(--secondary-color); /* Dark Teal */
+    color: white;
+}
+
+button.secondary:hover {
+    background-color: #20555d; /* Slightly darker Teal */
+}
+
+button.danger {
+    /* Retaining standard danger color for universal recognition */
+    background-color: #dc3545; 
+    color: white;
+}
+
+button.danger:hover {
+    background-color: #c82333;
+}
+
+/* --- Form Styles --- */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    /* Subtle shadow on focus */
+    box-shadow: 0 0 0 3px rgba(3, 63, 99, 0.2); 
+}
+
+.required-field::after {
+    content: ' *';
+    color: #dc3545; /* Using danger color for required sign */
+}
+
+.form-navigation {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.top-nav {
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    border-top: none;
+}
+
+.last-saved-time {
+    margin-right: auto;
+    align-self: center;
+    font-size: 0.9em;
+    color: var(--secondary-color);
+    padding-left: 10px;
+}
+
+/* --- Customer Dashboard --- */
+#dashboard-header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+#customer-info {
+    font-size: 1.2em;
+	color: #B84D19;
+	font-size: 1.2em;
+    font-weight: 500;
+}
+
+.customer-highlight {
+    color: #B84D19;
+	font-size: 1.2em;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.pack-highlight {
+    color: #B84D19; 
+    font-size: 1.2em;
+    font-weight: 500;
+}
+#dashboard-actions button {
+    margin-left: 10px;
+}
+
+#btn-delete-customer {
+    background-color: #B84D19;
+	padding: 5px 9px;
+    font-size: 12px;
+}
+
+#btn-open-library {
+    background-color: #19183B; 
+    border-color: #19183B;
+}
+
+#btn-open-library:hover {
+    background-color: #B84D19; 
+    border-color: #B84D19;
+}
+
+#btn-open-folder {
+    background-color: #19183B; 
+    border-color: #19183B;
+
+}
+
+#btn-open-folder:hover {
+    background-color: #3B0F39; 
+    border-color: #3B0F39;
+}
+
+.intake-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.intake-grid button {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    /* Dark Teal for grid controls */
+    background-color: var(--secondary-color); 
+    color: white;
+}
+
+.intake-grid button:hover {
+    /* Hover to Navy Blue */
+    background-color: var(--primary-color); 
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.intake-grid button:active {
+    transform: translateY(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5) inset;
+}
+
+/* --- Customer Library Table --- */
+#library-header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Style for the new folder button */
+#library-header-menu button {
+    align-self: center; /* Vertically align button with the H2 title */
+    font-size: 0.9em;
+    padding: 8px 12px;
+}
+
+
+#customer-library-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#customer-library-table th, #customer-library-table td {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    text-align: left;
+}
+
+#customer-library-table th {
+    color: #B84D19;
+    background-color: #e9ecef; 
+    font-weight: 600;
+}
+
+#customer-library-table tr:hover:not(.empty-state-row) {
+    background-color: #ffffff; 
+    cursor: pointer;
+}
+
+.customer-name-link {
+    font-weight: bold;
+    color: #B84D19; 
+}
+
+.empty-state-row:hover {
+    /* Ensure the "No customers saved" row doesn't have a hover effect */
+    background-color: transparent !important;
+    cursor: default !important;
+}
+
+/* --- Footer Styles (ULTRA-COMPACT & MICRO TEXT) --- */
+footer {
+    /* Match the primary color of the header */
+    background-color: var(--primary-color);
+    color: white;
+    padding: 6px var(--padding); /* Minimal vertical padding */
+    margin-top: 30px; 
+}
+
+#footer-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Base style for text/paragraphs in the footer content */
+#footer-content p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.6); 
+}
+
+/* Ensure all links are styled */
+#footer-content a {
+    color: var(--accent-color); 
+    text-decoration: none;
+    padding: 0 8px; /* Slightly tighter spacing between links */
+    transition: color 0.2s;
+}
+
+#footer-content a:hover {
+    color: white;
+    text-decoration: underline;
+
+}
+/* --- Dashboard Two-Column Layout --- */
+#dashboard-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+#main-intakes-column {
+    /* Main column takes up more space */
+}
+
+#other-documents-column {
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+#other-documents-column h2 {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+#other-documents-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+#other-documents-container button {
+    width: 100%;
+    max-width: none;
+    padding: 15px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
