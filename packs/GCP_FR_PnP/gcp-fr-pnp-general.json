@@ -1,0 +1,19 @@
+{
+  "title": "GCP Foundational Requirements - General Intake",
+  "questions": [
+    {
+      "name": "customerName",
+      "label": "Customer Name",
+      "type": "text",
+      "mandatory": true,
+      "placeholder": "Enter the customer name (e.g., Umbrella Inc)"
+    },
+    {
+      "name": "systemName",
+      "label": "System Name",
+      "type": "text",
+      "mandatory": false,
+      "placeholder": "Enter the name of the system (e.g., Development Sandbox)"
+    }
+  ]
+}
