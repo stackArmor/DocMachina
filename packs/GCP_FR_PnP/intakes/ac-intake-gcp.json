@@ -1,0 +1,12 @@
+{
+  "title": "Access Control (AC) Intake",
+  "questions": [
+    {
+      "name": "atIntakeField1",
+      "label": "AC: Placeholder question for Access Control",
+      "type": "text",
+      "mandatory": true,
+      "placeholder": "Enter the required retention period (e.g., 90 days)"
+    }
+  ]
+}
