@@ -4,7 +4,6 @@
 ---
 
 ### 1. Overview
-
 DocMachina is a modular, locally-running desktop engine for document generation. It guides users through intake questionnaires and then generates completed documents in markdown, placing them directly in the user’s local downloads folder. Functionality is based around customers, with each customer having their own dashboard and separate file storage.  
 
 ### 2. Core Philosophy: "Local-Always"
@@ -28,12 +27,12 @@ DocMachina is a modular, locally-running desktop engine for document generation.
 - Installation instructions to be inserted here.
 
 ### 5. Technology, Tools, and Security
-Application Type: Offline desktop application (Electron-based)
-Data Storage: Local file system only
-Network: No external connections or dependencies
-User Model: Single user per machine, open source code
-
 DocMachina was built with assistance from AI and is composed primarily of HTML, JavaScript, CSS, and JSON.
+
+- Application Type: Offline desktop application (Electron-based)
+- Data Storage: Local file system only
+- Network: No external connections or dependencies
+- User Model: Single user per machine, open source code
 
 #### Security Considerations
 DocMachina has been designed with security best practices appropriate for an offline, local-first desktop application. This approach aligns with industry best practices for open-source desktop applications. The security model focuses on:
@@ -59,7 +58,7 @@ Since users control both the code and data, we prioritize protecting users from 
 	- Never use eval() or Function() constructor with user data
 
 #### 5.3 Content Security Policy (CSP)
-Allow 'unsafe-inline' for styles as this is standard for Electron apps and poses minimal risk in our offline context.
+Allow 'unsafe-inline' for styles as this is standard for Electron apps and poses minimal risk in an offline context.
 
 #### 5.4 Input Length Restrictions
 - maxLength="500" attribute on all input fields
@@ -112,8 +111,6 @@ Output encoding (escapeForMarkdown()) handles dangerous characters at the point 
 File name sanitization handles file system concerns
 Users can only affect their own data
 
-Conclusion
-
 ### 6. User Guide / Functionality
 DocMachina is designed to dynamically scan the /packs folder to determine what buttons to display in the Main Menu on the landing page.  Clicking a pack's button from the main menu launches the general intake for that pack. Save/Next will then take the user to the customer's dashboard.  The app will then scan the the pack's own intakes/folder and otherintakes/folder to dynamically determine what to display in the dashboard sections. Each pack will be diffferent depending on its purpose.
 
@@ -121,7 +118,6 @@ DocMachina is designed to dynamically scan the /packs folder to determine what b
 To maintain DocMachina's key feature of local-always, the app and packs are not designed for auto-updates.   
 
 ### 7. Pack Development
-
 To be compatible with DocMachina:
 
 - Every pack must have at least one general intake (json) and at least one template (md).
@@ -158,7 +154,6 @@ DocMachina/packs<br>
 ---- app-s-sod.md<br>
 
 GCP_FedRAMP/<br>
-
 					
 ### 8. Future Development Ideas
 
