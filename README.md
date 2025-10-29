@@ -2,34 +2,43 @@
 ##### Runs local. Saves local. Stays local.
 
 ---
+### Purpose:  
+- Reduce the time the compliance team spends on manual and repetative tasks associated with documentation.
+- Reduce errors, and produce consistent documentation sets.
+- Initial release targets the policies and procedures task which is estimated to save approximately 20 hours per document package.
+- See section 3 below for more key benefits and use cases.
+
+---
 Running Instructions
-1. Install Node.js from https://nodejs.org (if not already installed)
+1. Install Node.js from https://nodejs.org 
 2. Open terminal/command prompt in the project folder
 3. Install dependencies (first time only): npm install
 4. Run the app:  npm start
 
 ### 1. Overview
-DocMachina is a modular, locally-running desktop engine for document generation. It guides users through intake questionnaires and then generates completed documents in markdown, placing them directly in the user’s local downloads folder. Functionality is based around customers, with each customer having their own dashboard and separate file storage.  
+DocMachina is a modular, locally-running desktop engine for document generation. It guides users through intake questionnaires and then generates completed documents in markdown, placing them directly in the customers/. Functionality is based around customers, with each customer having their own dashboard and separate file storage.  
 
 ### 2. Core Philosophy: "Local-Always"
 - DocMachina is designed to run locally on the user’s machine without reliance on cloud services, external libraries, or any other external dependencies.
-- The application does not auto-update. Please see the update section below for more details.
-- Customer and application data are stored on the user's local machine within the app's file structure, including customer data captured in intake forms. Generated documents are NOT saved but are placed in the user's downloads fodler.
+- Users authenticate to their OS, which controls access to the application and its data files.
+- The application has no internal auto-update functions. 
+- Customer and application data are stored on the user's local machine, including customer data captured in intake forms.
+- Generated documents are NOT saved.
 - DocMachina is modular, and will only run utilizing locally installed and properly configured packs consisting of intake questionnaires and corresponding document templates.
 - DocMachina can run on air-gapped machines.
 
 ### 3. Key Benefits and Use Cases
 - Reduce time spent on documentation by eliminating redundant tasks.
-- No online storage or connectivity supports privacy and security.
+- Easy to update / add more options. Installing a pack is as easy as dropping a new pack into your local packs/ folder.
+- No online storage or connectivity supports speed, privacy, and security.
 - Files in markdown are ready for easy conversion to other formats.
 - Easy and intuitive user interface and file management.
 - Consistent and professional results.
 - Highly modular and adaptable to various environments and documentation needs with core functionality inherently built into the packs. See below for more information on pack structure and development.
-- Installing a pack is as easy as dropping a new pack into your local packs/ folder.
   
 ### 4. Installation and Set Up
 
-- Installation instructions to be inserted here.
+- Future installation instructions to be inserted here.
 
 ### 5. Technology, Tools, and Security
 DocMachina was built with assistance from AI and is composed primarily of HTML, JavaScript, CSS, and JSON.
@@ -45,8 +54,6 @@ DocMachina has been designed with security best practices appropriate for an off
 - Data integrity: Ensuring user data is stored and processed correctly
 - Error prevention: Catching mistakes before they cause problems
 - Graceful degradation: Handling unexpected input without crashing
-
-Since users control both the code and data, we prioritize protecting users from accidental errors over defending against intentional attacks. 
 
 - Key Security Principle: Since users control both the code and data on their own machines, the security focus is on preventing unintentional errors and ensuring data integrity rather than defending against malicious actors.
 
@@ -94,7 +101,7 @@ Allow 'unsafe-inline' for styles as this is standard for Electron apps and poses
 
 #### 5.9 Browser Storage APIs (localStorage, sessionStorage)
 Status: ❌ Not applicable
-Reason: These APIs are not suitable for our Electron application. All data is stored via the main process to the file system for better control and security. This prevents any potential XSS attacks from accessing stored data.
+Reason: These APIs are not suitable for this Electron application. All data is stored via the main process to the file system for better control and security. This prevents any potential XSS attacks from accessing stored data.
 
 #### 5.10. Server-Side Input Validation
 Status: ❌ Not applicable
@@ -117,7 +124,7 @@ File name sanitization handles file system concerns
 Users can only affect their own data
 
 ### 6. User Guide / Functionality
-DocMachina is designed to dynamically scan the /packs folder to determine what buttons to display in the Main Menu on the landing page.  Clicking a pack's button from the main menu launches the general intake for that pack. Save/Next will then take the user to the customer's dashboard.  The app will then scan the the pack's own intakes/folder and otherintakes/folder to dynamically determine what to display in the dashboard sections. Each pack will be diffferent depending on its purpose.
+Upon launch, DocMachina is designed to dynamically scan the /packs folder to determine what buttons to display in the Main Menu on the landing page.  Clicking a pack's button from the main menu launches the general intake for that pack. Save/Next will then take the user to the customer's dashboard.  The app will then scan the the pack's own intakes/folder (future feature: and otherintakes/folder) to dynamically determine what to display in the dashboard sections. Each pack will be diffferent depending on its purpose.
 
 #### 6.1 Updating DocMachina.
 To maintain DocMachina's key feature of local-always, the app and packs are not designed for auto-updates.   
@@ -127,19 +134,16 @@ To be compatible with DocMachina:
 
 - Every pack must have at least one general intake (json) and at least one template (md).
 - The general intake must be located in the pack's root folder (examples below).
-- DocMachina uses the pack name to determine what to launch when clicking the pack's button from the Main Menu, so general intakes must follow the proper file name and folder path convention.
+##### Important: DocMachina uses the pack name to determine what to launch when clicking the pack's button from the Main Menu, so the pack's general intakes must follow the proper file name and folder path convention.
 
 Examples:
 
-- PACK_NAME/	pack-name-general.json
-- AWS_Fedramp/	aws-fedramp-general.json 
-- ABC/			abc-general.json 
+- PACK_NAME/	pack-name-general.json<br>
+- AWS_Fedramp/	aws-fedramp-general.json<br> 
+- ABC/			abc-general.json<br> 
 
 DocMachina uses the customerName field for the file id so it is the minimun required field in every general intake.  
-
-DocMachina will scan the pack's own intakes/ folder to dynamically determine what buttons to display in the main section of the customer's dashboard.   If your pack has another "set" of intakes in the otherintakes/ folder the app will scan and display those in the secondary section of the dashboard.
-
-The following is an example of a standard two-tier pack design, ideal for document packages where multiple documents share common fields (e.g., `customerName`) but several documents also require document-specific inputs such as Policies and Procedures for FISMA/FedRAMP requirements. 
+The following is an example of a standard pack design, ideal for document packages where multiple documents share common fields (e.g., `customerName`) but several documents also require document-specific inputs such as Policies and Procedures for FISMA/FedRAMP requirements. 
 
 DocMachina/packs
 --AWS_FedRAMP/
@@ -148,15 +152,11 @@ DocMachina/packs
 ---- ac.json
 ---- at.json
 ---- etc.
-
 -- otherintakes/
-
-
 -- templates/
+---- frontmatter.md
 ---- ac-policy.md
 ---- ac-procedure.md
----- app-s-sod.md
-
 GCP_FedRAMP/
 					
 ### 8. Future Development Ideas
