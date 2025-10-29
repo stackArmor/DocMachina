@@ -124,7 +124,7 @@ File name sanitization handles file system concerns
 Users can only affect their own data
 
 ### 6. User Guide / Functionality
-Upon launch, DocMachina is designed to dynamically scan the /packs folder to determine what buttons to display in the Main Menu on the landing page.  Clicking a pack's button from the main menu launches the general intake for that pack. Save/Next will then take the user to the customer's dashboard.  The app will then scan the the pack's own intakes/folder (future feature: and otherintakes/folder) to dynamically determine what to display in the dashboard sections. Each pack will be diffferent depending on its purpose.
+Upon launch, DocMachina is designed to dynamically scan the /packs folder to determine what buttons to display in the Main Menu on the landing page.  Clicking a pack's button from the main menu launches the general intake for that pack. Save/Next will then take the user to the customer's dashboard.  The app will then scan the the pack's own intakes/folder (future feature: and otherintakes/folder) to dynamically determine what to display in the dashboard sections. Each pack will be different depending on its purpose.
 
 #### 6.1 Updating DocMachina.
 To maintain DocMachina's key feature of local-always, the app and packs are not designed for auto-updates.   
@@ -134,7 +134,7 @@ To be compatible with DocMachina:
 
 - Every pack must have at least one general intake (json) and at least one template (md).
 - The general intake must be located in the pack's root folder (examples below).
-##### Important: DocMachina uses the pack name to determine what to launch when clicking the pack's button from the Main Menu, so the pack's general intakes must follow the proper file name and folder path convention.
+##### Important: DocMachina uses the pack name to determine what to launch when clicking the pack's button from the Main Menu, so the pack's general intake must follow the proper file name and folder path convention.
 
 Examples:
 
@@ -160,7 +160,6 @@ DocMachina/packs
 GCP_FedRAMP/
 					
 ### 8. Future Development Ideas
-
 - Add-on module(s) to generate additional formats (e.g., OSCAL, DOCX).
 - Add-on module(s) to interface with external systems (to upload to SharePoint, CSAM, TBD).
 - Custom pack creator module
