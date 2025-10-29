@@ -2,6 +2,11 @@
 ##### Runs local. Saves local. Stays local.
 
 ---
+Running Instructions
+1. Install Node.js from https://nodejs.org (if not already installed)
+2. Open terminal/command prompt in the project folder
+3. Install dependencies (first time only): npm install
+4. Run the app:  npm start
 
 ### 1. Overview
 DocMachina is a modular, locally-running desktop engine for document generation. It guides users through intake questionnaires and then generates completed documents in markdown, placing them directly in the user’s local downloads folder. Functionality is based around customers, with each customer having their own dashboard and separate file storage.  
