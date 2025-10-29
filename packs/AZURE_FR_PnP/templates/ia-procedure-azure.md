@@ -1,0 +1,33 @@
+## IA - Identification and Authentication
+
+
+- **IA-1** - Policy and Procedures
+- **IA-2** - Identification and Authentication (Organizational Users)
+  - **IA-2(1)** - Multi-factor Authentication to Privileged Accounts
+  - **IA-2(2)** - Multi-factor Authentication to Non-privileged Accounts
+  - **IA-2(5)** - Individual Authentication with Group Authentication
+  - **IA-2(6)** - Access to Accounts - Separate Device
+  - **IA-2(8)** - Access to Accounts - Replay Resistant
+  - **IA-2(12)** - Acceptance of PIV Credentials
+- **IA-3** - Device Identification and Authentication
+- **IA-4** - Identifier Management
+  - **IA-4(4)** - Identify User Status
+- **IA-5** - Authenticator Management
+  - **IA-5(1)** - Password-based Authentication
+  - **IA-5(2)** - Public Key-based Authentication
+  - **IA-5(6)** - Protection of Authenticators
+  - **IA-5(7)** - No Embedded Unencrypted Static Authenticators
+  - **IA-5(8)** - Multiple System Accounts
+  - **IA-5(13)** - Expiration of Cached Authenticators
+- **IA-6** - Authentication Feedback
+- **IA-7** - Cryptographic Module Authentication
+- **IA-8** - Identification and Authentication (Non-organizational Users)
+  - **IA-8(1)** - Acceptance of PIV Credentials from Other Agencies
+  - **IA-8(2)** - Acceptance of External Authenticators
+  - **IA-8(4)** - Use of Defined Profiles
+- **IA-11** - Re-authentication
+- **IA-12** - Identity Proofing
+  - **IA-12(2)** - Identity Evidence
+  - **IA-12(3)** - Identity Evidence Validation and Verification
+  - **IA-12(4)** - In-person Validation and Verification
+  - **IA-12(5)** - Address Confirmation
