@@ -5,8 +5,7 @@
 ### Purpose:  
 - Reduce the time the compliance team spends on manual and repetative tasks associated with documentation.
 - Reduce errors, and produce consistent documentation sets.
-- Initial release targets the policies and procedures task which is estimated to save approximately 20 hours per document package.
-- See section 3 below for more key benefits and use cases.
+- See Section 3 below for more key benefits and use cases.
 
 ---
 First Time Running Instructions:
