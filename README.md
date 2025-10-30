@@ -3,7 +3,7 @@
 
 ---
 ### Purpose:  
-- Reduce the time the compliance team spends on manual and repetative tasks associated with documentation.
+- Reduce the time the compliance team spends on manual and repetitive tasks associated with documentation.
 - Reduce errors, and produce consistent documentation sets.
 - See Section 3 below for more key benefits and use cases.
 
