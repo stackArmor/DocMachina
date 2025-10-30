@@ -20,7 +20,7 @@ After that you only need to:
 2. Run the app:  npm start
 
 ### 1. Overview
-DocMachina is a modular, locally-running desktop engine for document generation. It guides users through intake questionnaires and then generates completed documents in markdown, placing them directly in the customers/ folder. Functionality is based around customers, with each customer having their own dashboard.  
+DocMachina is a modular, locally-running desktop engine for document generation. It guides users through intake questionnaires and then generates completed documents in markdown, placing them directly in the app's customers/ folder. Functionality is based around customers, with each customer having their own dashboard.  
 
 ### 2. Core Philosophy: "Local-Always"
 - DocMachina is designed to run locally on the user’s machine without reliance on cloud services, external libraries, or any other external dependencies.
