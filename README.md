@@ -12,8 +12,10 @@ First Time Running Instructions:
 1. Create a project folder, then download and extract to your project folder
 2. Install Node.js from https://nodejs.org 
 3. Open terminal/command prompt and cd to the project folder
-4. Install dependencies (first time only): npm install
-5. Run the app:  npm start
+4. Install dependencies (first time only):
+- npm install
+- npm install docx
+6. Run the app:  npm start
 
 After that:
 1. Open terminal/command prompt and cd to the project folder
