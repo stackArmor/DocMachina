@@ -15,7 +15,7 @@ First Time Running Instructions:
 4. Install dependencies (first time only): npm install
 5. Run the app:  npm start
 
-After that you only need to:
+After that:
 1. Open terminal/command prompt and cd to the project folder
 2. Run the app:  npm start
 
