@@ -23,7 +23,9 @@ title: "{{controlFamilyName}} Procedure"
 © {{dateYear}} {{customerName}}. All rights reserved.
 
 </div>
+
 ---
+
 <div align="center">
 
 
@@ -56,8 +58,9 @@ The document owner is responsible for updating this document and all supporting 
 - Introduction of new systems/hardware/software
 - Identification and remediation of security vulnerabilities
 - Regulatory changes
-
+  
 The latest version of this document must be kept in a central storage location, accessible by all personnel assigned per the Roles and Responsibilities. All previous versions of this document must be archived once the latest version has been approved for circulation, and all involved personnel must be notified of any new changes. Furthermore, training may be required for all personnel involved after a new version of this document has been published. 
+
 ---
  
 |	Document Properties		|					|
