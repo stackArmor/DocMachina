@@ -1,7 +1,7 @@
 ---
-name: "{{controlFamilyName}} Procedure"
-about: "{{controlFamilyAcronym}} Procedure Template"
-title: "{{controlFamilyAcronym}}"
+name: "{{controlFamilyName}} Procedure - Azure"
+about: "{{controlFamilyAcronym}} Procedure Template for Azure"
+title: "{{controlFamilyName}} Procedure"
 ---
 <div align="center">>
 
