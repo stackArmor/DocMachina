@@ -3,8 +3,6 @@ name: "{{controlFamilyName}}" Procedure
 about: "{{controlFamilyAcronym}}" Procedure Template
 title: "{{controlFamilyAcronym}}" 
 
-author: "{{customerName}}"  
-
 ---
 <div align="center">
 
@@ -12,10 +10,10 @@ author: "{{customerName}}"
 {{customerSystemName}} ({{customerSystemAcronym}}) <br>
 {{systemAssuranceLevel}}
 
-# CONTROLFAMILYNAME Procedure
+# {{controlFamilyName}} Procedure
 
-**Version 0.1**  
-{{draftMonthYear}}
+**Version 1.0**  
+{{finalMonthYear}}
 
 {{customerName}}  
 {{customerAddress1}}  
@@ -23,7 +21,7 @@ author: "{{customerName}}"
 {{customerAddress3}}  
 {{customerUrl}}
 
-© [sert Year] {{customerName}}. All rights reserved.
+© {{dateYear}} {{customerName}}. All rights reserved.
 
 </div>
 ---
@@ -65,10 +63,10 @@ The latest version of this document must be kept in a central storage location, 
  
 |	Document Properties		|					|
 |---------------------------------------|---------------------------------------|
-| Policy Owner: 			| {{customerPnpOwner}} 			|
-| Policy Approver:			| {{customerPnpApprover}}		|
+| Document Owner: 			| {{customerPnpOwner}} 			|
+| Document Approver:			| {{customerPnpApprover}}		|
 | Next Review Date:			| {{nextReviewDate}} 			|
-| Document Storage Location:		| System Secure Document Repository	|
+| Document Storage Location:		| {{customerDocumentStorage}}	|
 | Internal Document Classification:	| Proprietary and Confidential		|
 
 ---
@@ -85,7 +83,7 @@ Federal agencies and organizations must protect the confidentiality, integrity, 
 All policies, procedures, and plans must be stored in a centrally accessible location available to all necessary stakeholders identified in Appendix R and Appendix S of the {{customerSystemAcronym}} SSP.  
 
 ### 1.1 Purpose  
-The purpose of this document is to comply with CONTROLFAMILYNAME requirements in accordance with the following:
+The purpose of this document is to comply with {{controlFamilyName}} requirements in accordance with the following:
 
 - National Institute of Standards and Technology (NIST) Special Publication (SP) 800-53, Revision 5 - Physical and Environmental Protection family baseline of controls established by the Federal Risk and Authorization Management Program (FedRAMP).<br>
 - [DOD] Department of Defense (DoD) Cloud Security Requirements Guide (SRG). <br>
@@ -97,17 +95,17 @@ This document applies to all personnel assigned to the {{customerSystemAcronym}}
 This document also applies to all authorized {{customerName}} employees with privileged access to FedRAMP designated environments and information systems that support the {{customerSystemAcronym}} information system environment.
 
 ### 1.3 Locations  
-This document applies to the {{customerSystemAcronym}} environment within AWS GovCloud.  
+This document applies to the {{customerSystemAcronym}} environment within Azure.  
 
 ---
 
 ## 2. Roles and Responsibilities
-The Roles and Responsibilities of the {{customerSystemAcronym}} system can be found within Appendix R and Appendix S of the {{customerSystemAcronym}} SSP. These appendices provide direct guidance throughout the system documentation (policy, procedures, and plans).  Additional details are available within the Playbooks and Task Definition stored in GitLab.
+The Roles and Responsibilities of the {{customerSystemAcronym}} system can be found within Appendix R and Appendix S of the {{customerSystemAcronym}} SSP. These appendices provide direct guidance throughout the system documentation (policy, procedures, and plans).  Additional details are available within the Playbooks and Task Definitions stored in GitLab.
 
 ---
 
 ## 3. Management Commitment  
-The content of this document has been reviewed and determined to be acceptable and beneficial to the {{customerName}} mission for CONTROLFAMILYNAME. Management and senior leadership are fully committed to supporting and continually improving all aspects of the organization's CONTROLFAMILYNAME efforts. Specific managers have been assigned the responsibility for overseeing internal personnel and ensuring adherence to the roles, responsibilities, policies, and procedures outlined herein.
+The content of this document has been reviewed and determined to be acceptable and beneficial to the {{customerName}} mission for {{controlFamilyName}}. Management and senior leadership are fully committed to supporting and continually improving all aspects of the organization's {{controlFamilyName}} efforts. Specific managers have been assigned the responsibility for overseeing internal personnel and ensuring adherence to the roles, responsibilities, policies, and procedures outlined herein.
 
 ### 3.1 Organizational Coordination  
 FedRAMP designated environments and information systems are supported by a limited group of {{customerName}} personnel representing Engineering, Development, Infrastructure, Monitoring, Security, and other support departments.  All supporting departments are led by a designated manager who is responsible for the team's performance and who reports directly to senior management. 
@@ -117,6 +115,7 @@ Requirements, laws, processes, team organizations, strategies, and technology su
 
 Guidance from senior management, and cross collaboration with affiliated departments within the {{customerName}} organization allows the document owner or delegate to further their efforts of upholding confidentiality, integrity, and availability of information. 
 
-4. {{controlFamilyName}} Controls
+### 4. {{controlFamilyName}} Controls
 
 <!-- CONTROL_SPECIFIC_CONTENT -->
+
