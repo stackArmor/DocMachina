@@ -1,10 +1,9 @@
 ---
-name: "{{controlFamilyName}}" Procedure
-about: "{{controlFamilyAcronym}}" Procedure Template
-title: "{{controlFamilyAcronym}}" 
-
+name: "{{controlFamilyName}} Procedure"
+about: "{{controlFamilyAcronym}} Procedure Template"
+title: "{{controlFamilyAcronym}}"
 ---
-<div align="center">
+<div align="center">>
 
 {{customerName}}<br>
 {{customerSystemName}} ({{customerSystemAcronym}}) <br>
