@@ -3,7 +3,7 @@ name: "{{controlFamilyName}} Procedure - Azure"
 about: "{{controlFamilyAcronym}} Procedure Template for Azure"
 title: "{{controlFamilyName}} Procedure"
 ---
-<div align="center">>
+<div align="center">
 
 {{customerName}}<br>
 {{customerSystemName}} ({{customerSystemAcronym}}) <br>
