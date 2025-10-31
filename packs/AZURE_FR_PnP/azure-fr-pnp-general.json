@@ -1,6 +1,6 @@
 {
 	"title": "AZURE - General Intake",
-	"description": "Use this form to create a new customer record.   Click Next to proceed to the control family menu.",
+	"description": "Customer name is mandatory.",
 	
   "questions": [
     {
@@ -51,10 +51,17 @@
       "type": "text",
       "mandatory": false
     },
+	{
+      "name": "reviewFrequency",
+      "label": "Review Frequency",
+      "type": "text",
+      "mandatory": false
+    }
     {
       "name": "customerDocumentStorage",
       "label": "Document Storage Location",
       "type": "text",
+	  "default": "System Secure Document Repository"
       "mandatory": false
     },
     {
@@ -87,11 +94,30 @@
       "type": "text",
       "mandatory": false
     },
-    {
-      "name": "reviewFrequency",
-      "label": "Review Frequency",
+	{
+      "name": "yearDocument",
+      "label": "dateYear",
+      "type": "text",
+      "mandatory": false
+    }
+	{
+      "name": "draftMonthYear",
+      "label": "Draft Month/Year",
+      "type": "text",
+      "mandatory": false
+    }
+	{
+      "name": "finalMonthYear",
+      "label": "Final Month/Year",
+      "type": "text",
+      "mandatory": false
+    }
+	{
+      "name": "nextReviewDate",
+      "label": "Next Review Date",
       "type": "text",
       "mandatory": false
     }
   ]
+  
 }
