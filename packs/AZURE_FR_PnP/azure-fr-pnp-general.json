@@ -51,17 +51,17 @@
       "type": "text",
       "mandatory": false
     },
-	{
+    {
       "name": "reviewFrequency",
       "label": "Review Frequency",
       "type": "text",
       "mandatory": false
-    }
+    },
     {
       "name": "customerDocumentStorage",
       "label": "Document Storage Location",
       "type": "text",
-	  "default": "System Secure Document Repository"
+      "default": "System Secure Document Repository",
       "mandatory": false
     },
     {
@@ -94,25 +94,25 @@
       "type": "text",
       "mandatory": false
     },
-	{
-      "name": "yearDocument",
-      "label": "dateYear",
+    {
+      "name": "dateYear",
+      "label": "Year",
       "type": "text",
       "mandatory": false
-    }
-	{
+    },
+    {
       "name": "draftMonthYear",
       "label": "Draft Month/Year",
       "type": "text",
       "mandatory": false
-    }
-	{
+    },
+    {
       "name": "finalMonthYear",
       "label": "Final Month/Year",
       "type": "text",
       "mandatory": false
-    }
-	{
+    },
+    {
       "name": "nextReviewDate",
       "label": "Next Review Date",
       "type": "text",
