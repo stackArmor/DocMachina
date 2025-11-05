@@ -17,7 +17,8 @@ Users are notified by {{trainingNotifyMethod}} when training is required.
 -	Employee handbook
 -	Phishing exercises 
 -	Security Practices which include a list of security process and procedures that can be consulted on-demand
--	Logon screen messages 
+-	Logon screen messages
+-	Internal alerts and advisories 
 -	{{trainingAdditional1}}
 -	{{trainingAdditional2}}
 -	{{trainingAdditional3}}
