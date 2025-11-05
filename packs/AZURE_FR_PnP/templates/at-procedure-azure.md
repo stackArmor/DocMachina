@@ -48,4 +48,4 @@ The {{trainingVerifyRole}} is responsible for updating content of role-based tra
 The also {{trainingVerifyRole}} ensures that any lessons learned from internal or external security incidents or breaches are incorporated into role-based training. 
 
 #### 4.5 AT-4 Training Records
-The {{customerName}} {{trainingVerifyRole}} documents and monitors completion of information security and privacy training activities for all {{customerSystemAcronym}} system users within {{trainingRecordsStorage}} for {{trainingRecordsRetention} after completion.
+The {{customerName}} {{trainingVerifyRole}} documents and monitors completion of information security and privacy training activities for all {{customerSystemAcronym}} system users within {{trainingRecordsStorage}} for {{trainingRecordsRetention}} after completion.
