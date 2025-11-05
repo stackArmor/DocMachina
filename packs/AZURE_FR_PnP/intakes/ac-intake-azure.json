@@ -2,16 +2,171 @@
   "questions": [
    
      {
-      "name": "customerName",
-      "label": "Customer Name",
-      "type": "text",
-      "mandatory": true
+  "name": "accountReviewFrequency",
+  "label": "Review frequency of priv and non-priv accounts",
+  "type": "radio",
+  "mandatory": true,
+  "options": [
+    {
+      "label": "quarterly for privileged access, annually for non-privileged access",
+      "value": "quarterly for privileged access, annually for non-privileged access"
     },
     {
-      "name": "customerAddress1",
-      "label": "Address Line 1",
+      "label": "monthly for privileged accessed, every six (6) months for non-privileged access",
+      "value": "monthly for privileged accessed, every six (6) months for non-privileged access"
+    }
+  ]
+},
+    {
+      "name": "accountAutomatedMechanisms",
+      "label": "automated mechanisms used to manage system accounts",
+      "type": "checkbox",
+      "mandatory": false,
+      "options": [
+      {
+      "label": "Microsoft Entra ID Services",
+      "value": "Microsoft Entra ID Services "
+      },
+      {
+      "label": "GitLab ITSM Issues",
+      "value": "GitLAB ITSM Issues"
+      },
+      {
+      "label": "Splunk",
+      "value": "Splunk"
+      },  
+      {
+      "label": "AWS Directory Services",
+      "value": "AWS Directory Services"
+      },          
+      {
+      "label": "GCP Service Directory",
+      "value": "GCP Service Directory"
+      },
+      {
+      "label": "Azure Directory Services",
+      "value": "Azure Directtory Services"
+      },  
+      {
+      "label": "Okta",
+      "value": "Okta"
+      }
+              ]
+    },
+    {
+      "name": "mfaTool",
+      "label": "What tool provides MFA??",
       "type": "text",
       "mandatory": false
-    }
-   ]
+    },
+    {
+      "name": "fedrampRulesOfBehavior",
+      "label": "Using FedRAMP rules of behavior?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountMonitoringTools",
+      "label": "Tools uses for account monitoring",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountLocalAdmin",
+      "label": "Where are credentials for account management maintained?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountUsageConditions",
+      "label": "What usage conditions are defined for access?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountAtypicalUsage",
+      "label": "List any additional atypical use cases?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountLocalAdmin",
+      "label": "Where are credentials for account management maintained?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountAccessEnforcement",
+      "label": "What is the hardening baseline?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "informationFlowTools",
+      "label": "What tools are used to manage information flow?",
+      "type": "text",
+      "mandatory": false
+    },    
+    {
+      "name": "accountAccessEnforcement",
+      "label": "What is the hardening baseline?",
+      "type": "text",
+      "mandatory": false
+    },    
+    {
+      "name": "accountLoggingTools",
+      "label": "What tools are used for account logging?",
+      "type": "text",
+      "mandatory": false
+    },    
+    {
+      "name": "accountInvalidAttempts",
+      "label": "How many invalid login attempts are allowed",
+      "type": "text",
+      "mandatory": false
+    },    
+    {
+      "name": "accountInvalidLock",
+      "label": "What happens when the invalid login limit is reached?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountConcurrentSessions",
+      "label": "Are concurrent sessions allowed?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "inactivityLockout",
+      "label": "Is the application itself configured for inactivity lockout, or will inactivity lockout be configured at the os level?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "applicationSessionTermination",
+      "label": "Is there a maximum amount of time allowed before a user must reauthenticate, and what is the mechanism to enforce it?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountUnlock",
+      "label": "How are accounts unlocked after the maximum number of invalid logins?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accessNoAuthentication",
+      "label": "Are there any actions allowd that do not require identification and authentication?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountAccessPoints",
+      "label": "What tools (VPN) are used to manage network perimiter access points?",
+      "type": "text",
+      "mandatory": false
+    },
+    ]
+  
 }
