@@ -5,7 +5,7 @@ Security and privacy literacy training must be provided to system users (includi
 - As part of initial training for new users and at least annually thereafter; and
 - When required by system changes or significant updates to literacy training and awareness content and/or lessons learned from incidents that have significant impacts to literacy training and awareness content.
   
-The following techniques to increase the security and privacy awareness of system users must be employed: - internal security alerts, advisories, and directives as deemed necessary, in accordance with the SI-5 control.
+The following techniques to increase the security and privacy awareness of system users must be employed:  internal security alerts, advisories, and directives as deemed necessary, in accordance with the SI-5 control.
 
 Literacy training and awareness content must be updated at least annually and following assessment or audit findings, lessons learned from internal or external security incidents or breaches recommendations received from  employees via Feedback Issues, changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. 
 
