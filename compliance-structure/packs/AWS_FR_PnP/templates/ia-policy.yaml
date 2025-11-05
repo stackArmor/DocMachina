@@ -1,0 +1,215 @@
+## Identification and Authentication (IA) Policy
+
+- control_family: Identification And Authentication
+  control_family_id: IA
+  controls:
+  - control_id: IA-01
+    title: Policy and Procedures
+    responsible_roles:
+    odps:
+    - id: IA-01_ODP[01]
+      description: personnel or roles to whom the identification and authentication
+        policy is to be disseminated are defined;
+      value:
+    - id: IA-01_ODP[02]
+      description: personnel or roles to whom the identification and authentication
+        procedures are to be disseminated is/are defined;
+      value:
+    - id: IA-01_ODP[03]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {organization-level; mission/business process-level; system-level};'
+      value:
+    - id: IA-01_ODP[04]
+      description: an official to manage the identification and authentication policy
+        and procedures is defined;
+      value:
+    - id: IA-01_ODP[05]
+      description: the frequency at which the current identification and authentication
+        policy is reviewed and updated is defined;
+      value:
+    - id: IA-01_ODP[06]
+      description: events that would require the current identification and authentication
+        policy to be reviewed and updated are defined;
+      value:
+    - id: IA-01_ODP[07]
+      description: the frequency at which the current identification and authentication
+        procedures are reviewed and updated is defined;
+      value:
+    - id: IA-01_ODP[08]
+      description: events that would require identification and authentication procedures
+        to be reviewed and updated are defined;
+      value:
+  - control_id: IA-02
+    title: Identification and Authentication (Organizational Users)
+    responsible_roles:
+    odps: N/A
+  - control_id: IA-02(01)
+    title: Identification and Authentication (Organizational Users) | Multi-factor
+      Authentication to Privileged Accounts
+    responsible_roles:
+    odps: N/A
+  - control_id: IA-02(02)
+    title: Identification and Authentication (Organizational Users) | Multi-factor
+      Authentication to Non-privileged Accounts
+    responsible_roles:
+    odps: N/A
+  - control_id: IA-02(05)
+    title: Identification and Authentication (Organizational Users) | Individual Authentication
+      with Group Authentication
+    responsible_roles:
+    odps: N/A
+  - control_id: IA-02(06)
+    title: "Identification and Authentication (Organizational Users) | Access to Accounts separate Device"
+    responsible_roles:
+    odps:
+    - id: IA-02(06)_ODP[01]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {local; network; remote};'
+      value:
+    - id: IA-02(06)_ODP[02]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {privileged accounts; non-privileged accounts};'
+      value:
+    - id: IA-02(06)_ODP[03]
+      description: the strength of mechanism requirements to be enforced by a device
+        separate from the system gaining access to accounts is defined;
+      value:
+  - control_id: IA-02(08)
+    title: "Identification and Authentication (Organizational Users) | Access to Accounts | Replay Resistant"
+    responsible_roles:
+    odps:
+    - id: IA-02(08)_ODP
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {privileged accounts; non-privileged accounts};'
+      value:
+  - control_id: IA-02(12)
+    title: Identification and Authentication (Organizational Users) | Acceptance of
+      PIV Credentials
+    responsible_roles:
+    odps: N/A
+  - control_id: IA-03
+    title: Device Identification and Authentication
+    responsible_roles:
+    odps:
+    - id: IA-03_ODP[01]
+      description: devices and/or types of devices to be uniquely identified and authenticated
+        before establishing a connection are defined;
+      value:
+    - id: IA-03_ODP[02]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {local; remote; network};'
+      value:
+  - control_id: IA-04
+    title: Identifier Management
+    responsible_roles:
+    odps:
+    - id: IA-04_ODP[01]
+      description: personnel or roles from whom authorization must be received to
+        assign an identifier are defined;
+      value:
+    - id: IA-04_ODP[02]
+      description: a time period for preventing reuse of identifiers is defined;
+      value:
+  - control_id: IA-04(04)
+    title: Identifier Management | Identify User Status
+    responsible_roles:
+    odps:
+    - id: IA-04(04)_ODP
+      description: characteristics used to identify individual status is defined;
+      value:
+  - control_id: IA-05
+    title: Authenticator Management
+    responsible_roles:
+    odps:
+    - id: IA-05_ODP[01]
+      description: a time period for changing or refreshing authenticators by authenticator
+        type is defined;
+      value:
+    - id: IA-05_ODP[02]
+      description: events that trigger the change or refreshment of authenticators
+        are defined;
+      value:
+  - control_id: IA-05(01)
+    title: Authenticator Management | Password-based Authentication
+    responsible_roles:
+    odps:
+    - id: IA-05(01)_ODP[01]
+      description: the frequency at which to update the list of commonly used, expected,
+        or compromised passwords is defined;
+      value:
+    - id: IA-05(01)_ODP[02]
+      description: authenticator composition and complexity rules are defined;
+      value:
+  - control_id: IA-05(02)
+    title: Authenticator Management | Public Key-based Authentication
+    responsible_roles:
+    odps: N/A
+  - control_id: IA-05(06)
+    title: Authenticator Management | Protection of Authenticators
+    responsible_roles:
+    odps: N/A
+  - control_id: IA-05(07)
+    title: Authenticator Management | No Embedded Unencrypted Static Authenticators
+    responsible_roles:
+    odps: N/A
+  - control_id: IA-06
+    title: Authentication Feedback
+    responsible_roles:
+    odps: N/A
+  - control_id: IA-07
+    title: Cryptographic Module Authentication
+    responsible_roles:
+    odps: N/A
+  - control_id: IA-08
+    title: Identification and Authentication (Non-organizational Users)
+    responsible_roles:
+    odps: N/A
+  - control_id: IA-08(01)
+    title: Identification and Authentication (Non-organizational Users) | Acceptance
+      of PIV Credentials from Other Agencies
+    responsible_roles:
+    odps: N/A
+  - control_id: IA-08(02)
+    title: Identification and Authentication (Non-organizational Users) | Acceptance
+      of External Authenticators
+    responsible_roles:
+    odps: N/A
+  - control_id: IA-08(04)
+    title: Identification and Authentication (Non-organizational Users) | Use of Defined
+      Profiles
+    responsible_roles:
+    odps:
+    - id: IA-08(04)_ODP
+      description: identity management profiles are defined;
+      value:
+  - control_id: IA-11
+    title: Re-authentication
+    responsible_roles:
+    odps:
+    - id: IA-11_ODP
+      description: circumstances or situations requiring re-authentication are defined;
+      value:
+  - control_id: IA-12
+    title: Identity Proofing
+    responsible_roles:
+    odps: N/A
+  - control_id: IA-12(02)
+    title: Identity Proofing | Identity Evidence
+    responsible_roles:
+    odps: N/A
+  - control_id: IA-12(03)
+    title: Identity Proofing | Identity Evidence Validation and Verification
+    responsible_roles:
+    odps:
+    - id: IA-12(03)_ODP
+      description: methods of validation and verification of identity evidence are
+        defined;
+      value:
+  - control_id: IA-12(05)
+    title: Identity Proofing | Address Confirmation
+    responsible_roles:
+    odps:
+    - id: IA-12(05)_ODP
+      description: 'one of the following PARAMETER VALUES is selected: {registration
+        code; notice of proofing};'
+      value:

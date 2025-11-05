@@ -1,0 +1,376 @@
+## System and Information Integrity (SI) Policy
+
+- control_family: System and Information Integrity
+  control_family_id: SI
+  controls:
+  - control_id: SI-01
+    title: Policy and Procedures
+    responsible_roles:
+    odps:
+    - id: SI-01_ODP[01]
+      description: personnel or roles to whom the system and information integrity
+        policy is to be disseminated is/are defined;
+      value:
+    - id: SI-01_ODP[02]
+      description: personnel or roles to whom the system and information integrity
+        procedures are to be disseminated is/are defined;
+      value:
+    - id: SI-01_ODP[03]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {organization-level; mission/business process-level; system-level};'
+      value:
+    - id: SI-01_ODP[04]
+      description: an official to manage the system and information integrity policy
+        and procedures is defined;
+      value:
+    - id: SI-01_ODP[05]
+      description: the frequency at which the current system and information integrity
+        policy is reviewed and updated is defined;
+      value:
+    - id: SI-01_ODP[06]
+      description: events that would require the current system and information integrity
+        policy to be reviewed and updated are defined;
+      value:
+    - id: SI-01_ODP[07]
+      description: the frequency at which the current system and information integrity
+        procedures are reviewed and updated is defined;
+      value:
+    - id: SI-01_ODP[08]
+      description: events that would require the system and information integrity
+        procedures to be reviewed and updated are defined;
+      value:
+  - control_id: SI-02
+    title: Flaw Remediation
+    responsible_roles:
+    odps:
+    - id: SI-02_ODP
+      description: time period within which to install security-relevant software
+        updates after the release of the updates is defined;
+      value:
+  - control_id: SI-02(02)
+    title: Flaw Remediation | Automated Flaw Remediation Status
+    responsible_roles:
+    odps:
+    - id: SI-02(02)_ODP[01]
+      description: automated mechanisms to determine if applicable security-relevant
+        software and firmware updates are installed on system components are defined;
+      value:
+    - id: SI-02(02)_ODP[02]
+      description: the frequency at which to determine if applicable security-relevant
+        software and firmware updates are installed on system components is defined;
+      value:
+  - control_id: SI-02(03)
+    title: Flaw Remediation | Time to Remediate Flaws and Benchmarks for Corrective
+      Actions
+    responsible_roles:
+    odps:
+    - id: SI-02(03)_ODP
+      description: the benchmarks for taking corrective actions are defined;
+      value:
+  - control_id: SI-03
+    title: Malicious Code Protection
+    responsible_roles:
+    odps:
+    - id: SI-03_ODP[01]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {signature-based; non-signature-based};'
+      value:
+    - id: SI-03_ODP[02]
+      description: the frequency at which malicious code protection mechanisms perform
+        scans is defined;
+      value:
+    - id: SI-03_ODP[03]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {endpoint; network entry and exit points};'
+      value:
+    - id: SI-03_ODP[04]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {block malicious code; quarantine malicious code; take <SI-03_ODP[05] action>};'
+      value:
+    - id: SI-03_ODP[05]
+      description: action to be taken in response to malicious code detection are
+        defined (if selected);
+      value:
+    - id: SI-03_ODP[06]
+      description: personnel or roles to be alerted when malicious code is detected
+        is/are defined;
+      value:
+  - control_id: SI-04
+    title: System Monitoring
+    responsible_roles:
+    odps:
+    - id: SI-04_ODP[01]
+      description: monitoring objectives to detect attacks and indicators of potential
+        attacks on the system are defined;
+      value:
+    - id: SI-04_ODP[02]
+      description: techniques and methods used to identify unauthorized use of the
+        system are defined;
+      value:
+    - id: SI-04_ODP[03]
+      description: system monitoring information to be provided to personnel or roles
+        is defined;
+      value:
+    - id: SI-04_ODP[04]
+      description: personnel or roles to whom system monitoring information is to
+        be provided is/are defined;
+      value:
+    - id: SI-04_ODP[05]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {as needed; <SI-04_ODP[06] frequency>};'
+      value:
+    - id: SI-04_ODP[06]
+      description: a frequency for providing system monitoring to personnel or roles
+        is defined (if selected);
+      value:
+  - control_id: SI-04(01)
+    title: System Monitoring | System-wide Intrusion Detection System
+    responsible_roles:
+    odps: N/A
+  - control_id: SI-04(02)
+    title: System Monitoring | Automated Tools and Mechanisms for Real-time Analysis
+    responsible_roles:
+    odps: N/A
+  - control_id: SI-04(04)
+    title: System Monitoring | Inbound and Outbound Communications Traffic
+    responsible_roles:
+    odps:
+    - id: SI-04(04)_ODP[01]
+      description: the frequency at which to monitor inbound communications traffic
+        for unusual or unauthorized activities or conditions is defined;
+      value:
+    - id: SI-04(04)_ODP[02]
+      description: unusual or unauthorized activities or conditions that are to be
+        monitored in inbound communications traffic are defined;
+      value:
+    - id: SI-04(04)_ODP[03]
+      description: the frequency at which to monitor outbound communications traffic
+        for unusual or unauthorized activities or conditions is defined;
+      value:
+    - id: SI-04(04)_ODP[04]
+      description: unusual or unauthorized activities or conditions that are to be
+        monitored in outbound communications traffic are defined;
+      value:
+  - control_id: SI-04(05)
+    title: System Monitoring | System-generated Alerts
+    responsible_roles:
+    odps:
+    - id: SI-04(05)_ODP[01]
+      description: personnel or roles to be alerted when indications of compromise
+        or potential compromise occur is/are defined;
+      value:
+    - id: SI-04(05)_ODP[02]
+      description: compromise indicators are defined;
+      value:
+  - control_id: SI-04(16)
+    title: System Monitoring | Correlate Monitoring Information
+    responsible_roles:
+    odps: N/A
+  - control_id: SI-04(18)
+    title: System Monitoring | Analyze Traffic and Covert Exfiltration
+    responsible_roles:
+    odps:
+    - id: SI-04(18)_ODP
+      description: interior points within the system where communications traffic
+        is to be analyzed are defined;
+      value:
+  - control_id: SI-04(23)
+    title: System Monitoring | Host-based Devices
+    responsible_roles:
+    odps:
+    - id: SI-04(23)_ODP[01]
+      description: host-based monitoring mechanisms to be implemented on system components
+        are defined;
+      value:
+    - id: SI-04(23)_ODP[02]
+      description: system components where host-based monitoring is to be implemented
+        are defined;
+      value:
+  - control_id: SI-05
+    title: Security Alerts, Advisories, and Directives
+    responsible_roles:
+    odps:
+    - id: SI-05_ODP[01]
+      description: external organizations from whom system security alerts, advisories,
+        and directives are to be received on an ongoing basis are defined;
+      value:
+    - id: SI-05_ODP[02]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        { <SI-05_ODP[03] personnel or roles>; <SI-05_ODP[04] elements>; <SI-05_ODP[05]
+        external organizations>};'
+      value:
+    - id: SI-05_ODP[03]
+      description: personnel or roles to whom security alerts, advisories, and directives
+        are to be disseminated is/are defined (if selected);
+      value:
+    - id: SI-05_ODP[04]
+      description: elements within the organization to whom security alerts, advisories,
+        and directives are to be disseminated are defined (if selected);
+      value:
+    - id: SI-05_ODP[05]
+      description: external organizations to whom security alerts, advisories, and
+        directives are to be disseminated are defined (if selected);
+      value:
+  - control_id: SI-06
+    title: Security and Privacy Function Verification
+    responsible_roles:
+    odps:
+    - id: SI-06_ODP[01]
+      description: security functions to be verified for correct operation are defined;
+      value:
+    - id: SI-06_ODP[02]
+      description: privacy functions to be verified for correct operation are defined;
+      value:
+    - id: SI-06_ODP[03]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        { <SI-06_ODP[04] system transitional states>; upon command by user with appropriate
+        privilege; <SI-06_ODP[05] frequency>};'
+      value:
+    - id: SI-06_ODP[04]
+      description: system transitional states requiring the verification of security
+        and privacy functions are defined; (if selected)
+      value:
+    - id: SI-06_ODP[05]
+      description: frequency at which to verify the correct operation of security
+        and privacy functions is defined; (if selected)
+      value:
+    - id: SI-06_ODP[06]
+      description: personnel or roles to be alerted of failed security and privacy
+        verification tests is/are defined;
+      value:
+    - id: SI-06_ODP[07]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {shut the system down; restart the system; <SI-06_ODP[08] alternative action(s)>};'
+      value:
+    - id: SI-06_ODP[08]
+      description: alternative action(s) to be performed when anomalies are discovered
+        are defined (if selected);
+      value:
+  - control_id: SI-07
+    title: Software, Firmware, and Information Integrity
+    responsible_roles:
+    odps:
+    - id: SI-07_ODP[01]
+      description: software requiring integrity verification tools to be employed
+        to detect unauthorized changes is defined;
+      value:
+    - id: SI-07_ODP[02]
+      description: firmware requiring integrity verification tools to be employed
+        to detect unauthorized changes is defined;
+      value:
+    - id: SI-07_ODP[03]
+      description: information requiring integrity verification tools to be employed
+        to detect unauthorized changes is defined;
+      value:
+    - id: SI-07_ODP[04]
+      description: actions to be taken when unauthorized changes to software are detected
+        are defined;
+      value:
+    - id: SI-07_ODP[05]
+      description: actions to be taken when unauthorized changes to firmware are detected
+        are defined;
+      value:
+    - id: SI-07_ODP[06]
+      description: actions to be taken when unauthorized changes to information are
+        detected are defined;
+      value:
+  - control_id: SI-07(01)
+    title: Software, Firmware, and Information Integrity | Integrity Checks
+    responsible_roles:
+    odps:
+    - id: SI-07(01)_ODP[01]
+      description: software on which an integrity check is to be performed is defined;
+      value:
+    - id: SI-07(01)_ODP[02]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {at startup; at <SI-07(01)_ODP[03] transitional states or security-relevant
+        events>; <SI-07(01)_ODP[04] frequency>};'
+      value:
+    - id: SI-07(01)_ODP[03]
+      description: transitional states or security-relevant events requiring integrity
+        checks (on software) are defined (if selected);
+      value:
+    - id: SI-07(01)_ODP[04]
+      description: frequency with which to perform an integrity check (on software)
+        is defined (if selected);
+      value:
+    - id: SI-07(01)_ODP[05]
+      description: firmware on which an integrity check is to be performed is defined;
+      value:
+    - id: SI-07(01)_ODP[06]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {at startup; at <SI-07(01)_ODP[07] transitional states or security-relevant
+        events>; <SI-07(01)_ODP[08] frequency>};'
+      value:
+    - id: SI-07(01)_ODP[07]
+      description: transitional states or security-relevant events requiring integrity
+        checks (on firmware) are defined (if selected);
+      value:
+    - id: SI-07(01)_ODP[08]
+      description: frequency with which to perform an integrity check (on firmware)
+        is defined (if selected);
+      value:
+    - id: SI-07(01)_ODP[09]
+      description: information on which an integrity check is to be performed is defined;
+      value:
+    - id: SI-07(01)_ODP[10]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {at startup; at <SI-07(01)_ODP[11] transitional states or security-relevant
+        events>; <SI-07(01)_ODP[12] frequency>};'
+      value:
+    - id: SI-07(01)_ODP[11]
+      description: transitional states or security-relevant events requiring integrity
+        checks (of information) are defined (if selected);
+      value:
+    - id: SI-07(01)_ODP[12]
+      description: frequency with which to perform an integrity check (of information)
+        is defined (if selected);
+      value:
+  - control_id: SI-07(07)
+    title: Software, Firmware, and Information Integrity | Integration of Detection
+      and Response
+    responsible_roles:
+    odps:
+    - id: SI-07(07)_ODP
+      description: security-relevant changes to the system are defined;
+      value:
+  - control_id: SI-08
+    title: Spam Protection
+    responsible_roles:
+    odps: N/A
+  - control_id: SI-08(02)
+    title: Spam Protection | Automatic Updates
+    responsible_roles:
+    odps:
+    - id: SI-08(02)_ODP
+      description: the frequency at which to automatically update spam protection
+        mechanisms is defined;
+      value:
+  - control_id: SI-10
+    title: Information Input Validation
+    responsible_roles:
+    odps:
+    - id: SI-10_ODP
+      description: information inputs to the system requiring validity checks are
+        defined;
+      value:
+  - control_id: SI-11
+    title: Error Handling
+    responsible_roles:
+    odps:
+    - id: SI-11_ODP
+      description: personnel or roles to whom error messages are to be revealed is/are
+        defined;
+      value:
+  - control_id: SI-12
+    title: Information Management and Retention
+    responsible_roles:
+    odps: N/A
+  - control_id: SI-16
+    title: Memory Protection
+    responsible_roles:
+    odps:
+    - id: SI-16_ODP
+      description: controls to be implemented to protect the system memory from unauthorized
+        code execution are defined;
+      value:

@@ -1,0 +1,186 @@
+## Supply Chain Risk Management (SR) Policy
+
+- control_family: Supply Chain Risk Management
+  control_family_id: SR
+  controls:
+  - control_id: SR-01
+    title: Policy and Procedures
+    responsible_roles:
+    odps:
+    - id: SR-01_ODP[01]
+      description: personnel or roles to whom supply chain risk management policy
+        is to be disseminated to is/are defined;
+      value:
+    - id: SR-01_ODP[02]
+      description: personnel or roles to whom supply chain risk management procedures
+        are disseminated to is/are defined;
+      value:
+    - id: SR-01_ODP[03]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {organization-level; mission/business process-level; system-level};'
+      value:
+    - id: SR-01_ODP[04]
+      description: an official to manage the development, documentation, and dissemination
+        of the supply chain risk management policy and procedures is defined;
+      value:
+    - id: SR-01_ODP[05]
+      description: the frequency at which the current supply chain risk management
+        policy is reviewed and updated is defined;
+      value:
+    - id: SR-01_ODP[06]
+      description: events that require the current supply chain risk management policy
+        to be reviewed and updated are defined;
+      value:
+    - id: SR-01_ODP[07]
+      description: the frequency at which the current supply chain risk management
+        procedure is reviewed and updated is defined;
+      value:
+    - id: SR-01_ODP[08]
+      description: events that require the supply chain risk management procedures
+        to be reviewed and updated are defined;
+      value:
+  - control_id: SR-02
+    title: Supply Chain Risk Management Plan
+    responsible_roles:
+    odps:
+    - id: SR-02_ODP[01]
+      description: systems, system components, or system services for which a supply
+        chain risk management plan is developed are defined;
+      value:
+    - id: SR-02_ODP[02]
+      description: the frequency at which to review and update the supply chain risk
+        management plan is defined;
+      value:
+  - control_id: SR-02(01)
+    title: Supply Chain Risk Management Plan | Establish SCRM Team
+    responsible_roles:
+    odps:
+    - id: SR-02(01)_ODP[01]
+      description: the personnel, roles, and responsibilities of the supply chain
+        risk management team are defined;
+      value:
+    - id: SR-02(01)_ODP[02]
+      description: supply chain risk management activities are defined;
+      value:
+  - control_id: SR-03
+    title: Supply Chain Controls and Processes
+    responsible_roles:
+    odps:
+    - id: SR-03_ODP[01]
+      description: the system or system component requiring a process or processes
+        to identify and address weaknesses or deficiencies is defined;
+      value:
+    - id: SR-03_ODP[02]
+      description: supply chain personnel with whom to coordinate the process or processes
+        to identify and address weaknesses or deficiencies in the supply chain elements
+        and processes is/are defined;
+      value:
+    - id: SR-03_ODP[03]
+      description: supply chain controls employed to protect against supply chain
+        risks to the system, system component, or system service and to limit the
+        harm or consequences from supply chain-related events are defined;
+      value:
+    - id: SR-03_ODP[04]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {security and privacy plans; supply chain risk management plan; <SR-03_ODP[05]
+        document>};'
+      value:
+    - id: SR-03_ODP[05]
+      description: the document identifying the selected and implemented supply chain
+        processes and controls is defined (if selected);
+      value:
+  - control_id: SR-05
+    title: Acquisition Strategies, Tools, and Methods
+    responsible_roles:
+    odps:
+    - id: SR-05_ODP
+      description: acquisition strategies, contract tools, and procurement methods
+        to protect against, identify, and mitigate supply chain risks are defined;
+      value:
+  - control_id: SR-06
+    title: Supplier Assessments and Reviews
+    responsible_roles:
+    odps:
+    - id: SR-06_ODP
+      description: the frequency at which to assess and review the supply chain-related
+        risks associated with suppliers or contractors and the systems, system components,
+        or system services they provide is defined;
+      value:
+  - control_id: SR-08
+    title: Notification Agreements
+    responsible_roles:
+    odps:
+    - id: SR-08_ODP[01]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {notification of supply chain compromises; <SR-08_ODP[02] results of assessments
+        or audits>};'
+      value:
+    - id: SR-08_ODP[02]
+      description: information for which agreements and procedures are to be established
+        are defined (if selected);
+      value:
+  - control_id: SR-10
+    title: Inspection of Systems or Components
+    responsible_roles:
+    odps:
+    - id: SR-10_ODP[01]
+      description: systems or system components that require inspection are defined;
+      value:
+    - id: SR-10_ODP[02]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {at random; at <SR-10_ODP[03] frequency>; upon <SR-10_ODP[04] indications
+        of need for inspection>};'
+      value:
+    - id: SR-10_ODP[03]
+      description: frequency at which to inspect systems or system components is defined
+        (if selected);
+      value:
+    - id: SR-10_ODP[04]
+      description: indications of the need for an inspection of systems or system
+        components are defined (if selected);
+      value:
+  - control_id: SR-11
+    title: Component Authenticity
+    responsible_roles:
+    odps:
+    - id: SR-11_ODP[01]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {source of counterfeit component; <SR-11_ODP[02] external reporting organizations>;
+        <SR-11_ODP[03] personnel or roles>};'
+      value:
+    - id: SR-11_ODP[02]
+      description: external reporting organizations to whom counterfeit system components
+        are to be reported is/are defined (if selected);
+      value:
+    - id: SR-11_ODP[03]
+      description: personnel or roles to whom counterfeit system components are to
+        be reported is/are defined (if selected);
+      value:
+  - control_id: SR-11(01)
+    title: Component Authenticity | Anti-counterfeit Training
+    responsible_roles:
+    odps:
+    - id: SR-11(01)_ODP
+      description: personnel or roles requiring training to detect counterfeit system
+        components (including hardware, software, and firmware) is/are defined;
+      value:
+  - control_id: SR-11(02)
+    title: Component Authenticity | Configuration Control for Component Service and
+      Repair
+    responsible_roles:
+    odps:
+    - id: SR-11(02)_ODP
+      description: system components requiring configuration control are defined;
+      value:
+  - control_id: SR-12
+    title: Component Disposal
+    responsible_roles:
+    odps:
+    - id: SR-12_ODP[01]
+      description: data, documentation, tools, or system components to be disposed
+        of are defined;
+      value:
+    - id: SR-12_ODP[02]
+      description: techniques and methods for disposing of data, documentation, tools,
+        or system components are defined;
+      value:

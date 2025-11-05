@@ -1,0 +1,249 @@
+### Physical and Environmental Protection (PE) Policy
+
+- control_family: Physical And Environmental Protection
+  control_family_id: PE
+  controls:
+  - control_id: PE-01
+    title: Policy and Procedures
+    responsible_roles:
+    odps:
+    - id: PE-01_ODP[01]
+      description: personnel or roles to whom the physical and environmental protection
+        policy is to be disseminated is/are defined;
+      value:
+    - id: PE-01_ODP[02]
+      description: personnel or roles to whom the physical and environmental protection
+        procedures are to be disseminated is/are defined;
+      value:
+    - id: PE-01_ODP[03]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {organization-level; mission/business process-level; system-level};'
+      value:
+    - id: PE-01_ODP[04]
+      description: an official to manage the physical and environmental protection
+        policy and procedures is defined;
+      value:
+    - id: PE-01_ODP[05]
+      description: the frequency at which the current physical and environmental protection
+        policy is reviewed and updated is defined;
+      value:
+    - id: PE-01_ODP[06]
+      description: events that would require the current physical and environmental
+        protection policy to be reviewed and updated are defined;
+      value:
+    - id: PE-01_ODP[07]
+      description: the frequency at which the current physical and environmental protection
+        procedures are reviewed and updated is defined;
+      value:
+    - id: PE-01_ODP[08]
+      description: events that would require the physical and environmental protection
+        procedures to be reviewed and updated are defined;
+      value:
+  - control_id: PE-02
+    title: Physical Access Authorizations
+    responsible_roles:
+    odps:
+    - id: PE-02_ODP
+      description: frequency at which to review the access list detailing authorized
+        facility access by individuals is defined;
+      value:
+  - control_id: PE-03
+    title: Physical Access Control
+    responsible_roles:
+    odps:
+    - id: PE-03_ODP[01]
+      description: entry and exit points to the facility in which the system resides
+        are defined;
+      value:
+    - id: PE-03_ODP[02]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        { <PE-03_ODP[03] systems or devices>; guards};'
+      value:
+    - id: PE-03_ODP[03]
+      description: physical access control systems or devices used to control ingress
+        and egress to the facility are defined (if selected);
+      value:
+    - id: PE-03_ODP[04]
+      description: entry or exit points for which physical access logs are maintained
+        are defined;
+      value:
+    - id: PE-03_ODP[05]
+      description: physical access controls to control access to areas within the
+        facility designated as publicly accessible are defined;
+      value:
+    - id: PE-03_ODP[06]
+      description: circumstances requiring visitor escorts and control of visitor
+        activity are defined;
+      value:
+    - id: PE-03_ODP[07]
+      description: physical access devices to be inventoried are defined;
+      value:
+    - id: PE-03_ODP[08]
+      description: frequency at which to inventory physical access devices is defined;
+      value:
+    - id: PE-03_ODP[09]
+      description: frequency at which to change combinations is defined;
+      value:
+    - id: PE-03_ODP[10]
+      description: frequency at which to change keys is defined;
+      value:
+  - control_id: PE-04
+    title: Access Control for Transmission
+    responsible_roles:
+    odps:
+    - id: PE-04_ODP[01]
+      description: system distribution and transmission lines requiring physical access
+        controls are defined;
+      value:
+    - id: PE-04_ODP[02]
+      description: security controls to be implemented to control physical access
+        to system distribution and transmission lines within the organizational facility
+        are defined;
+      value:
+  - control_id: PE-05
+    title: Access Control for Output Devices
+    responsible_roles:
+    odps:
+    - id: PE-05_ODP
+      description: output devices that require physical access control to output are
+        defined;
+      value:
+  - control_id: PE-06
+    title: Monitoring Physical Access
+    responsible_roles:
+    odps:
+    - id: PE-06_ODP[01]
+      description: the frequency at which to review physical access logs is defined;
+      value:
+    - id: PE-06_ODP[02]
+      description: events or potential indication of events requiring physical access
+        logs to be reviewed are defined;
+      value:
+  - control_id: PE-06(01)
+    title: Monitoring Physical Access | Intrusion Alarms and Surveillance Equipment
+    responsible_roles:
+    odps: N/A
+  - control_id: PE-06(04)
+    title: Monitoring Physical Access | Monitoring Physical Access to Systems
+    responsible_roles:
+    odps:
+    - id: PE-06(04)_ODP
+      description: physical spaces containing one or more components of the system
+        are defined;
+      value:
+  - control_id: PE-08
+    title: Visitor Access Records
+    responsible_roles:
+    odps:
+    - id: PE-08_ODP[01]
+      description: time period for which to maintain visitor access records for the
+        facility where the system resides is defined;
+      value:
+    - id: PE-08_ODP[02]
+      description: the frequency at which to review visitor access records is defined;
+      value:
+    - id: PE-08_ODP[03]
+      description: personnel to whom visitor access records anomalies are reported
+        to is/are defined;
+      value:
+  - control_id: PE-09
+    title: Power Equipment and Cabling
+    responsible_roles:
+    odps: N/A
+  - control_id: PE-10
+    title: Emergency Shutoff
+    responsible_roles:
+    odps:
+    - id: PE-10_ODP[01]
+      description: system or individual system components that require the capability
+        to shut off power in emergency situations is/are defined;
+      value:
+    - id: PE-10_ODP[02]
+      description: location of emergency shutoff switches or devices by system or
+        system component is defined;
+      value:
+  - control_id: PE-11
+    title: Emergency Power
+    responsible_roles:
+    odps:
+    - id: PE-11_ODP
+      description: 'one of the following PARAMETER VALUES is selected: {an orderly
+        shutdown of the system; transition of the system to long-term alternate power};'
+      value:
+  - control_id: PE-12
+    title: Emergency Lighting
+    responsible_roles:
+    odps: N/A
+  - control_id: PE-13
+    title: Fire Protection
+    responsible_roles:
+    odps: N/A
+  - control_id: PE-13(01)
+    title: "Fire Protection | Detection Systems - Automatic Activation and Notification"
+    responsible_roles:
+    odps:
+    - id: PE-13(01)_ODP[01]
+      description: personnel or roles to be notified in the event of a fire is/are
+        defined;
+      value:
+    - id: PE-13(01)_ODP[02]
+      description: emergency responders to be notified in the event of a fire are
+        defined;
+      value:
+  - control_id: PE-13(02)
+    title: "Fire Protection | Suppression Systems \x97 Automatic Activation and Notification"
+    responsible_roles:
+    odps:
+    - id: PE-13(02)_ODP[01]
+      description: personnel or roles to be notified in the event of a fire is/are
+        defined;
+      value:
+    - id: PE-13(02)_ODP[02]
+      description: emergency responders to be notified in the event of a fire are
+        defined;
+      value:
+  - control_id: PE-14
+    title: Environmental Controls
+    responsible_roles:
+    odps:
+    - id: PE-14_ODP[01]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {temperature; humidity; pressure; radiation; <PE-14_ODP[02] environmental
+        control>};'
+      value:
+    - id: PE-14_ODP[02]
+      description: environmental control(s) for which to maintain a specified level
+        in the facility where the system resides are defined (if selected);
+      value:
+    - id: PE-14_ODP[03]
+      description: acceptable levels for environmental controls are defined;
+      value:
+    - id: PE-14_ODP[04]
+      description: frequency at which to monitor environmental control levels is defined;
+      value:
+  - control_id: PE-15
+    title: Water Damage Protection
+    responsible_roles:
+    odps: N/A
+  - control_id: PE-16
+    title: Delivery and Removal
+    responsible_roles:
+    odps:
+    - id: PE-16_ODP[01]
+      description: types of system components to be authorized and controlled when
+        entering the facility are defined;
+      value:
+    - id: PE-16_ODP[02]
+      description: types of system components to be authorized and controlled when
+        exiting the facility are defined;
+      value:
+  - control_id: PE-17
+    title: Alternate Work Site
+    responsible_roles:
+    odps:
+    - id: PE-17_ODP[01]
+      description: alternate work sites allowed for use by employees are defined;
+      value:
+    - id: PE-17_ODP[02]
+      description: controls to be employed at alternate work sites are defined;
+      value:

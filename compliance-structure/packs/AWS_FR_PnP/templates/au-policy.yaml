@@ -1,0 +1,178 @@
+## Audit and Accountability (AU) Policy Template
+
+- control_family: Audit And Accountability
+  control_family_id: AU
+  controls:
+  - control_id: AU-01
+    title: Policy and Procedures
+    responsible_roles:
+    odps:
+    - id: AU-01_ODP[01]
+      description: personnel or roles to whom the audit and accountability policy
+        is to be disseminated is/are defined;
+      value:
+    - id: AU-01_ODP[02]
+      description: personnel or roles to whom the audit and accountability procedures
+        are to be disseminated is/are defined;
+      value:
+    - id: AU-01_ODP[03]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {organization-level; mission/business process-level; system-level};'
+      value:
+    - id: AU-01_ODP[04]
+      description: an official to manage the audit and accountability policy and procedures
+        is defined;
+      value:
+    - id: AU-01_ODP[05]
+      description: the frequency at which the current audit and accountability policy
+        is reviewed and updated is defined;
+      value:
+    - id: AU-01_ODP[06]
+      description: events that would require the current audit and accountability
+        policy to be reviewed and updated are defined;
+      value:
+    - id: AU-01_ODP[07]
+      description: the frequency at which the current audit and accountability procedures
+        are reviewed and updated is defined;
+      value:
+    - id: AU-01_ODP[08]
+      description: events that would require audit and accountability procedures to
+        be reviewed and updated are defined;
+      value:
+  - control_id: AU-02
+    title: Event Logging
+    responsible_roles:
+    odps:
+    - id: AU-02_ODP[01]
+      description: the event types that the system is capable of logging in support
+        of the audit function are defined;
+      value:
+    - id: AU-02_ODP[02]
+      description: the event types (subset of AU-02_ODP[01]) for logging within the
+        system are defined;
+      value:
+    - id: AU-02_ODP[03]
+      description: the frequency or situation requiring logging for each specified
+        event type is defined;
+      value:
+    - id: AU-02_ODP[04]
+      description: the frequency of event types selected for logging are reviewed
+        and updated;
+      value:
+  - control_id: AU-03
+    title: Content of Audit Records
+    responsible_roles:
+    odps: N/A
+  - control_id: AU-03(01)
+    title: Content of Audit Records | Additional Audit Information
+    responsible_roles:
+    odps:
+    - id: AU-03(01)_ODP
+      description: additional information to be included in audit records is defined;
+      value:
+  - control_id: AU-04
+    title: Audit Log Storage Capacity
+    responsible_roles:
+    odps:
+    - id: AU-04_ODP
+      description: audit log retention requirements are defined;
+      value:
+  - control_id: AU-05
+    title: Response to Audit Logging Process Failures
+    responsible_roles:
+    odps:
+    - id: AU-05_ODP[01]
+      description: personnel or roles receiving audit logging process failure alerts
+        are defined;
+      value:
+    - id: AU-05_ODP[02]
+      description: time period for personnel or roles receiving audit logging process
+        failure alerts is defined;
+      value:
+    - id: AU-05_ODP[03]
+      description: additional actions to be taken in the event of an audit logging
+        process failure are defined;
+      value:
+  - control_id: AU-06
+    title: Audit Record Review, Analysis, and Reporting
+    responsible_roles:
+    odps:
+    - id: AU-06_ODP[01]
+      description: frequency at which system audit records are reviewed and analyzed
+        is defined;
+      value:
+    - id: AU-06_ODP[02]
+      description: inappropriate or unusual activity is defined;
+      value:
+    - id: AU-06_ODP[03]
+      description: personnel or roles to receive findings from reviews and analyses
+        of system records is/are defined;
+      value:
+  - control_id: AU-06(01)
+    title: Audit Record Review, Analysis, and Reporting | Automated Process Integration
+    responsible_roles:
+    odps:
+    - id: AU-06(01)_ODP
+      description: automated mechanisms used for integrating audit record review,
+        analysis, and reporting processes are defined;
+      value:
+  - control_id: AU-06(03)
+    title: Audit Record Review, Analysis, and Reporting | Correlate Audit Record Repositories
+    responsible_roles:
+    odps: N/A
+  - control_id: AU-07
+    title: Audit Record Reduction and Report Generation
+    responsible_roles:
+    odps: N/A
+  - control_id: AU-07(01)
+    title: Audit Record Reduction and Report Generation | Automatic Processing
+    responsible_roles:
+    odps:
+    - id: AU-07(01)_ODP
+      description: fields within audit records that can be processed, sorted, or searched
+        are defined;
+      value:
+  - control_id: AU-08
+    title: Time Stamps
+    responsible_roles:
+    odps:
+    - id: AU-08_ODP
+      description: granularity of time measurement for audit record timestamps is
+        defined;
+      value:
+  - control_id: AU-09
+    title: Protection of Audit Information
+    responsible_roles:
+    odps:
+    - id: AU-09_ODP
+      description: personnel or roles to be alerted upon detection of unauthorized
+        access, modification, or deletion of audit information is/are defined;
+      value:
+  - control_id: AU-09(04)
+    title: Protection of Audit Information | Access by Subset of Privileged Users
+    responsible_roles:
+    odps:
+    - id: AU-09(04)_ODP
+      description: a subset of privileged users or roles authorized to access management
+        of audit logging functionality is defined;
+      value:
+  - control_id: AU-11
+    title: Audit Record Retention
+    responsible_roles:
+    odps:
+    - id: AU-11_ODP
+      description: a time period to retain audit records that is consistent with the
+        records retention policy is defined;
+      value:
+  - control_id: AU-12
+    title: Audit Record Generation
+    responsible_roles:
+    odps:
+    - id: AU-12_ODP[01]
+      description: system components that provide an audit record generation capability
+        for the events types (defined in AU-02_ODP[02]) are defined;
+      value:
+    - id: AU-12_ODP[02]
+      description: personnel or roles allowed to select the event types that are to
+        be logged by specific components of the system is/are defined;
+      value:

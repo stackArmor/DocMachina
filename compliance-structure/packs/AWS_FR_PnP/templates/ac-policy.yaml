@@ -1,0 +1,443 @@
+## Access Control (AC) Policy
+
+- control_family: Access Control
+  control_family_id: AC
+  controls:
+  - control_id: AC-01
+    title: Policy and Procedures
+    responsible_roles:
+    odps:
+    - id: AC-01_ODP[01]
+      description: personnel or roles to whom the access control policy is to be disseminated
+        is/are defined;
+      value:
+    - id: AC-01_ODP[02]
+      description: personnel or roles to whom the access control procedures are to
+        be disseminated is/are defined;
+      value:
+    - id: AC-01_ODP[03]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {organization-level; mission/business process-level; system-level};'
+      value:
+    - id: AC-01_ODP[04]
+      description: an official to manage the access control policy and procedures
+        is defined;
+      value:
+    - id: AC-01_ODP[05]
+      description: the frequency at which the current access control policy is reviewed
+        and updated is defined;
+      value:
+    - id: AC-01_ODP[06]
+      description: events that would require the current access control policy to
+        be reviewed and updated are defined;
+      value:
+    - id: AC-01_ODP[07]
+      description: the frequency at which the current access control procedures are
+        reviewed and updated is defined;
+      value:
+    - id: AC-01_ODP[08]
+      description: events that would require procedures to be reviewed and updated
+        are defined;
+      value:
+  - control_id: AC-02
+    title: Account Management
+    responsible_roles:
+    odps:
+    - id: AC-02_ODP[01]
+      description: prerequisites and criteria for group and role membership are defined;
+      value:
+    - id: AC-02_ODP[02]
+      description: attributes (as required) for each account are defined;
+      value:
+    - id: AC-02_ODP[03]
+      description: personnel or roles required to approve requests to create accounts
+        is/are defined;
+      value:
+    - id: AC-02_ODP[04]
+      description: policy, procedures, prerequisites, and criteria for account creation,
+        enabling, modification, disabling, and removal are defined;
+      value:
+    - id: AC-02_ODP[05]
+      description: personnel or roles to be notified is/are defined;
+      value:
+    - id: AC-02_ODP[06]
+      description: time period within which to notify account managers when accounts
+        are no longer required is defined;
+      value:
+    - id: AC-02_ODP[07]
+      description: time period within which to notify account managers when users
+        are terminated or transferred is defined;
+      value:
+    - id: AC-02_ODP[08]
+      description: time period within which to notify account managers when system
+        usage or the need to know changes for an individual is defined;
+      value:
+    - id: AC-02_ODP[09]
+      description: attributes needed to authorize system access (as required) are
+        defined;
+      value:
+    - id: AC-02_ODP[10]
+      description: the frequency of account review is defined;
+      value:
+  - control_id: AC-02(01)
+    title: Account Management | Automated System Account Management
+    responsible_roles:
+    odps:
+    - id: AC-02(01)_ODP
+      description: automated mechanisms used to support the management of system accounts
+        are defined;
+      value:
+  - control_id: AC-02(02)
+    title: Account Management | Automated Temporary and Emergency Account Management
+    responsible_roles:
+    odps:
+    - id: AC-02(02)_ODP[01]
+      description: 'one of the following PARAMETER VALUES is selected: {remove; disable};'
+      value:
+    - id: AC-02(02)_ODP[02]
+      description: the time period after which to automatically remove or disable
+        temporary or emergency accounts is defined;
+      value:
+  - control_id: AC-02(03)
+    title: Account Management | Disable Accounts
+    responsible_roles:
+    odps:
+    - id: AC-02(03)_ODP[01]
+      description: time period within which to disable accounts is defined;
+      value:
+    - id: AC-02(03)_ODP[02]
+      description: time period for account inactivity before disabling is defined;
+      value:
+  - control_id: AC-02(04)
+    title: Account Management | Automated Audit Actions
+    responsible_roles:
+    odps: N/A
+  - control_id: AC-02(05)
+    title: Account Management | Inactivity Logout
+    responsible_roles:
+    odps:
+    - id: AC-02(05)_ODP
+      description: the time period of expected inactivity or description of when to
+        log out is defined;
+      value:
+  - control_id: AC-02(07)
+    title: Account Management | Privileged User Accounts
+    responsible_roles:
+    odps:
+    - id: AC-02(07)_ODP
+      description: 'one of the following PARAMETER VALUES is selected: {a role-based
+        access scheme; an attribute-based access scheme};'
+      value:
+  - control_id: AC-02(09)
+    title: Account Management | Restrictions on Use of Shared and Group Accounts
+    responsible_roles:
+    odps:
+    - id: AC-02(09)_ODP
+      description: conditions for establishing shared and group accounts are defined;
+      value:
+  - control_id: AC-02(12)
+    title: Account Management | Account Monitoring for Atypical Usage
+    responsible_roles:
+    odps:
+    - id: AC-02(12)_ODP[01]
+      description: atypical usage for which to monitor system accounts is defined;
+      value:
+    - id: AC-02(12)_ODP[02]
+      description: personnel or roles to report atypical usage is/are defined;
+      value:
+  - control_id: AC-02(13)
+    title: Account Management | Disable Accounts for High-risk Individuals
+    responsible_roles:
+    odps:
+    - id: AC-02(13)_ODP[01]
+      description: time period within which to disable accounts of individuals who
+        are discovered to pose significant risk is defined;
+      value:
+    - id: AC-02(13)_ODP[02]
+      description: significant risks leading to disabling accounts are defined;
+      value:
+  - control_id: AC-03
+    title: Access Enforcement
+    responsible_roles:
+    odps: N/A
+  - control_id: AC-04
+    title: Information Flow Enforcement
+    responsible_roles:
+    odps:
+    - id: AC-04_ODP
+      description: information flow control policies within the system and between
+        connected systems are defined;
+      value:
+  - control_id: AC-04(21)
+    title: Information Flow Enforcement | Physical or Logical Separation of Information
+      Flows
+    responsible_roles:
+    odps:
+    - id: AC-04(21)_ODP[01]
+      description: mechanisms and/or techniques used to logically separate information
+        flows are defined (if selected);
+      value:
+    - id: AC-04(21)_ODP[02]
+      description: mechanisms and/or techniques used to physically separate information
+        flows are defined (if selected);
+      value:
+    - id: AC-04(21)_ODP[03]
+      description: required separations by types of information are defined;
+      value:
+  - control_id: AC-05
+    title: Separation of Duties
+    responsible_roles:
+    odps:
+    - id: AC-05_ODP
+      description: duties of individuals requiring separation are defined;
+      value:
+  - control_id: AC-06
+    title: Least Privilege
+    responsible_roles:
+    odps: N/A
+  - control_id: AC-06(01)
+    title: Least Privilege | Authorize Access to Security Functions
+    responsible_roles:
+    odps:
+    - id: AC-06(01)_ODP[01]
+      description: individuals and roles with authorized access to security functions
+        and security-relevant information are defined;
+      value:
+    - id: AC-06(01)_ODP[02]
+      description: security functions (deployed in hardware) for authorized access
+        are defined;
+      value:
+    - id: AC-06(01)_ODP[03]
+      description: security functions (deployed in software) for authorized access
+        are defined;
+      value:
+    - id: AC-06(01)_ODP[04]
+      description: security functions (deployed in firmware) for authorized access
+        are defined;
+      value:
+    - id: AC-06(01)_ODP[05]
+      description: security-relevant information for authorized access is defined;
+      value:
+  - control_id: AC-06(02)
+    title: Least Privilege | Non-privileged Access for Nonsecurity Functions
+    responsible_roles:
+    odps:
+    - id: AC-06(02)_ODP
+      description: security functions or security-relevant information, the access
+        to which requires users to use non-privileged accounts to access non-security
+        functions, are defined;
+      value:
+  - control_id: AC-06(05)
+    title: Least Privilege | Privileged Accounts
+    responsible_roles:
+    odps:
+    - id: AC-06(05)_ODP
+      description: personnel or roles to which privileged accounts on the system are
+        to be restricted is/are defined;
+      value:
+  - control_id: AC-06(07)
+    title: Least Privilege | Review of User Privileges
+    responsible_roles:
+    odps:
+    - id: AC-06(07)_ODP[01]
+      description: the frequency at which to review the privileges assigned to roles
+        or classes of users is defined;
+      value:
+    - id: AC-06(07)_ODP[02]
+      description: roles or classes of users to which privileges are assigned are
+        defined;
+      value:
+  - control_id: AC-06(09)
+    title: Least Privilege | Log Use of Privileged Functions
+    responsible_roles:
+    odps: N/A
+  - control_id: AC-06(10)
+    title: Least Privilege | Prohibit Non-privileged Users from Executing Privileged
+      Functions
+    responsible_roles:
+    odps: N/A
+  - control_id: AC-07
+    title: Unsuccessful Logon Attempts
+    responsible_roles:
+    odps:
+    - id: AC-07_ODP[01]
+      description: the number of consecutive invalid logon attempts by a user allowed
+        during a time period is defined;
+      value:
+    - id: AC-07_ODP[02]
+      description: the time period to which the number of consecutive invalid logon
+        attempts by a user is limited is defined;
+      value:
+    - id: AC-07_ODP[03]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {lock the account or node for <AC-07_ODP[04] time period>; lock the account
+        or node until released by an administrator; delay next logon prompt per <AC-07_ODP[05]
+        delay algorithm>; notify system administrator; take other <AC-07_ODP[06] action>};'
+      value:
+    - id: AC-07_ODP[04]
+      description: time period for an account or node to be locked is defined (if
+        selected);
+      value:
+    - id: AC-07_ODP[05]
+      description: delay algorithm for the next logon prompt is defined (if selected);
+      value:
+    - id: AC-07_ODP[06]
+      description: other action to be taken when the maximum number of unsuccessful
+        attempts is exceeded is defined (if selected);
+      value:
+  - control_id: AC-08
+    title: System Use Notification
+    responsible_roles:
+    odps:
+    - id: AC-08_ODP[01]
+      description: system use notification message or banner to be displayed by the
+        system to users before granting access to the system is defined;
+      value:
+    - id: AC-08_ODP[02]
+      description: conditions for system use to be displayed by the system before
+        granting further access are defined;
+      value:
+  - control_id: AC-11
+    title: Device Lock
+    responsible_roles:
+    odps:
+    - id: AC-11_ODP[01]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {initiating a device lock after <AC-11_ODP[02] time period> of inactivity;
+        requiring the user to initiate a device lock before leaving the system unattended};'
+      value:
+    - id: AC-11_ODP[02]
+      description: time period of inactivity after which a device lock is initiated
+        is defined (if selected);
+      value:
+  - control_id: AC-11(01)
+    title: Device Lock | Pattern-hiding Displays
+    responsible_roles:
+    odps: N/A
+  - control_id: AC-12
+    title: Session Termination
+    responsible_roles:
+    odps:
+    - id: AC-12_ODP
+      description: conditions or trigger events requiring session disconnect are defined;
+      value:
+  - control_id: AC-14
+    title: Permitted Actions Without Identification or Authentication
+    responsible_roles:
+    odps:
+    - id: AC-14_ODP
+      description: user actions that can be performed on the system without identification
+        or authentication are defined;
+      value:
+  - control_id: AC-17
+    title: Remote Access
+    responsible_roles:
+    odps: N/A
+  - control_id: AC-17(01)
+    title: Remote Access | Monitoring and Control
+    responsible_roles:
+    odps: N/A
+  - control_id: AC-17(02)
+    title: Remote Access | Protection of Confidentiality and Integrity Using Encryption
+    responsible_roles:
+    odps: N/A
+  - control_id: AC-17(03)
+    title: Remote Access | Managed Access Control Points
+    responsible_roles:
+    odps: N/a
+  - control_id: AC-17(04)
+    title: Remote Access | Privileged Commands and Access
+    responsible_roles:
+    odps:
+    - id: AC-17(04)_ODP[01]
+      description: needs requiring execution of privileged commands via remote access
+        are defined;
+      value:
+    - id: AC-17(04)_ODP[02]
+      description: needs requiring access to security-relevant information via remote
+        access are defined;
+      value:
+  - control_id: AC-18
+    title: Wireless Access
+    responsible_roles:
+    odps: N/A
+  - control_id: AC-18(01)
+    title: Wireless Access | Authentication and Encryption
+    responsible_roles:
+    odps:
+    - id: AC-18(01)_ODP
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {users; devices};'
+      value:
+  - control_id: AC-18(03)
+    title: Wireless Access | Disable Wireless Networking
+    responsible_roles:
+    odps: N/A
+  - control_id: AC-19
+    title: Access Control for Mobile Devices
+    responsible_roles:
+    odps: N/A
+  - control_id: AC-19(05)
+    title: Access Control for Mobile Devices | Full Device or Container-based Encryption
+    responsible_roles:
+    odps:
+    - id: AC-19(05)_ODP[01]
+      description: 'one of the following PARAMETER VALUES is selected: {full-device
+        encryption; container-based encryption};'
+      value:
+    - id: AC-19(05)_ODP[02]
+      description: mobile devices on which to employ encryption are defined;
+      value:
+  - control_id: AC-20
+    title: Use of External Systems
+    responsible_roles:
+    odps:
+    - id: AC-20_ODP[01]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {establish <AC-20_ODP[02] terms and conditions>; identify <AC-20_ODP[03] controls
+        asserted>};'
+      value:
+    - id: AC-20_ODP[02]
+      description: terms and conditions consistent with the trust relationships established
+        with other organizations owning, operating, and/or maintaining external systems
+        are defined (if selected);
+      value:
+    - id: AC-20_ODP[03]
+      description: controls asserted to be implemented on external systems consistent
+        with the trust relationships established with other organizations owning,
+        operating, and/or maintaining external systems are defined (if selected);
+      value:
+    - id: AC-20_ODP[04]
+      description: types of external systems prohibited from use are defined;
+      value:
+  - control_id: AC-20(01)
+    title: Use of External Systems | Limits on Authorized Use
+    responsible_roles:
+    odps: N/A
+  - control_id: AC-20(02)
+    title: "Use of External Systems | Portable Storage Devices \x97 Restricted Use"
+    responsible_roles:
+    odps:
+    - id: AC-20(02)_ODP
+      description: restrictions on the use of organization-controlled portable storage
+        devices by authorized individuals on external systems are defined;
+      value:
+  - control_id: AC-21
+    title: Information Sharing
+    responsible_roles:
+    odps:
+    - id: AC-21_ODP[01]
+      description: "information-sharing circumstances where user discretion is required to determine whether access authorizations assigned to a sharing partner match the information’s access and use restrictions are defined;"
+      value:
+    - id: AC-21_ODP[02]
+      description: automated mechanisms or manual processes that assist users in making
+        information-sharing and collaboration decisions are defined;
+      value:
+  - control_id: AC-22
+    title: Publicly Accessible Content
+    responsible_roles:
+    odps:
+    - id: AC-22_ODP
+      description: the frequency at which to review the content on the publicly accessible
+        system for non-public information is defined;
+      value:

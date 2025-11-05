@@ -1,0 +1,149 @@
+## Risk Assessment (RA) Policy Template
+
+- control_family: Risk Assessment
+  control_family_id: RA
+  controls:
+  - control_id: RA-01
+    title: Policy and Procedures
+    responsible_roles:
+    odps:
+    - id: RA-01_ODP[01]
+      description: personnel or roles to whom the risk assessment policy is to be
+        disseminated is/are defined;
+      value:
+    - id: RA-01_ODP[02]
+      description: personnel or roles to whom the risk assessment procedures are to
+        be disseminated is/are defined;
+      value:
+    - id: RA-01_ODP[03]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {organization-level; mission/business process-level; system-level};'
+      value:
+    - id: RA-01_ODP[04]
+      description: an official to manage the risk assessment policy and procedures
+        is defined;
+      value:
+    - id: RA-01_ODP[05]
+      description: the frequency at which the current risk assessment policy is reviewed
+        and updated is defined;
+      value:
+    - id: RA-01_ODP[06]
+      description: events that would require the current risk assessment policy to
+        be reviewed and updated are defined;
+      value:
+    - id: RA-01_ODP[07]
+      description: the frequency at which the current risk assessment procedures are
+        reviewed and updated is defined;
+      value:
+    - id: RA-01_ODP[08]
+      description: events that would require risk assessment procedures to be reviewed
+        and updated are defined;
+      value:
+  - control_id: RA-02
+    title: Security Categorization
+    responsible_roles:
+    odps: N/A
+  - control_id: RA-03
+    title: Risk Assessment
+    responsible_roles:
+    odps:
+    - id: RA-03_ODP[01]
+      description: 'one of the following PARAMETER VALUES is selected: {security and
+        privacy plans; risk assessment report; <RA-03_ODP[02] document>};'
+      value:
+    - id: RA-03_ODP[02]
+      description: a document in which risk assessment results are to be documented
+        (if not documented in the security and privacy plans or risk assessment report)
+        is defined (if selected);
+      value:
+    - id: RA-03_ODP[03]
+      description: the frequency to review risk assessment results is defined;
+      value:
+    - id: RA-03_ODP[04]
+      description: personnel or roles to whom risk assessment results are to be disseminated
+        is/are defined;
+      value:
+    - id: RA-03_ODP[05]
+      description: the frequency to update the risk assessment is defined;
+      value:
+  - control_id: RA-03(01)
+    title: Risk Assessment | Supply Chain Risk Assessment
+    responsible_roles:
+    odps:
+    - id: RA-03(01)_ODP[01]
+      description: systems, system components, and system services to assess supply
+        chain risks are defined;
+      value:
+    - id: RA-03(01)_ODP[02]
+      description: the frequency at which to update the supply chain risk assessment
+        is defined;
+      value:
+  - control_id: RA-05
+    title: Vulnerability Monitoring and Scanning
+    responsible_roles:
+    odps:
+    - id: RA-05_ODP[01]
+      description: frequency for monitoring systems and hosted applications for vulnerabilities
+        is defined;
+      value:
+    - id: RA-05_ODP[02]
+      description: frequency for scanning systems and hosted applications for vulnerabilities
+        is defined;
+      value:
+    - id: RA-05_ODP[03]
+      description: response times to remediate legitimate vulnerabilities in accordance
+        with an organizational assessment of risk are defined;
+      value:
+    - id: RA-05_ODP[04]
+      description: personnel or roles with whom information obtained from the vulnerability
+        scanning process and control assessments is to be shared;
+      value:
+  - control_id: RA-05(02)
+    title: Vulnerability Monitoring and Scanning | Update Vulnerabilities to Be Scanned
+    responsible_roles:
+    odps:
+    - id: RA-05(02)_ODP[01]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        { <RA-05(02)_ODP[02] frequency>; prior to a new scan; when new vulnerabilities
+        are identified and reported};'
+      value:
+    - id: RA-05(02)_ODP[02]
+      description: the frequency for updating the system vulnerabilities to be scanned
+        is defined (if selected);
+      value:
+  - control_id: RA-05(03)
+    title: Vulnerability Monitoring and Scanning | Breadth and Depth of Coverage
+    responsible_roles:
+    odps: N/A
+  - control_id: RA-05(05)
+    title: Vulnerability Monitoring and Scanning | Privileged Access
+    responsible_roles:
+    odps:
+    - id: RA-05(05)_ODP[01]
+      description: system components to which privileged access is authorized for
+        selected vulnerability scanning activities are defined;
+      value:
+    - id: RA-05(05)_ODP[02]
+      description: vulnerability scanning activities selected for privileged access
+        authorization to system components are defined;
+      value:
+  - control_id: RA-05(11)
+    title: Vulnerability Monitoring and Scanning | Public Disclosure Program
+    responsible_roles:
+    odps: N/A
+  - control_id: RA-07
+    title: Risk Response
+    responsible_roles:
+    odps: N/A
+  - control_id: RA-09
+    title: Criticality Analysis
+    responsible_roles:
+    odps:
+    - id: RA-09_ODP[01]
+      description: systems, system components, or system services to be analyzed for
+        criticality are defined;
+      value:
+    - id: RA-09_ODP[02]
+      description: decision points in the system development life cycle when a criticality
+        analysis is to be performed are defined;
+      value:

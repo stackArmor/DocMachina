@@ -1,0 +1,203 @@
+## Incident Response (IR) Policy
+
+- control_family: Incident Response
+  control_family_id: IR
+  controls:
+  - control_id: IR-01
+    title: Policy and Procedures
+    responsible_roles:
+    odps:
+    - id: IR-01_ODP[01]
+      description: personnel or roles to whom the incident response policy is to be
+        disseminated is/are defined;
+      value:
+    - id: IR-01_ODP[02]
+      description: personnel or roles to whom the incident response procedures are
+        to be disseminated is/are defined;
+      value:
+    - id: IR-01_ODP[03]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {organization-level; mission/business process-level; system-level};'
+      value:
+    - id: IR-01_ODP[04]
+      description: an official to manage the incident response policy and procedures
+        is defined;
+      value:
+    - id: IR-01_ODP[05]
+      description: the frequency at which the current incident response policy is
+        reviewed and updated is defined;
+      value:
+    - id: IR-01_ODP[06]
+      description: events that would require the current incident response policy
+        to be reviewed and updated are defined;
+      value:
+    - id: IR-01_ODP[07]
+      description: the frequency at which the current incident response procedures
+        are reviewed and updated is defined;
+      value:
+    - id: IR-01_ODP[08]
+      description: events that would require the incident response procedures to be
+        reviewed and updated are defined;
+      value:
+  - control_id: IR-02
+    title: Incident Response Training
+    responsible_roles:
+    odps:
+    - id: IR-02_ODP[01]
+      description: a time period within which incident response training is to be
+        provided to system users assuming an incident response role or responsibility
+        is defined;
+      value:
+    - id: IR-02_ODP[02]
+      description: frequency at which to provide incident response training to users
+        is defined;
+      value:
+    - id: IR-02_ODP[03]
+      description: frequency at which to review and update incident response training
+        content is defined;
+      value:
+    - id: IR-02_ODP[04]
+      description: events that initiate a review of the incident response training
+        content are defined;
+      value:
+  - control_id: IR-03
+    title: Incident Response Testing
+    responsible_roles:
+    odps:
+    - id: IR-03_ODP[01]
+      description: frequency at which to test the effectiveness of the incident response
+        capability for the system is defined;
+      value:
+    - id: IR-03_ODP[02]
+      description: tests used to test the effectiveness of the incident response capability
+        for the system are defined;
+      value:
+  - control_id: IR-03(02)
+    title: Incident Response Testing | Coordination with Related Plans
+    responsible_roles:
+    odps: N/A
+  - control_id: IR-04
+    title: Incident Handling
+    responsible_roles:
+    odps: N/A
+  - control_id: IR-04(01)
+    title: Incident Handling | Automated Incident Handling Processes
+    responsible_roles:
+    odps:
+    - id: IR-04(01)_ODP
+      description: automated mechanisms used to support the incident handling process
+        are defined;
+      value:
+  - control_id: IR-05
+    title: Incident Monitoring
+    responsible_roles:
+    odps: N/A
+  - control_id: IR-06
+    title: Incident Reporting
+    responsible_roles:
+    odps:
+    - id: IR-06_ODP[01]
+      description: time period for personnel to report suspected incidents to the
+        organizational incident response capability is defined;
+      value:
+    - id: IR-06_ODP[02]
+      description: authorities to whom incident information is to be reported are
+        defined;
+      value:
+  - control_id: IR-06(01)
+    title: Incident Reporting | Automated Reporting
+    responsible_roles:
+    odps:
+    - id: IR-06(01)_ODP
+      description: automated mechanisms used for reporting incidents are defined;
+      value:
+  - control_id: IR-06(03)
+    title: Incident Reporting | Supply Chain Coordination
+    responsible_roles:
+    odps: N/A
+  - control_id: IR-07
+    title: Incident Response Assistance
+    responsible_roles:
+    odps: N/A
+  - control_id: IR-07(01)
+    title: Incident Response Assistance | Automation Support for Availability of Information
+      and Support
+    responsible_roles:
+    odps:
+    - id: IR-07(01)_ODP
+      description: automated mechanisms used to increase the availability of incident
+        response information and support are defined;
+      value:
+  - control_id: IR-08
+    title: Incident Response Plan
+    responsible_roles:
+    odps:
+    - id: IR-08_ODP[01]
+      description: personnel or roles that review and approve the incident response
+        plan is/are identified;
+      value:
+    - id: IR-08_ODP[02]
+      description: the frequency at which to review and approve the incident response
+        plan is defined;
+      value:
+    - id: IR-08_ODP[03]
+      description: entities, personnel, or roles with designated responsibility for
+        incident response are defined;
+      value:
+    - id: IR-08_ODP[04]
+      description: incident response personnel (identified by name and/or by role)
+        to whom copies of the incident response plan are to be distributed is/are
+        defined;
+      value:
+    - id: IR-08_ODP[05]
+      description: organizational elements to which copies of the incident response
+        plan are to be distributed are defined;
+      value:
+    - id: IR-08_ODP[06]
+      description: incident response personnel (identified by name and/or by role)
+        to whom changes to the incident response plan is/are communicated are defined;
+      value:
+    - id: IR-08_ODP[07]
+      description: organizational elements to which changes to the incident response
+        plan are communicated are defined;
+      value:
+  - control_id: IR-09
+    title: Information Spillage Response
+    responsible_roles:
+    odps:
+    - id: IR-09_ODP[01]
+      description: personnel or roles assigned the responsibility for responding to
+        information spills is/are defined;
+      value:
+    - id: IR-09_ODP[02]
+      description: personnel or roles to be alerted of the information spill using
+        a method of communication not associated with the spill is/are defined;
+      value:
+    - id: IR-09_ODP[03]
+      description: actions to be performed are defined;
+      value:
+  - control_id: IR-09(02)
+    title: Information Spillage Response | Training
+    responsible_roles:
+    odps:
+    - id: IR-09(02)_ODP
+      description: frequency at which to provide information spillage response training
+        is defined;
+      value:
+  - control_id: IR-09(03)
+    title: Information Spillage Response | Post-spill Operations
+    responsible_roles:
+    odps:
+    - id: IR-09(03)_ODP
+      description: procedures to be implemented to ensure that organizational personnel
+        impacted by information spills can continue to carry out assigned tasks while
+        contaminated systems are undergoing corrective actions are defined;
+      value:
+  - control_id: IR-09(04)
+    title: Information Spillage Response | Exposure to Unauthorized Personnel
+    responsible_roles:
+    odps:
+    - id: IR-09(04)_ODP
+      description: controls employed for personnel exposed to information not within
+        assigned access authorizations are defined;
+      value:

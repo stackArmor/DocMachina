@@ -1,0 +1,256 @@
+## System and Communications protection (SC) policy template
+
+- control_family: System and Communications Protection
+  control_family_id: SC
+  controls:
+  - control_id: SC-01
+    title: Policy and Procedures
+    responsible_roles:
+    odps:
+    - id: SC-01_ODP[01]
+      description: personnel or roles to whom the system and communications protection
+        policy is to be disseminated is/are defined;
+      value:
+    - id: SC-01_ODP[02]
+      description: personnel or roles to whom the system and communications protection
+        procedures are to be disseminated is/are defined;
+      value:
+    - id: SC-01_ODP[03]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {organization-level; mission/business-process-level; system-level};'
+      value:
+    - id: SC-01_ODP[04]
+      description: an official to manage the system and communications protection
+        policy and procedures is defined;
+      value:
+    - id: SC-01_ODP[05]
+      description: the frequency at which the current system and communications protection
+        policy is reviewed and updated is defined;
+      value:
+    - id: SC-01_ODP[06]
+      description: events that would require the current system and communications
+        protection policy to be reviewed and updated are defined;
+      value:
+    - id: SC-01_ODP[07]
+      description: the frequency at which the current system and communications protection
+        procedures are reviewed and updated is defined;
+      value:
+    - id: SC-01_ODP[08]
+      description: events that would require the system and communications protection
+        procedures to be reviewed and updated are defined;
+      value:
+  - control_id: SC-02
+    title: Separation of System and User Functionality
+    responsible_roles:
+    odps: N/A
+  - control_id: SC-04
+    title: Information in Shared System Resources
+    responsible_roles:
+    odps: N/A
+  - control_id: SC-05
+    title: Denial-of-service Protection
+    responsible_roles:
+    odps:
+    - id: SC-05_ODP[01]
+      description: types of denial-of-service events to be protected against or limited
+        are defined;
+      value:
+    - id: SC-05_ODP[02]
+      description: 'one of the following PARAMETER VALUES is selected: {protect against;
+        limit};'
+      value:
+    - id: SC-05_ODP[03]
+      description: controls to achieve the denial-of-service objective by type of
+        denial-of-service event are defined;
+      value:
+  - control_id: SC-07
+    title: Boundary Protection
+    responsible_roles:
+    odps:
+    - id: SC-07_ODP
+      description: 'one of the following PARAMETER VALUES is selected: {physically;
+        logically};'
+      value:
+  - control_id: SC-07(03)
+    title: Boundary Protection | Access Points
+    responsible_roles:
+    odps: N/A
+  - control_id: SC-07(04)
+    title: Boundary Protection | External Telecommunications Services
+    responsible_roles:
+    odps:
+    - id: SC-07(04)_ODP
+      description: the frequency at which to review exceptions to traffic flow policy
+        is defined;
+      value:
+  - control_id: SC-07(05)
+    title: "Boundary Protection | Deny by Default \x97 Allow by Exception"
+    responsible_roles:
+    odps:
+    - id: SC-07(05)_ODP[01]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {at managed interfaces; for <SC-07(05)_ODP[02] systems>};'
+      value:
+    - id: SC-07(05)_ODP[02]
+      description: systems for which network communications traffic is denied by default
+        and network communications traffic is allowed by exception are defined (if
+        selected).
+      value:
+  - control_id: SC-07(07)
+    title: Boundary Protection | Split Tunneling for Remote Devices
+    responsible_roles:
+    odps:
+    - id: SC-07(07)_ODP
+      description: safeguards to securely provision split tunneling are defined;
+      value:
+  - control_id: SC-07(08)
+    title: Boundary Protection | Route Traffic to Authenticated Proxy Servers
+    responsible_roles:
+    odps:
+    - id: SC-07(08)_ODP[01]
+      description: internal communications traffic to be routed to external networks
+        is defined;
+      value:
+    - id: SC-07(08)_ODP[02]
+      description: external networks to which internal communications traffic is to
+        be routed are defined;
+      value:
+  - control_id: SC-07(12)
+    title: Boundary Protection | Host-based Protection
+    responsible_roles:
+    odps:
+    - id: SC-07(12)_ODP[01]
+      description: host-based boundary protection mechanisms to be implemented are
+        defined;
+      value:
+    - id: SC-07(12)_ODP[02]
+      description: system components where host-based boundary protection mechanisms
+        are to be implemented are defined;
+      value:
+  - control_id: SC-07(18)
+    title: Boundary Protection | Fail Secure
+    responsible_roles:
+    odps: N/A
+  - control_id: SC-08
+    title: Transmission Confidentiality and Integrity
+    responsible_roles:
+    odps:
+    - id: SC-08_ODP
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {confidentiality; integrity};'
+      value:
+  - control_id: SC-08(01)
+    title: Transmission Confidentiality and Integrity | Cryptographic Protection
+    responsible_roles:
+    odps:
+    - id: SC-08(01)_ODP
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {prevent unauthorized disclosure of information; detect changes to information};'
+      value:
+  - control_id: SC-10
+    title: Network Disconnect
+    responsible_roles:
+    odps:
+    - id: SC-10_ODP
+      description: a time period of inactivity after which the system terminates a
+        network connection associated with a communication session is defined;
+      value:
+  - control_id: SC-12
+    title: Cryptographic Key Establishment and Management
+    responsible_roles:
+    odps:
+    - id: SC-12_ODP
+      description: requirements for key generation, distribution, storage, access,
+        and destruction are defined;
+      value:
+  - control_id: SC-13
+    title: Cryptographic Protection
+    responsible_roles:
+    odps:
+    - id: SC-13_ODP[01]
+      description: cryptographic uses are defined;
+      value:
+    - id: SC-13_ODP[02]
+      description: types of cryptography for each specified cryptographic use are
+        defined;
+      value:
+  - control_id: SC-15
+    title: Collaborative Computing Devices and Applications
+    responsible_roles:
+    odps:
+    - id: SC-15_ODP
+      description: exceptions where remote activation is to be allowed are defined;
+      value:
+  - control_id: SC-17
+    title: Public Key Infrastructure Certificates
+    responsible_roles:
+    odps:
+    - id: SC-17_ODP
+      description: a certificate policy for issuing public key certificates is defined;
+      value:
+  - control_id: SC-18
+    title: Mobile Code
+    responsible_roles:
+    odps: N/A
+  - control_id: SC-20
+    title: Secure Name/Address Resolution Service (Authoritative Source)
+    responsible_roles:
+    odps: N/A
+  - control_id: SC-21
+    title: Secure Name/Address Resolution Service (Recursive or Caching Resolver)
+    responsible_roles:
+    odps: N/A
+  - control_id: SC-22
+    title: Architecture and Provisioning for Name/Address Resolution Service
+    responsible_roles:
+    odps: N/A
+  - control_id: SC-23
+    title: Session Authenticity
+    responsible_roles:
+    odps: N/A
+  - control_id: SC-28
+    title: Protection of Information at Rest
+    responsible_roles:
+    odps:
+    - id: SC-28_ODP[01]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {confidentiality; integrity};'
+      value:
+    - id: SC-28_ODP[02]
+      description: information at rest requiring protection is defined;
+      value:
+  - control_id: SC-28(01)
+    title: Protection of Information at Rest | Cryptographic Protection
+    responsible_roles:
+    odps:
+    - id: SC-28(01)_ODP[01]
+      description: information requiring cryptographic protection is defined;
+      value:
+    - id: SC-28(01)_ODP[02]
+      description: system components or media requiring cryptographic protection is/are
+        defined;
+      value:
+  - control_id: SC-39
+    title: Process Isolation
+    responsible_roles:
+    odps: N/A
+  - control_id: SC-45
+    title: System Time Synchronization
+    responsible_roles:
+    odps: N/A
+  - control_id: SC-45(01)
+    title: System Time Synchronization | Synchronization with Authoritative Time Source
+    responsible_roles:
+    odps:
+    - id: SC-45(01)_ODP[01]
+      description: the frequency at which to compare the internal system clocks with
+        the authoritative time source is defined;
+      value:
+    - id: SC-45(01)_ODP[02]
+      description: the authoritative time source to which internal system clocks are
+        to be compared is defined;
+      value:
+    - id: SC-45(01)_ODP[03]
+      description: the time period to compare the internal system clocks with the
+        authoritative time source is defined;
+      value:

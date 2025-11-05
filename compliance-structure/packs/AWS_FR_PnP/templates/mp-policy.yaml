@@ -1,0 +1,158 @@
+## Media Protection (MP) Policy
+
+- control_family: Media Protection
+  control_family_id: MP
+  controls:
+  - control_id: MP-01
+    title: Policy and Procedures
+    responsible_roles:
+    odps:
+    - id: MP-01_ODP[01]
+      description: personnel or roles to whom the media protection policy is to be
+        disseminated is/are defined;
+      value:
+    - id: MP-01_ODP[02]
+      description: personnel or roles to whom the media protection procedures are
+        to be disseminated is/are defined;
+      value:
+    - id: MP-01_ODP[03]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {organization-level; mission/business process-level; system-level};'
+      value:
+    - id: MP-01_ODP[04]
+      description: an official to manage the media protection policy and procedures
+        is defined;
+      value:
+    - id: MP-01_ODP[05]
+      description: the frequency with which the current media protection policy is
+        reviewed and updated is defined;
+      value:
+    - id: MP-01_ODP[06]
+      description: events that would require the current media protection policy to
+        be reviewed and updated are defined;
+      value:
+    - id: MP-01_ODP[07]
+      description: the frequency with which the current media protection procedures
+        are reviewed and updated is defined;
+      value:
+    - id: MP-01_ODP[08]
+      description: events that would require media protection procedures to be reviewed
+        and updated are defined;
+      value:
+  - control_id: MP-02
+    title: Media Access
+    responsible_roles:
+    odps:
+    - id: MP-02_ODP[01]
+      description: types of digital media to which access is restricted are defined;
+      value:
+    - id: MP-02_ODP[02]
+      description: personnel or roles authorized to access digital media is/are defined;
+      value:
+    - id: MP-02_ODP[03]
+      description: types of non-digital media to which access is restricted are defined;
+      value:
+    - id: MP-02_ODP[04]
+      description: personnel or roles authorized to access non-digital media is/are
+        defined;
+      value:
+  - control_id: MP-03
+    title: Media Marking
+    responsible_roles:
+    odps:
+    - id: MP-03_ODP[01]
+      description: types of system media exempt from marking when remaining in controlled
+        areas are defined;
+      value:
+    - id: MP-03_ODP[02]
+      description: controlled areas where media is exempt from marking are defined;
+      value:
+  - control_id: MP-04
+    title: Media Storage
+    responsible_roles:
+    odps:
+    - id: MP-04_ODP[01]
+      description: types of digital media to be physically controlled are defined
+        (if selected);
+      value:
+    - id: MP-04_ODP[02]
+      description: types of non-digital media to be physically controlled are defined
+        (if selected);
+      value:
+    - id: MP-04_ODP[03]
+      description: types of digital media to be securely stored are defined (if selected);
+      value:
+    - id: MP-04_ODP[04]
+      description: types of non-digital media to be securely stored are defined (if
+        selected);
+      value:
+    - id: MP-04_ODP[05]
+      description: controlled areas within which to securely store digital media are
+        defined;
+      value:
+    - id: MP-04_ODP[06]
+      description: controlled areas within which to securely store non-digital media
+        are defined;
+      value:
+  - control_id: MP-05
+    title: Media Transport
+    responsible_roles:
+    odps:
+    - id: MP-05_ODP[01]
+      description: types of system media to protect and control during transport outside
+        of controlled areas are defined;
+      value:
+    - id: MP-05_ODP[02]
+      description: controls used to protect system media outside of controlled areas
+        are defined;
+      value:
+    - id: MP-05_ODP[03]
+      description: controls used to control system media outside of controlled areas
+        are defined;
+      value:
+  - control_id: MP-06
+    title: Media Sanitization
+    responsible_roles:
+    odps:
+    - id: MP-06_ODP[01]
+      description: system media to be sanitized prior to disposal is defined;
+      value:
+    - id: MP-06_ODP[02]
+      description: system media to be sanitized prior to release from organizational
+        control is defined;
+      value:
+    - id: MP-06_ODP[03]
+      description: system media to be sanitized prior to release for reuse is defined;
+      value:
+    - id: MP-06_ODP[04]
+      description: sanitization techniques and procedures to be used for sanitization
+        prior to disposal are defined;
+      value:
+    - id: MP-06_ODP[05]
+      description: sanitization techniques and procedures to be used for sanitization
+        prior to release from organizational control are defined;
+      value:
+    - id: MP-06_ODP[06]
+      description: sanitization techniques and procedures to be used for sanitization
+        prior to release for reuse are defined;
+      value:
+  - control_id: MP-07
+    title: Media Use
+    responsible_roles:
+    odps:
+    - id: MP-07_ODP[01]
+      description: types of system media to be restricted or prohibited from use on
+        systems or system components are defined;
+      value:
+    - id: MP-07_ODP[02]
+      description: 'one of the following PARAMETER VALUES is selected: {restrict;
+        prohibit};'
+      value:
+    - id: MP-07_ODP[03]
+      description: systems or system components on which the use of specific types
+        of system media to be restricted or prohibited are defined;
+      value:
+    - id: MP-07_ODP[04]
+      description: controls to restrict or prohibit the use of specific types of system
+        media on systems or system components are defined;
+      value:

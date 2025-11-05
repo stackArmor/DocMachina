@@ -1,0 +1,90 @@
+## Planning (PL) Policy
+
+- control_family: Planning
+  control_family_id: PL
+  controls:
+  - control_id: PL-01
+    title: Policy and Procedures
+    responsible_roles:
+    odps:
+    - id: PL-01_ODP[01]
+      description: personnel or roles to whom the planning policy is to be disseminated
+        is/are defined;
+      value:
+    - id: PL-01_ODP[02]
+      description: personnel or roles to whom the planning procedures are to be disseminated
+        is/are defined;
+      value:
+    - id: PL-01_ODP[03]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {organization-level; mission/business process-level; system-level};'
+      value:
+    - id: PL-01_ODP[04]
+      description: an official to manage the planning policy and procedures is defined;
+      value:
+    - id: PL-01_ODP[05]
+      description: the frequency with which the current planning policy is reviewed
+        and updated is defined;
+      value:
+    - id: PL-01_ODP[06]
+      description: events that would require the current planning policy to be reviewed
+        and updated are defined;
+      value:
+    - id: PL-01_ODP[07]
+      description: the frequency with which the current planning procedures are reviewed
+        and updated is defined;
+      value:
+    - id: PL-01_ODP[08]
+      description: events that would require procedures to be reviewed and updated
+        are defined;
+      value:
+  - control_id: PL-02
+    title: System Security and Privacy Plans
+    responsible_roles:
+    odps:
+    - id: PL-02_ODP[01]
+      description: individuals or groups with whom security and privacy-related activities
+        affecting the system that require planning and coordination is/are assigned;
+      value:
+    - id: PL-02_ODP[02]
+      description: personnel or roles to receive distributed copies of the system
+        security and privacy plans is/are assigned;
+      value:
+    - id: PL-02_ODP[03]
+      description: frequency to review system security and privacy plans is defined;
+      value:
+  - control_id: PL-04
+    title: Rules of Behavior
+    responsible_roles:
+    odps:
+    - id: PL-04_ODP[01]
+      description: frequency for reviewing and updating the rules of behavior is defined;
+      value:
+    - id: PL-04_ODP[02]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        { <PL-04_ODP[03] frequency>; when the rules are revised or updated};'
+      value:
+    - id: PL-04_ODP[03]
+      description: frequency for individuals to read and re-acknowledge the rules
+        of behavior is defined (if selected);
+      value:
+  - control_id: PL-04(01)
+    title: Rules of Behavior | Social Media and External Site/Application Usage Restrictions
+    responsible_roles:
+    odps: N/A
+  - control_id: PL-08
+    title: Security and Privacy Architectures
+    responsible_roles:
+    odps:
+    - id: PL-08_ODP
+      description: frequency for review and update to reflect changes in the enterprise
+        architecture;
+      value:
+  - control_id: PL-10
+    title: Baseline Selection
+    responsible_roles:
+    odps: N/A
+  - control_id: PL-11
+    title: Baseline Tailoring
+    responsible_roles:
+    odps: N/A

@@ -1,0 +1,249 @@
+## Contingency Planning (CP) Policy
+
+- control_family: Contingency Planning 
+  control_family_id: CP
+  controls:
+  - control_id: CP-01
+    title: Policy and Procedures
+    responsible_roles:
+    odps:
+    - id: CP-01_ODP[01]
+      description: personnel or roles to whom the contingency planning policy is to
+        be disseminated is/are defined;
+      value:
+    - id: CP-01_ODP[02]
+      description: personnel or roles to whom the contingency planning procedures
+        are to be disseminated is/are defined;
+      value:
+    - id: CP-01_ODP[03]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {organization-level; mission/business process-level; system-level};'
+      value:
+    - id: CP-01_ODP[04]
+      description: an official to manage the contingency planning policy and procedures
+        is defined;
+      value:
+    - id: CP-01_ODP[05]
+      description: the frequency at which the current contingency planning policy
+        is reviewed and updated is defined;
+      value:
+    - id: CP-01_ODP[06]
+      description: events that would require the current contingency planning policy
+        to be reviewed and updated are defined;
+      value:
+    - id: CP-01_ODP[07]
+      description: the frequency at which the current contingency planning procedures
+        are reviewed and updated is defined;
+      value:
+    - id: CP-01_ODP[08]
+      description: events that would require procedures to be reviewed and updated
+        are defined;
+      value:
+  - control_id: CP-02
+    title: Contingency Plan
+    responsible_roles:
+    odps:
+    - id: CP-02_ODP[01]
+      description: personnel or roles to review a contingency plan is/are defined;
+      value:
+    - id: CP-02_ODP[02]
+      description: personnel or roles to approve a contingency plan is/are defined;
+      value:
+    - id: CP-02_ODP[03]
+      description: key contingency personnel (identified by name and/or by role) to
+        whom copies of the contingency plan are distributed are defined;
+      value:
+    - id: CP-02_ODP[04]
+      description: key contingency organizational elements to which copies of the
+        contingency plan are distributed are defined;
+      value:
+    - id: CP-02_ODP[05]
+      description: frequency of contingency plan review is defined;
+      value:
+    - id: CP-02_ODP[06]
+      description: key contingency personnel (identified by name and/or by role) to
+        communicate changes to are defined;
+      value:
+    - id: CP-02_ODP[07]
+      description: key contingency organizational elements to communicate changes
+        to are defined;
+      value:
+  - control_id: CP-02(01)
+    title: Contingency Plan | Coordinate with Related Plans
+    responsible_roles:
+    odps: N/A
+  - control_id: CP-02(03)
+    title: Contingency Plan | Resume Mission and Business Functions
+    responsible_roles:
+    odps:
+    - id: CP-02(03)_ODP[01]
+      description: 'one of the following PARAMETER VALUES is selected: {all; essential};'
+      value:
+    - id: CP-02(03)_ODP[02]
+      description: the contingency plan activation time period within which to resume
+        mission and business functions is defined;
+      value:
+  - control_id: CP-02(08)
+    title: Contingency Plan | Identify Critical Assets
+    responsible_roles:
+    odps:
+    - id: CP-02(08)_ODP
+      description: 'one of the following PARAMETER VALUES is selected: {all; essential};'
+      value:
+  - control_id: CP-03
+    title: Contingency Training
+    responsible_roles:
+    odps:
+    - id: CP-03_ODP[01]
+      description: the time period within which to provide contingency training after
+        assuming a contingency role or responsibility is defined;
+      value:
+    - id: CP-03_ODP[02]
+      description: frequency at which to provide training to system users with a contingency
+        role or responsibility is defined;
+      value:
+    - id: CP-03_ODP[03]
+      description: frequency at which to review and update contingency training content
+        is defined;
+      value:
+    - id: CP-03_ODP[04]
+      description: events necessitating review and update of contingency training
+        are defined;
+      value:
+  - control_id: CP-03(01)
+    title: Contingency Training | Simulated Events
+    responsible_roles:
+    odps: N/a   
+  - control_id: CP-04
+    title: Contingency Plan Testing
+    responsible_roles:
+    odps:
+    - id: CP-04_ODP[01]
+      description: frequency of testing the contingency plan for the system is defined;
+      value:
+    - id: CP-04_ODP[02]
+      description: tests for determining the effectiveness of the contingency plan
+        are defined;
+      value:
+    - id: CP-04_ODP[03]
+      description: tests for determining readiness to execute the contingency plan
+        are defined;
+      value:
+  - control_id: CP-04(01)
+    title: Contingency Plan Testing | Coordinate with Related Plans
+    responsible_roles:
+    odps: N/A
+  - control_id: CP-06
+    title: Alternate Storage Site
+    responsible_roles:
+    odps: N/A
+  - control_id: CP-06(01)
+    title: Alternate Storage Site | Separation from Primary Site
+    responsible_roles:
+    odps: N/A
+  - control_id: CP-06(03)
+    title: Alternate Storage Site | Accessibility
+    responsible_roles:
+    odps: N/A
+  - control_id: CP-07
+    title: Alternate Processing Site
+    responsible_roles:
+    odps:
+    - id: CP-07_ODP[01]
+      description: system operations for essential mission and business functions
+        are defined;
+      value:
+    - id: CP-07_ODP[02]
+      description: time period consistent with recovery time and recovery point objectives
+        is defined;
+      value:
+  - control_id: CP-07(01)
+    title: Alternate Processing Site | Separation from Primary Site
+    responsible_roles:
+    odps: N/A
+  - control_id: CP-07(02)
+    title: Alternate Processing Site | Accessibility
+    responsible_roles:
+    odps: N/A
+  - control_id: CP-07(03)
+    title: Alternate Processing Site | Priority of Service
+    responsible_roles:
+    odps: N/A
+  - control_id: CP-08
+    title: Telecommunications Services
+    responsible_roles:
+    odps:
+    - id: CP-08_ODP[01]
+      description: system operations to be resumed for essential mission and business
+        functions are defined;
+      value:
+    - id: CP-08_ODP[02]
+      description: time period within which to resume essential mission and business
+        functions when the primary telecommunications capabilities are unavailable
+        is defined;
+      value:
+  - control_id: CP-08(01)
+    title: Telecommunications Services | Priority of Service Provisions
+    responsible_roles:
+    odps: N/A
+  - control_id: CP-08(02)
+    title: Telecommunications Services | Single Points of Failure
+    responsible_roles:
+    odps: ISSM
+  - control_id: CP-09
+    title: System Backup
+    responsible_roles:
+    odps:
+    - id: CP-09_ODP[01]
+      description: system components for which to conduct backups of user-level information
+        is defined;
+      value:
+    - id: CP-09_ODP[02]
+      description: frequency at which to conduct backups of user-level information
+        consistent with recovery time and recovery point objectives is defined;
+      value:
+    - id: CP-09_ODP[03]
+      description: frequency at which to conduct backups of system-level information
+        consistent with recovery time and recovery point objectives is defined;
+      value:
+    - id: CP-09_ODP[04]
+      description: frequency at which to conduct backups of system documentation consistent
+        with recovery time and recovery point objectives is defined;
+      value:
+  - control_id: CP-09(01)
+    title: System Backup | Testing for Reliability and Integrity
+    responsible_roles:
+    odps:
+    - id: CP-09(01)_ODP[01]
+      description: frequency at which to test backup information for media reliability
+        is defined;
+      value:
+    - id: CP-09(01)_ODP[02]
+      description: frequency at which to test backup information for information integrity
+        is defined;
+      value:
+  - control_id: CP-09(08)
+    title: System Backup | Cryptographic Protection
+    responsible_roles:
+    odps:
+    - id: CP-09(08)_ODP
+      description: backup information to protect against unauthorized disclosure and
+        modification is defined;
+      value:
+  - control_id: CP-10
+    title: System Recovery and Reconstitution
+    responsible_roles:
+    odps:
+    - id: CP-10_ODP[01]
+      description: time period consistent with recovery time and recovery point objectives
+        for the recovery of the system is determined;
+      value:
+    - id: CP-10_ODP[02]
+      description: time period consistent with recovery time and recovery point objectives
+        for the reconstitution of the system is determined;
+      value:
+  - control_id: CP-10(02)
+    title: System Recovery and Reconstitution | Transaction Recovery
+    responsible_roles:
+    odps: N/A
+      value:

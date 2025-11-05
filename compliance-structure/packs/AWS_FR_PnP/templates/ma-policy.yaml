@@ -1,0 +1,112 @@
+## Maintenance (MA) Policy
+
+- control_family: Maintenance
+  control_family_id: MA
+  controls:
+  - control_id: MA-01
+    title: Policy and Procedures
+    responsible_roles:
+    odps:
+    - id: MA-01_ODP[01]
+      description: personnel or roles to whom the maintenance policy is to be disseminated
+        is/are defined;
+      value:
+    - id: MA-01_ODP[02]
+      description: personnel or roles to whom the maintenance procedures are to be
+        disseminated is/are defined;
+      value:
+    - id: MA-01_ODP[03]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {organization-level; mission/business process-level; system-level};'
+      value:
+    - id: MA-01_ODP[04]
+      description: an official to manage the maintenance policy and procedures is
+        defined;
+      value:
+    - id: MA-01_ODP[05]
+      description: the frequency with which the current maintenance policy is reviewed
+        and updated is defined;
+      value:
+    - id: MA-01_ODP[06]
+      description: events that would require the current maintenance policy to be
+        reviewed and updated are defined;
+      value:
+    - id: MA-01_ODP[07]
+      description: the frequency with which the current maintenance procedures are
+        reviewed and updated is defined;
+      value:
+    - id: MA-01_ODP[08]
+      description: events that would require the maintenance procedures to be reviewed
+        and updated are defined;
+      value:
+  - control_id: MA-02
+    title: Controlled Maintenance
+    responsible_roles:
+    odps:
+    - id: MA-02_ODP[01]
+      description: personnel or roles required to explicitly approve the removal of
+        the system or system components from organizational facilities for off-site
+        maintenance or repairs is/are defined;
+      value:
+    - id: MA-02_ODP[02]
+      description: information to be removed from associated media prior to removal
+        from organizational facilities for off-site maintenance, repair, or replacement
+        is defined;
+      value:
+    - id: MA-02_ODP[03]
+      description: information to be included in organizational maintenance records
+        is defined;
+      value:
+  - control_id: MA-03
+    title: Maintenance Tools
+    responsible_roles:
+    odps:
+    - id: MA-03_ODP
+      description: frequency at which to review previously approved system maintenance
+        tools is defined;
+      value:
+  - control_id: MA-03(01)
+    title: Maintenance Tools | Inspect Tools
+    responsible_roles:
+    odps: N/a
+  - control_id: MA-03(02)
+    title: Maintenance Tools | Inspect Media
+    responsible_roles:
+    odps: N/A
+  - control_id: MA-03(03)
+    title: Maintenance Tools | Prevent Unauthorized Removal
+    responsible_roles:
+    odps:
+    - id: MA-03(03)_ODP
+      description: personnel or roles who can authorize removal of equipment from
+        the facility is/are defined;
+      value:
+  - control_id: MA-04
+    title: Nonlocal Maintenance
+    responsible_roles:
+    odps: N/A
+  - control_id: MA-05
+    title: Maintenance Personnel
+    responsible_roles:
+    odps: N/A
+  - control_id: MA-05(01)
+    title: Maintenance Personnel | Individuals Without Appropriate Access
+    responsible_roles:
+    odps:
+    - id: MA-05(01)_ODP
+      description: alternate controls to be developed and implemented in the event
+        that a system component cannot be sanitized, removed, or disconnected from
+        the system are defined;
+      value:
+  - control_id: MA-06
+    title: Timely Maintenance
+    responsible_roles:
+    odps:
+    - id: MA-06_ODP[01]
+      description: system components for which maintenance support and/or spare parts
+        are obtained are defined;
+      value:
+    - id: MA-06_ODP[02]
+      description: time period within which maintenance support and/or spare parts
+        are to be obtained after a failure are defined;
+      value:

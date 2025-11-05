@@ -1,0 +1,182 @@
+## Security Assessment and Authorization (CA) Policy Template
+
+- control_family: Assessment, Authorization, And Monitoring
+  control_family_id: CA
+  controls:
+  - control_id: CA-01
+    title: Policy and Procedures
+    responsible_roles:
+    odps:
+    - id: CA-01_ODP[01]
+      description: personnel or roles to whom the assessment, authorization, and monitoring
+        policy is to be disseminated is/are defined;
+      value:
+    - id: CA-01_ODP[02]
+      description: personnel or roles to whom the assessment, authorization, and monitoring
+        procedures are to be disseminated is/are defined;
+      value:
+    - id: CA-01_ODP[03]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {organization-level; mission/business process-level; system-level};'
+      value:
+    - id: CA-01_ODP[04]
+      description: an official to manage the assessment, authorization, and monitoring
+        policy and procedures is defined;
+      value:
+    - id: CA-01_ODP[05]
+      description: the frequency at which the current assessment, authorization, and
+        monitoring policy is reviewed and updated is defined;
+      value:
+    - id: CA-01_ODP[06]
+      description: events that would require the current assessment, authorization,
+        and monitoring policy to be reviewed and updated are defined;
+      value:
+    - id: CA-01_ODP[07]
+      description: the frequency at which the current assessment, authorization, and
+        monitoring procedures are reviewed and updated is defined;
+      value:
+    - id: CA-01_ODP[08]
+      description: events that would require assessment, authorization, and monitoring
+        procedures to be reviewed and updated are defined;
+      value:
+  - control_id: CA-02
+    title: Control Assessments
+    responsible_roles:
+    odps:
+    - id: CA-02_ODP[01]
+      description: the frequency at which to assess controls in the system and its
+        environment of operation is defined;
+      value:
+    - id: CA-02_ODP[02]
+      description: individuals or roles to whom control assessment results are to
+        be provided are defined;
+      value:
+  - control_id: CA-02(01)
+    title: Control Assessments | Independent Assessors
+    responsible_roles:
+    odps: N/A
+  - control_id: CA-02(03)
+    title: Control Assessments | Leveraging Results from External Organizations
+    responsible_roles:
+    odps:
+    - id: CA-02(03)_ODP[01]
+      description: external organizations from which the results of control assessments
+        are leveraged are defined;
+      value:
+    - id: CA-02(03)_ODP[02]
+      description: system on which a control assessment was performed by an external
+        organization is defined;
+      value:
+    - id: CA-02(03)_ODP[03]
+      description: requirements to be met by the control assessment performed by an
+        external organization on the system are defined;
+      value:
+  - control_id: CA-03
+    title: Information Exchange
+    responsible_roles:
+    odps:
+    - id: CA-03_ODP[01]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {interconnection security agreements; information exchange security agreements;
+        memoranda of understanding or agreement; service level agreements; user agreements;
+        non-disclosure agreements; <CA-03_ODP[02] type of agreement>};'
+      value:
+    - id: CA-03_ODP[02]
+      description: the type of agreement used to approve and manage the exchange of
+        information is defined (if selected);
+      value:
+    - id: CA-03_ODP[03]
+      description: the frequency at which to review and update agreements is defined;
+      value:
+  - control_id: CA-05
+    title: Plan of Action and Milestones
+    responsible_roles:
+    odps:
+    - id: CA-05_ODP
+      description: the frequency at which to update an existing plan of action and
+        milestones based on the findings from control assessments, independent audits
+        or reviews, and continuous monitoring activities is defined;
+      value:
+  - control_id: CA-06
+    title: Authorization
+    responsible_roles:
+    odps:
+    - id: CA-06_ODP
+      description: frequency at which to update the authorizations is defined;
+      value:
+  - control_id: CA-07
+    title: Continuous Monitoring
+    responsible_roles:
+    odps:
+    - id: CA-07_ODP[01]
+      description: system-level metrics to be monitored are defined;
+      value:
+    - id: CA-07_ODP[02]
+      description: frequencies at which to monitor control effectiveness are defined;
+      value:
+    - id: CA-07_ODP[03]
+      description: frequencies at which to assess control effectiveness are defined;
+      value:
+    - id: CA-07_ODP[04]
+      description: personnel or roles to whom the security status of the system is
+        reported are defined;
+      value:
+    - id: CA-07_ODP[05]
+      description: frequency at which the security status of the system is reported
+        is defined;
+      value:
+    - id: CA-07_ODP[06]
+      description: personnel or roles to whom the privacy status of the system is
+        reported are defined;
+      value:
+    - id: CA-07_ODP[07]
+      description: frequency at which the privacy status of the system is reported
+        is defined;
+      value:
+  - control_id: CA-07(01)
+    title: Continuous Monitoring | Independent Assessment
+    responsible_roles:
+    odps: N/A
+  - control_id: CA-07(04)
+    title: Continuous Monitoring | Risk Monitoring
+    responsible_roles:
+    odps: N/A
+  - control_id: CA-08
+    title: Penetration Testing
+    responsible_roles:
+    odps:
+    - id: CA-08_ODP[01]
+      description: frequency at which to conduct penetration testing on systems or
+        system components is defined;
+      value:
+    - id: CA-08_ODP[02]
+      description: systems or system components on which penetration testing is to
+        be conducted are defined;
+      value:
+  - control_id: CA-08(01)
+    title: Penetration Testing | Independent Penetration Testing Agent or Team
+    responsible_roles:
+    odps: N/A
+  - control_id: CA-08(02)
+    title: Penetration Testing | Red Team Exercises
+    responsible_roles:
+    odps:
+    - id: CA-08(02)_ODP
+      description: red team exercises to simulate attempts by adversaries to compromise
+        organizational systems are defined;
+      value:
+  - control_id: CA-09
+    title: Internal System Connections
+    responsible_roles:
+    odps:
+    - id: CA-09_ODP[01]
+      description: system components or classes of components requiring internal connections
+        to the system are defined;
+      value:
+    - id: CA-09_ODP[02]
+      description: conditions requiring termination of internal connections are defined;
+      value:
+    - id: CA-09_ODP[03]
+      description: frequency at which to review the continued need for each internal
+        connection is defined;
+      value:

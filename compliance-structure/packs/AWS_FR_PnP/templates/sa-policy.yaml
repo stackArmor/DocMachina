@@ -1,0 +1,261 @@
+## System and Services Acquisition (SA) Policy Template
+
+- control_family: System and Services Acquisition
+  control_family_id: SA
+  controls:
+  - control_id: SA-01
+    title: Policy and Procedures
+    responsible_roles:
+    odps:
+    - id: SA-01_ODP[01]
+      description: personnel or roles to whom the system and services acquisition
+        policy is to be disseminated is/are defined;
+      value:
+    - id: SA-01_ODP[02]
+      description: personnel or roles to whom the system and services acquisition
+        procedures are to be disseminated is/are defined;
+      value:
+    - id: SA-01_ODP[03]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {organization-level; mission/business process-level; system-level};'
+      value:
+    - id: SA-01_ODP[04]
+      description: an official to manage the system and services acquisition policy
+        and procedures is defined;
+      value:
+    - id: SA-01_ODP[05]
+      description: the frequency at which the current system and services acquisition
+        policy is reviewed and updated is defined;
+      value:
+    - id: SA-01_ODP[06]
+      description: events that would require the current system and services acquisition
+        policy to be reviewed and updated are defined;
+      value:
+    - id: SA-01_ODP[07]
+      description: the frequency at which the current system and services acquisition
+        procedures are reviewed and updated is defined;
+      value:
+    - id: SA-01_ODP[08]
+      description: events that would require the system and services acquisition procedures
+        to be reviewed and updated are defined;
+      value:
+  - control_id: SA-02
+    title: Allocation of Resources
+    responsible_roles:
+    odps: N/A
+  - control_id: SA-03
+    title: System Development Life Cycle
+    responsible_roles:
+    odps:
+    - id: SA-03_ODP
+      description: system development life cycle is defined;
+      value:
+  - control_id: SA-04
+    title: Acquisition Process
+    responsible_roles:
+    odps:
+    - id: SA-04_ODP[01]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {standardized contract language; <SA-04_ODP[02] contract language>};'
+      value:
+    - id: SA-04_ODP[02]
+      description: contract language is defined (if selected);
+      value:
+  - control_id: SA-04(01)
+    title: Acquisition Process | Functional Properties of Controls
+    responsible_roles:
+    odps: N/A
+  - control_id: SA-04(02)
+    title: Acquisition Process | Design and Implementation Information for Controls
+    responsible_roles:
+    odps:
+    - id: SA-04(02)_ODP[01]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {security-relevant external system interfaces; high-level design; low-level
+        design; source code or hardware schematics; <SA-04(02)_ODP[02] design and
+        implementation information>};'
+      value:
+    - id: SA-04(02)_ODP[02]
+      description: design and implementation information is defined (if selected);
+      value:
+    - id: SA-04(02)_ODP[03]
+      description: level of detail is defined;
+      value:
+  - control_id: SA-04(09)
+    title: Acquisition Process | Functions, Ports, Protocols, and Services in Use
+    responsible_roles:
+    odps: N/A
+  - control_id: SA-04(10)
+    title: Acquisition Process | Use of Approved PIV Products
+    responsible_roles:
+    odps: N/A
+  - control_id: SA-05
+    title: System Documentation
+    responsible_roles:
+    odps:
+    - id: SA-05_ODP[01]
+      description: actions to take when system, system component, or system service
+        documentation is either unavailable or nonexistent are defined;
+      value:
+    - id: SA-05_ODP[02]
+      description: personnel or roles to distribute system documentation to is/are
+        defined;
+      value:
+  - control_id: SA-08
+    title: Security and Privacy Engineering Principles
+    responsible_roles:
+    odps:
+    - id: SA-08_ODP[01]
+      description: systems security engineering principles are defined;
+      value:
+    - id: SA-08_ODP[02]
+      description: privacy engineering principles are defined;
+      value:
+  - control_id: SA-09
+    title: External System Services
+    responsible_roles:
+    odps:
+    - id: SA-09_ODP[01]
+      description: controls to be employed by external system service providers are
+        defined;
+      value:
+    - id: SA-09_ODP[02]
+      description: processes, methods, and techniques employed to monitor control
+        compliance by external service providers are defined;
+      value:
+  - control_id: SA-09(01)
+    title: External System Services | Risk Assessments and Organizational Approvals
+    responsible_roles:
+    odps:
+    - id: SA-09(01)_ODP
+      description: personnel or roles that approve the acquisition or outsourcing
+        of dedicated information security services is/are defined;
+      value:
+  - control_id: SA-09(02)
+    title: External System Services | Identification of Functions, Ports, Protocols,
+      and Services
+    responsible_roles:
+    odps:
+    - id: SA-09(02)_ODP
+      description: external system services that require the identification of functions,
+        ports, protocols, and other services are defined;
+      value:
+  - control_id: SA-09(05)
+    title: External System Services | Processing, Storage, and Service Location
+    responsible_roles:
+    odps:
+    - id: SA-09(05)_ODP[01]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {information processing; information or data; system services};'
+      value:
+    - id: SA-09(05)_ODP[02]
+      description: locations where <SA-09(05)_ODP[01] SELECTED PARAMETER VALUE(S)>
+        is/are to be restricted are defined;
+      value:
+    - id: SA-09(05)_ODP[03]
+      description: requirements or conditions for restricting the location of <SA-09(05)_ODP[01]
+        SELECTED PARAMETER VALUE(S)> are defined;
+      value:
+  - control_id: SA-10
+    title: Developer Configuration Management
+    responsible_roles:
+    odps:
+    - id: SA-10_ODP[01]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {design; development; implementation; operation; disposal};'
+      value:
+    - id: SA-10_ODP[02]
+      description: configuration items under configuration management are defined;
+      value:
+    - id: SA-10_ODP[03]
+      description: personnel to whom security flaws and flaw resolutions within the
+        system, component, or service are reported is/are defined;
+      value:
+  - control_id: SA-11
+    title: Developer Testing and Evaluation
+    responsible_roles:
+    odps:
+    - id: SA-11_ODP[01]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {unit; integration; system; regression};'
+      value:
+    - id: SA-11_ODP[02]
+      description: frequency at which to conduct <SA-11_ODP[01] SELECTED PARAMETER
+        VALUE(S)> testing/evaluation is defined;
+      value:
+    - id: SA-11_ODP[03]
+      description: depth and coverage of <SA-11_ODP[01] SELECTED PARAMETER VALUE(S)>
+        testing/evaluation is defined;
+      value:
+  - control_id: SA-11(01)
+    title: Developer Testing and Evaluation | Static Code Analysis
+    responsible_roles:
+    odps: N/A
+  - control_id: SA-11(02)
+    title: Developer Testing and Evaluation | Threat Modeling and Vulnerability Analyses
+    responsible_roles:
+    odps:
+    - id: SA-11(02)_ODP[01]
+      description: information concerning impact, environment of operations, known
+        or assumed threats, and acceptable risk levels to be used as contextual information
+        for threat modeling and vulnerability analyses is defined;
+      value:
+    - id: SA-11(02)_ODP[02]
+      description: the tools and methods to be employed for threat modeling and vulnerability
+        analyses are defined;
+      value:
+    - id: SA-11(02)_ODP[03]
+      description: the breadth and depth of threat modeling to be conducted is defined;
+      value:
+    - id: SA-11(02)_ODP[04]
+      description: the breadth and depth of vulnerability analyses to be conducted
+        is defined;
+      value:
+    - id: SA-11(02)_ODP[05]
+      description: acceptance criteria to be met by produced evidence for threat modeling
+        are defined;
+      value:
+    - id: SA-11(02)_ODP[06]
+      description: acceptance criteria to be met by produced evidence for vulnerability
+        analyses are defined;
+      value:
+  - control_id: SA-15
+    title: Development Process, Standards, and Tools
+    responsible_roles:
+    odps:
+    - id: SA-15_ODP[01]
+      description: frequency at which to review the development process, standards,
+        tools, tool options, and tool configurations is defined;
+      value:
+    - id: SA-15_ODP[02]
+      description: security requirements to be satisfied by the process, standards,
+        tools, tool options, and tool configurations are defined;
+      value:
+    - id: SA-15_ODP[03]
+      description: privacy requirements to be satisfied by the process, standards,
+        tools, tool options, and tool configurations are defined;
+      value:
+  - control_id: SA-15(03)
+    title: Development Process, Standards, and Tools | Criticality Analysis
+    responsible_roles:
+    odps:
+    - id: SA-15(03)_ODP[01]
+      description: decision points in the system development life cycle are defined;
+      value:
+    - id: SA-15(03)_ODP[02]
+      description: the breadth of criticality analysis is defined;
+      value:
+    - id: SA-15(03)_ODP[03]
+      description: the depth of criticality analysis is defined;
+      value:
+  - control_id: SA-22
+    title: Unsupported System Components
+    responsible_roles:
+    odps:
+    - id: SA-22_ODP[01]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {in-house support; <SA-22_ODP[02] support from external providers>};'
+      value:
+    - id: SA-22_ODP[02]
+      description: support from external providers is defined (if selected);
+      value:

@@ -1,0 +1,359 @@
+## Configuration Management (CM) Policy
+
+- control_family: Configuration Management 
+  control_family_id: CM
+  controls:
+  - control_id: CM-01
+    title: Policy and Procedures
+    responsible_roles:
+    odps:
+    - id: CM-01_ODP[01]
+      description: personnel or roles to whom the configuration management policy
+        is to be disseminated is/are defined;
+      value:
+    - id: CM-01_ODP[02]
+      description: personnel or roles to whom the configuration management procedures
+        are to be disseminated is/are defined;
+      value:
+    - id: CM-01_ODP[03]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {organization-level; mission/business process-level; system-level};'
+      value:
+    - id: CM-01_ODP[04]
+      description: an official to manage the configuration management policy and procedures
+        is defined;
+      value:
+    - id: CM-01_ODP[05]
+      description: the frequency at which the current configuration management policy
+        is reviewed and updated is defined;
+      value:
+    - id: CM-01_ODP[06]
+      description: events that would require the current configuration management
+        policy to be reviewed and updated are defined;
+      value:
+    - id: CM-01_ODP[07]
+      description: the frequency at which the current configuration management procedures
+        are reviewed and updated is defined;
+      value:
+    - id: CM-01_ODP[08]
+      description: events that would require configuration management procedures to
+        be reviewed and updated are defined;
+      value:
+  - control_id: CM-02
+    title: Baseline Configuration
+    responsible_roles:
+    odps:
+    - id: CM-02_ODP[01]
+      description: the frequency of baseline configuration review and update is defined;
+      value:
+    - id: CM-02_ODP[02]
+      description: the circumstances requiring baseline configuration review and update
+        are defined;
+      value:
+  - control_id: CM-02(02)
+    title: Baseline Configuration | Automation Support for Accuracy and Currency
+    responsible_roles:
+    odps:
+    - id: CM-02(02)_ODP
+      description: automated mechanisms for maintaining baseline configuration of
+        the system are defined;
+      value:
+  - control_id: CM-02(03)
+    title: Baseline Configuration | Retention of Previous Configurations
+    responsible_roles:
+    odps:
+    - id: CM-02(03)_ODP
+      description: the number of previous baseline configuration versions to be retained
+        is defined;
+      value:
+  - control_id: CM-02(07)
+    title: Baseline Configuration | Configure Systems and Components for High-risk
+      Areas
+    responsible_roles:
+    odps:
+    - id: CM-02(07)_ODP[01]
+      description: the systems or system components to be issued when individuals
+        travel to high-risk areas are defined;
+      value:
+    - id: CM-02(07)_ODP[02]
+      description: configurations for systems or system components to be issued when
+        individuals travel to high-risk areas are defined;
+      value:
+    - id: CM-02(07)_ODP[03]
+      description: the controls to be applied when the individuals return from travel
+        are defined;
+      value:
+  - control_id: CM-03
+    title: Configuration Change Control
+    responsible_roles:
+    odps:
+    - id: CM-03_ODP[01]
+      description: the time period to retain records of configuration-controlled changes
+        is defined;
+      value:
+    - id: CM-03_ODP[02]
+      description: the configuration change control element responsible for coordinating
+        and overseeing change control activities is defined;
+      value:
+    - id: CM-03_ODP[03]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        { <CM-03_ODP[04] frequency>; when <CM-03_ODP[05] configuration change conditions>};'
+      value:
+    - id: CM-03_ODP[04]
+      description: the frequency at which the configuration control element convenes
+        is defined (if selected);
+      value:
+    - id: CM-03_ODP[05]
+      description: configuration change conditions that prompt the configuration control
+        element to convene are defined (if selected);
+      value:
+  - control_id: CM-03(02)
+    title: Configuration Change Control | Testing, Validation, and Documentation of
+      Changes
+    responsible_roles:
+    odps: N/A
+  - control_id: CM-03(04)
+    title: Configuration Change Control | Security and Privacy Representatives
+    responsible_roles:
+    odps:
+    - id: CM-03(04)_ODP[01]
+      description: security representatives required to be members of the change control
+        element are defined;
+      value:
+    - id: CM-03(04)_ODP[02]
+      description: privacy representatives required to be members of the change control
+        element are defined;
+      value:
+    - id: CM-03(04)_ODP[03]
+      description: the configuration change control element of which the security
+        and privacy representatives are to be members is defined;
+      value:
+  - control_id: CM-04
+    title: Impact Analyses
+    responsible_roles:
+    odps: N/A
+  - control_id: CM-04(02)
+    title: Impact Analyses | Verification of Controls
+    responsible_roles:
+    odps: N/A
+  - control_id: CM-05
+    title: Access Restrictions for Change
+    responsible_roles:
+    odps: N/A
+  - control_id: CM-05(01)
+    title: Access Restrictions for Change | Automated Access Enforcement and Audit
+      Records
+    responsible_roles:
+    odps:
+    - id: CM-05(01)_ODP
+      description: mechanisms used to automate the enforcement of access restrictions
+        are defined;
+      value:
+  - control_id: CM-05(05)
+    title: Access Restrictions for Change | Privilege Limitation for Production and
+      Operation
+    responsible_roles:
+    odps:
+    - id: CM-05(05)_ODP[01]
+      description: frequency at which to review privileges is defined;
+      value:
+    - id: CM-05(05)_ODP[02]
+      description: frequency at which to reevaluate privileges is defined;
+      value:
+  - control_id: CM-06
+    title: Configuration Settings
+    responsible_roles:
+    odps:
+    - id: CM-06_ODP[01]
+      description: common secure configurations to establish and document configuration
+        settings for components employed within the system are defined;
+      value:
+    - id: CM-06_ODP[02]
+      description: system components for which approval of deviations is needed are
+        defined;
+      value:
+    - id: CM-06_ODP[03]
+      description: operational requirements necessitating approval of deviations are
+        defined;
+      value:
+  - control_id: CM-06(01)
+    title: Configuration Settings | Automated Management, Application, and Verification
+    responsible_roles:
+    odps:
+    - id: CM-06(01)_ODP[01]
+      description: system components for which to manage, apply, and verify configuration
+        settings are defined;
+      value:
+    - id: CM-06(01)_ODP[02]
+      description: automated mechanisms to manage configuration settings are defined;
+      value:
+    - id: CM-06(01)_ODP[03]
+      description: automated mechanisms to apply configuration settings are defined;
+      value:
+    - id: CM-06(01)_ODP[04]
+      description: automated mechanisms to verify configuration settings are defined;
+      value:
+  - control_id: CM-07
+    title: Least Functionality
+    responsible_roles:
+    odps:
+    - id: CM-07_ODP[01]
+      description: mission-essential capabilities for the system are defined;
+      value:
+    - id: CM-07_ODP[02]
+      description: functions to be prohibited or restricted are defined;
+      value:
+    - id: CM-07_ODP[03]
+      description: ports to be prohibited or restricted are defined;
+      value:
+    - id: CM-07_ODP[04]
+      description: protocols to be prohibited or restricted are defined;
+      value:
+    - id: CM-07_ODP[05]
+      description: software to be prohibited or restricted is defined;
+      value:
+    - id: CM-07_ODP[06]
+      description: services to be prohibited or restricted are defined;
+      value:
+  - control_id: CM-07(01)
+    title: Least Functionality | Periodic Review
+    responsible_roles:
+    odps:
+    - id: CM-07(01)_ODP[01]
+      description: the frequency at which to review the system to identify unnecessary
+        and/or non-secure functions, ports, protocols, software, and/or services is
+        defined;
+      value:
+    - id: CM-07(01)_ODP[02]
+      description: functions to be disabled or removed when deemed unnecessary or
+        non-secure are defined;
+      value:
+    - id: CM-07(01)_ODP[03]
+      description: ports to be disabled or removed when deemed unnecessary or non-secure
+        are defined;
+      value:
+    - id: CM-07(01)_ODP[04]
+      description: protocols to be disabled or removed when deemed unnecessary or
+        non-secure are defined;
+      value:
+    - id: CM-07(01)_ODP[05]
+      description: software to be disabled or removed when deemed unnecessary or non-secure
+        is defined;
+      value:
+    - id: CM-07(01)_ODP[06]
+      description: services to be disabled or removed when deemed unnecessary or non-secure
+        are defined;
+      value:
+  - control_id: CM-07(02)
+    title: Least Functionality | Prevent Program Execution
+    responsible_roles:
+    odps:
+    - id: CM-07(02)_ODP[01]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        { <CM-07(02)_ODP[02] policies, rules of behavior, and/or access agreements
+        regarding software program usage and restrictions>; rules authorizing the
+        terms and conditions of software program usage};'
+      value:
+    - id: CM-07(02)_ODP[02]
+      description: policies, rules of behavior, and/or access agreements regarding
+        software program usage and restrictions are defined (if selected);
+      value:
+  - control_id: CM-07(05)
+    title: "Least Functionality | Authorized Software, Allow-by-exception"
+    responsible_roles:
+    odps:
+    - id: CM-07(05)_ODP[01]
+      description: software programs authorized to execute on the system are defined;
+      value:
+    - id: CM-07(05)_ODP[02]
+      description: frequency at which to review and update the list of authorized
+        software programs is defined;
+      value:
+  - control_id: CM-08
+    title: System Component Inventory
+    responsible_roles:
+    odps:
+    - id: CM-08_ODP[01]
+      description: information deemed necessary to achieve effective system component
+        accountability is defined;
+      value:
+    - id: CM-08_ODP[02]
+      description: frequency at which to review and update the system component inventory
+        is defined;
+      value:
+  - control_id: CM-08(01)
+    title: System Component Inventory | Updates During Installation and Removal
+    responsible_roles:
+    odps: N/A
+  - control_id: CM-08(03)
+    title: System Component Inventory | Automated Unauthorized Component Detection
+    responsible_roles:
+    odps:
+    - id: CM-08(03)_ODP[01]
+      description: automated mechanisms used to detect the presence of unauthorized
+        hardware within the system are defined;
+      value:
+    - id: CM-08(03)_ODP[02]
+      description: automated mechanisms used to detect the presence of unauthorized
+        software within the system are defined;
+      value:
+    - id: CM-08(03)_ODP[03]
+      description: automated mechanisms used to detect the presence of unauthorized
+        firmware within the system are defined;
+      value:
+    - id: CM-08(03)_ODP[04]
+      description: frequency at which automated mechanisms are used to detect the
+        presence of unauthorized system components within the system is defined;
+      value:
+    - id: CM-08(03)_ODP[05]
+      description: 'one or more of the following PARAMETER VALUES is/are selected:
+        {disable network access by unauthorized components; isolate unauthorized components;
+        notify <CM-08(03)_ODP[06] personnel or roles>};'
+      value:
+    - id: CM-08(03)_ODP[06]
+      description: personnel or roles to be notified when unauthorized components
+        are detected is/are defined (if selected);
+      value:
+  - control_id: CM-09
+    title: Configuration Management Plan
+    responsible_roles:
+    odps:
+    - id: CM-09_ODP
+      description: personnel or roles to review and approve the configuration management
+        plan is/are defined;
+      value:
+  - control_id: CM-10
+    title: Software Usage Restrictions
+    responsible_roles:
+    odps: N/A
+  - control_id: CM-11
+    title: User-installed Software
+    responsible_roles:
+    odps:
+    - id: CM-11_ODP[01]
+      description: policies governing the installation of software by users are defined;
+      value:
+    - id: CM-11_ODP[02]
+      description: methods used to enforce software installation policies are defined;
+      value:
+    - id: CM-11_ODP[03]
+      description: frequency with which to monitor compliance is defined;
+      value:
+  - control_id: CM-12
+    title: Information Location
+    responsible_roles:
+    odps:
+    - id: CM-12_ODP
+      description: information for which the location is to be identified and documented
+        is defined;
+      value:
+  - control_id: CM-12(01)
+    title: Information Location | Automated Tools to Support Information Location
+    responsible_roles:
+    odps:
+    - id: CM-12(01)_ODP[01]
+      description: information to be protected is defined by information type;
+      value:
+    - id: CM-12(01)_ODP[02]
+      description: system components where the information is located are defined;
+      value:
