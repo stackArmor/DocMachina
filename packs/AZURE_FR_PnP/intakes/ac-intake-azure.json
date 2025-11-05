@@ -1,61 +1,100 @@
 {
   "questions": [
-   
-     {
-  "name": "accountReviewFrequency",
-  "label": "Review frequency of priv and non-priv accounts",
-  "type": "radio",
-  "mandatory": true,
-  "options": [
     {
-      "label": "quarterly for privileged access, annually for non-privileged access",
-      "value": "quarterly for privileged access, annually for non-privileged access"
+      "name": "accountTypes",
+      "label": "What account types will the application have?",
+      "type": "text",
+      "mandatory": false
     },
     {
-      "label": "monthly for privileged accessed, every six (6) months for non-privileged access",
-      "value": "monthly for privileged accessed, every six (6) months for non-privileged access"
-    }
-  ]
-},
+      "name": "accountTicketingTool",
+      "label": "What ticketing tool is used to create or modify accounts?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountApproveRole",
+      "label": "What role approves new accounts and account modifications?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountDisableInactivity",
+      "label": "Number of days an account can be inactive before being disabled?",
+      "type": "radio",
+      "mandatory": false,
+      "options": [
+        {
+          "label": "ninety (90) days",
+          "value": "ninety (90) days"
+        },
+        {
+          "label": "thirty-five (35) days",
+          "value": "thirty-five (35) days"
+        }
+      ]
+    },
+    {
+      "name": "accountInactivityTools",
+      "label": "What tools enforce account inactivity settings?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountReviewFrequency",
+      "label": "Review frequency of priv and non-priv accounts",
+      "type": "radio",
+      "mandatory": true,
+      "options": [
+        {
+          "label": "quarterly for privileged access, annually for non-privileged access",
+          "value": "quarterly for privileged access, annually for non-privileged access"
+        },
+        {
+          "label": "monthly for privileged access, every six (6) months for non-privileged access",
+          "value": "monthly for privileged access, every six (6) months for non-privileged access"
+        }
+      ]
+    },
     {
       "name": "accountAutomatedMechanisms",
       "label": "automated mechanisms used to manage system accounts",
       "type": "checkbox",
       "mandatory": false,
       "options": [
-      {
-      "label": "Microsoft Entra ID Services",
-      "value": "Microsoft Entra ID Services "
-      },
-      {
-      "label": "GitLab ITSM Issues",
-      "value": "GitLAB ITSM Issues"
-      },
-      {
-      "label": "Splunk",
-      "value": "Splunk"
-      },  
-      {
-      "label": "AWS Directory Services",
-      "value": "AWS Directory Services"
-      },          
-      {
-      "label": "GCP Service Directory",
-      "value": "GCP Service Directory"
-      },
-      {
-      "label": "Azure Directory Services",
-      "value": "Azure Directtory Services"
-      },  
-      {
-      "label": "Okta",
-      "value": "Okta"
-      }
-              ]
+        {
+          "label": "Microsoft Entra ID Services",
+          "value": "Microsoft Entra ID Services"
+        },
+        {
+          "label": "GitLab ITSM Issues",
+          "value": "GitLab ITSM Issues"
+        },
+        {
+          "label": "Splunk",
+          "value": "Splunk"
+        },
+        {
+          "label": "AWS Directory Services",
+          "value": "AWS Directory Services"
+        },
+        {
+          "label": "GCP Service Directory",
+          "value": "GCP Service Directory"
+        },
+        {
+          "label": "Azure Directory Services",
+          "value": "Azure Directory Services"
+        },
+        {
+          "label": "Okta",
+          "value": "Okta"
+        }
+      ]
     },
     {
       "name": "mfaTool",
-      "label": "What tool provides MFA??",
+      "label": "What tool provides MFA?",
       "type": "text",
       "mandatory": false
     },
@@ -67,7 +106,7 @@
     },
     {
       "name": "accountMonitoringTools",
-      "label": "Tools uses for account monitoring",
+      "label": "Tools used for account logging and monitoring",
       "type": "text",
       "mandatory": false
     },
@@ -90,12 +129,6 @@
       "mandatory": false
     },
     {
-      "name": "accountLocalAdmin",
-      "label": "Where are credentials for account management maintained?",
-      "type": "text",
-      "mandatory": false
-    },
-    {
       "name": "accountAccessEnforcement",
       "label": "What is the hardening baseline?",
       "type": "text",
@@ -106,25 +139,19 @@
       "label": "What tools are used to manage information flow?",
       "type": "text",
       "mandatory": false
-    },    
-    {
-      "name": "accountAccessEnforcement",
-      "label": "What is the hardening baseline?",
-      "type": "text",
-      "mandatory": false
-    },    
+    },
     {
       "name": "accountLoggingTools",
       "label": "What tools are used for account logging?",
       "type": "text",
       "mandatory": false
-    },    
+    },
     {
       "name": "accountInvalidAttempts",
       "label": "How many invalid login attempts are allowed",
       "type": "text",
       "mandatory": false
-    },    
+    },
     {
       "name": "accountInvalidLock",
       "label": "What happens when the invalid login limit is reached?",
@@ -157,16 +184,15 @@
     },
     {
       "name": "accessNoAuthentication",
-      "label": "Are there any actions allowd that do not require identification and authentication?",
+      "label": "Are there any actions allowed that do not require identification and authentication?",
       "type": "text",
       "mandatory": false
     },
     {
       "name": "accountAccessPoints",
-      "label": "What tools (VPN) are used to manage network perimiter access points?",
+      "label": "What tools (VPN) are used to manage network perimeter access points?",
       "type": "text",
       "mandatory": false
-    },
-    ]
-  
+    }
+  ]
 }
