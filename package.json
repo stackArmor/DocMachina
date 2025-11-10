@@ -71,8 +71,5 @@
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true
     }
-  },
-  "dependencies": {
-    "docx": "^9.5.1"
   }
 }
