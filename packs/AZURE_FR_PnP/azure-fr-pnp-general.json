@@ -1,0 +1,135 @@
+{
+	"title": "AZURE - General Intake",
+	"description": "Customer name is mandatory.",
+	
+  "questions": [
+    {
+      "name": "customerName",
+      "label": "Customer Name (required)",
+      "type": "text",
+      "mandatory": true
+    },
+    {
+      "name": "customerAddress1",
+      "label": "Address Line 1",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "customerAddress2",
+      "label": "Address Line 2",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "customerAddress3",
+      "label": "Address Line 3",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "customerUrl",
+      "label": "Customer URL",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "customerSystemName",
+      "label": "System Name",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "customerSystemAcronym",
+      "label": "System Acronym",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "systemAssuranceLevel",
+      "label": "System Assurance Level",
+      "type": "text",
+      "mandatory": false
+    },
+	{
+      "name": "customerColor1",
+      "label": "Customer Color 1",
+      "type": "text",
+      "mandatory": false
+    },
+	{
+      "name": "customerColor2",
+      "label": "Customer Color 2",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "reviewFrequency",
+      "label": "Review Frequency",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "customerDocumentStorage",
+      "label": "Document Storage Location",
+      "type": "text",
+      "placeholder": "System Secure Document Repository",
+      "mandatory": false
+    },
+    {
+      "name": "customerEnvironment",
+      "label": "Customer Environment",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "customerPnpOwner",
+      "label": "P&P Owner",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "customerPnpApprover",
+      "label": "P&P Approver",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "customerSupportingDepartments",
+      "label": "Supporting Departments",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "customerConMon",
+      "label": "ConMon Y/N",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "dateYear",
+      "label": "Year",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "draftMonthYear",
+      "label": "Draft Month/Year",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "finalMonthYear",
+      "label": "Final Month/Year",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "nextReviewDate",
+      "label": "Next Review Date",
+      "type": "text",
+      "mandatory": false
+    }
+  ]
+  
+}

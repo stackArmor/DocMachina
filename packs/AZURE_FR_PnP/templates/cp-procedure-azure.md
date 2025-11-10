@@ -1,0 +1,37 @@
+## CP - Contingency Planning
+
+
+- **CP-1** - Policy and Procedures
+- **CP-2** - Contingency Plan
+  - **CP-2(1)** - Coordinate with Related Plans
+  - **CP-2(2)** - Capacity Planning
+  - **CP-2(3)** - Resume Mission and Business Functions
+  - **CP-2(5)** - Continue Mission and Business Functions
+  - **CP-2(8)** - Identify Critical Assets
+- **CP-3** - Contingency Training
+  - **CP-3(1)** - Simulated Events
+- **CP-4** - Contingency Plan Testing
+  - **CP-4(1)** - Coordinate with Related Plans
+  - **CP-4(2)** - Alternate Processing Site
+- **CP-6** - Alternate Storage Site
+  - **CP-6(1)** - Separation from Primary Site
+  - **CP-6(3)** - Accessibility
+- **CP-7** - Alternate Processing Site
+  - **CP-7(1)** - Separation from Primary Site
+  - **CP-7(2)** - Accessibility
+  - **CP-7(3)** - Priority of Service
+  - **CP-7(4)** - Preparation for Use
+- **CP-8** - Telecommunications Services
+  - **CP-8(1)** - Priority of Service Provisions
+  - **CP-8(2)** - Single Points of Failure
+  - **CP-8(3)** - Separation of Primary and Alternate Providers
+  - **CP-8(4)** - Provider Contingency Plan
+- **CP-9** - System Backup
+  - **CP-9(1)** - Testing for Reliability and Integrity
+  - **CP-9(2)** - Test Restoration Using Sampling
+  - **CP-9(3)** - Separate Storage for Critical Information
+  - **CP-9(5)** - Transfer to Alternate Storage Site
+  - **CP-9(8)** - Cryptographic Protection
+- **CP-10** - System Recovery and Reconstitution
+  - **CP-10(2)** - Transaction Recovery
+  - **CP-10(4)** - Restore Within Time Period

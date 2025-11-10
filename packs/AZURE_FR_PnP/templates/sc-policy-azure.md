@@ -1,0 +1,38 @@
+## SC - System and Communications Protection
+
+
+- **SC-1** - Policy and Procedures
+- **SC-2** - Separation of System and User Functionality
+- **SC-3** - Security Function Isolation
+- **SC-4** - Information in Shared System Resources
+- **SC-5** - Denial-of-service Protection
+- **SC-7** - Boundary Protection
+  - **SC-7(3)** - Access Points
+  - **SC-7(4)** - External Telecommunications Services
+  - **SC-7(5)** - Deny by Default - Allow by Exception
+  - **SC-7(7)** - Split Tunneling for Remote Devices
+  - **SC-7(8)** - Route Traffic to Authenticated Proxy Servers
+  - **SC-7(10)** - Prevent Exfiltration
+  - **SC-7(12)** - Host-based Protection
+  - **SC-7(18)** - Fail Secure
+  - **SC-7(20)** - Dynamic Isolation and Segregation
+  - **SC-7(21)** - Isolation of System Components
+- **SC-8** - Transmission Confidentiality and Integrity
+  - **SC-8(1)** - Cryptographic Protection
+- **SC-10** - Network Disconnect
+- **SC-12** - Cryptographic Key Establishment and Management
+  - **SC-12(1)** - Availability
+- **SC-13** - Cryptographic Protection
+- **SC-15** - Collaborative Computing Devices and Applications
+- **SC-17** - Public Key Infrastructure Certificates
+- **SC-18** - Mobile Code
+- **SC-20** - Secure Name/Address Resolution Service (Authoritative Source)
+- **SC-21** - Secure Name/Address Resolution Service (Recursive or Caching Resolver)
+- **SC-22** - Architecture and Provisioning for Name/Address Resolution Service
+- **SC-23** - Session Authenticity
+- **SC-24** - Fail in Known State
+- **SC-28** - Protection of Information at Rest
+  - **SC-28(1)** - Cryptographic Protection
+- **SC-39** - Process Isolation
+- **SC-45** - System Time Synchronization
+  - **SC-45(1)** - Synchronization with Authoritative Time Source

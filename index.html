@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocMachina. A desktop document engine.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="header-content">
+			<div id="header-brand-section">
+				<div>
+                <h1>DocMachina.  A desktop document engine.</h1>
+                <p><h4>Runs local. Saves local. Stays local.</h4></p>
+				</div>
+			</div>
+            <nav id="persistent-nav">
+                <button id="btn-home" class="primary">Home</button>
+				<button id="btn-header-folder" class="primary">File Location</button>
+				<button id="btn-header-library" class="primary">Library</button>
+				<button id="btn-header-about" class="primary">About</button>     
+			</nav>
+        </div>
+    </header>
+    
+    <main id="app-container">
+        
+<section id="landing-page" class="landing-page-grid">
+            <div id="landing-left-column">
+                <div id="pack-selection">
+                    <h2>Main Menu</h2>
+                    <p class="subtitle">Make a selection to get started:</p>
+                    <div id="packs-container" class="button-list">
+                        <p id="loading-packs">Loading packs...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="landing-right-column">
+                <div id="customer-management-area">
+				
+				<p>Welcome Message</p>
+                    <div class="button-list">
+					<!--	<button id="btn-open-library" class="primary">Open Library</button>  -->
+                    </div> 
+					
+                    <div style="flex-grow: 1;"></div> 
+                </div>
+            </div>
+        </section>
+
+        <section id="customer-library-section" style="display: none;">
+            <div id="library-header-menu">
+                <h2>Library</h2>
+                <!-- <button id="btn-open-folder" class="secondary">Open Local Folder</button> -->
+            </div>
+            
+            <table id="customer-library-table">
+                <thead>
+                    <tr>
+                        <th class="sortable" data-column="name">
+                            Customer Name <span class="sort-arrow">⇅</span>
+                        </th>
+                        <th class="sortable" data-column="pack">
+                            Pack <span class="sort-arrow">⇅</span>
+                        </th>
+                        <th class="sortable" data-column="date">
+                            Last Saved <span class="sort-arrow">⇅</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="library-table-body">
+                    <tr><td colspan="3">No customers saved yet.</td></tr>
+                </tbody>
+            </table>
+			
+        </section>
+        <section id="intake-form-section" style="display: none;">
+            <div class="form-navigation top-nav"></div>
+            <h2 id="intake-title"></h2>
+            <form id="active-intake-form"></form>
+            <div class="form-navigation bottom-nav"></div>
+        </section>
+
+<section id="customer-dashboard-section" style="display: none;">
+    <div id="dashboard-header-menu">
+        <div id="customer-info">
+            <span id="dashboard-customer-name" class="customer-highlight"></span>
+            <span id="dashboard-pack-name" class="pack-highlight"></span>
+			<span id="dashboard-assurance-level" class="pack-highlight"></span>
+        </div>
+        <div id="dashboard-actions">
+            <button id="btn-delete-customer" class="danger">Delete Customer</button>
+        </div>
+    </div>
+
+    <div id="dashboard-grid">
+        <div id="main-intakes-column">
+            <h2>Make a selection to continue</h2>
+            <button id="btn-return-to-general" class="secondary" style="margin-bottom: 20px;">Edit General Intake</button>
+            <div id="control-family-intakes-container" class="intake-grid"></div>
+            <button id="btn-generate-all" class="primary" style="margin-top: 20px;">Generate All Documents</button>
+        </div>
+        
+        <div id="other-documents-column">
+            <h2>Additional Documents</h2>
+            <div id="other-documents-container">
+            </div>
+        </div>		
+    </div>
+</section>
+
+<section id="about-section" style="display: none;">
+    <h2>About DocMachina</h2>
+    <div id="about-content">
+        <p>Loading...</p>
+    </div>
+</section>
+        
+    </main>
+    
+    <footer>
+        <div id="footer-content" class="text-micro">
+            
+            <p>DocMachina Demo v1.1</p>
+			<p>stackArmor Lorem ipsum </p>
+			
+			<!-- Footer Links 
+            <div>
+                <a href="#">Lorem</a>
+                <a href="#">ipsum</a>
+                <a href="#">Lorem</a>
+            </div>
+            --> 
+			
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

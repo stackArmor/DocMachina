@@ -1,0 +1,37 @@
+## CM - Configuration Management
+
+
+- **CM-1** - Policy and Procedures
+- **CM-2** - Baseline Configuration
+  - **CM-2(2)** - Automation Support for Accuracy and Currency
+  - **CM-2(3)** - Retention of Previous Configurations
+  - **CM-2(7)** - Configure Systems and Components for High-risk Areas
+- **CM-3** - Configuration Change Control
+  - **CM-3(1)** - Automated Documentation, Notification, and Prohibition of Changes
+  - **CM-3(2)** - Testing, Validation, and Documentation of Changes
+  - **CM-3(4)** - Security and Privacy Representatives
+  - **CM-3(6)** - Cryptography Management
+- **CM-4** - Impact Analyses
+  - **CM-4(1)** - Separate Test Environments
+  - **CM-4(2)** - Verification of Controls
+- **CM-5** - Access Restrictions for Change
+  - **CM-5(1)** - Automated Access Enforcement and Audit Records
+  - **CM-5(5)** - Privilege Limitation for Production and Operation
+- **CM-6** - Configuration Settings
+  - **CM-6(1)** - Automated Management, Application, and Verification
+  - **CM-6(2)** - Respond to Unauthorized Changes
+- **CM-7** - Least Functionality
+  - **CM-7(1)** - Periodic Review
+  - **CM-7(2)** - Prevent Program Execution
+  - **CM-7(5)** - Authorized Software - Allow-by-exception
+- **CM-8** - System Component Inventory
+  - **CM-8(1)** - Updates During Installation and Removal
+  - **CM-8(2)** - Automated Maintenance
+  - **CM-8(3)** - Automated Unauthorized Component Detection
+  - **CM-8(4)** - Accountability Information
+- **CM-9** - Configuration Management Plan
+- **CM-10** - Software Usage Restrictions
+- **CM-11** - User-installed Software
+- **CM-12** - Information Location
+  - **CM-12(1)** - Automated Tools to Support Information Location
+- **CM-14** - Signed Components

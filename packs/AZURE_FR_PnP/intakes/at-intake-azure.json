@@ -1,0 +1,103 @@
+{
+  "questions": [
+   
+{
+  "name": "controlFamilyName",
+  "label": "Control Family Name",
+  "type": "text",
+  "placeholder": "Awareness and Training",
+  "mandatory": false
+},
+{
+  "name": "controlFamilyAcronym",
+  "label": "Control Family Acronym",
+  "type": "text",
+  "placeholder": "AT",
+  "mandatory": false
+},
+{
+  "name": "trainingLMS",
+  "label": "Learning Management System(s)",
+  "type": "text",
+  "mandatory": false
+},
+{
+  "name": "trainingDeliveryMethod",
+  "label": "Training Delivery Method",
+  "type": "text",
+  "mandatory": false
+},
+{
+  "name": "trainingAdditional1",
+  "label": "Training Additional 1",
+  "type": "text",
+  "mandatory": false
+},
+{
+  "name": "trainingAdditional2",
+  "label": "Training Additional 2",
+  "type": "text",
+  "mandatory": false
+},
+{
+  "name": "trainingAdditional3",
+  "label": "Training Additional 3",
+  "type": "text",
+  "mandatory": false
+},
+{
+  "name": "trainingReviewFrequency",
+  "label": "Training Review Frequency",
+  "type": "text",
+  "mandatory": false
+},
+{
+  "name": "trainingReviewRole",
+  "label": "Training Review Role",
+  "type": "text",
+  "mandatory": false
+},
+{
+  "name": "trainingVerifyRole",
+  "label": "Training Verify Role",
+  "type": "text",
+  "mandatory": false
+},
+{
+  "name": "trainingRecordsStorage",
+  "label": "Training Records Storage",
+  "type": "text",
+  "mandatory": false
+},
+{
+  "name": "trainingRecordsRetention",
+  "label": "Training Records Retention",
+  "type": "text",
+  "mandatory": false
+},
+{
+  "name": "trainingDaysAfterHire",
+  "label": "Training Days After Hire",
+  "type": "text",
+  "mandatory": false
+},
+{
+  "name": "trainingNotifyMethod",
+  "label": "Training Notify Method",
+  "type": "text",
+  "mandatory": false
+},
+{
+  "name": "trainingTopics",
+  "label": "Training Topics",
+  "type": "text",
+  "mandatory": false
+},
+{
+  "name": "trainingRoleBased",
+  "label": "Training Role Based",
+  "type": "text",
+  "mandatory": false
+}  
+   ]
+}
