@@ -1,24 +1,9 @@
 {
   "questions": [
     {
-	"name": "controlFamilyName",
-	"label": "Control Family Name",
-	"type": "text",
-	"placeholder": "Access Control",
-	"mandatory": false
-	},
-	{		
-	"name": "controlFamilyAcronym",
-	"label": "Control Family Acronym",
-	"type": "text",
-	"placeholder": "AC",
-	"mandatory": false
-	},
-	{
       "name": "accountTypes",
       "label": "What account types will the application have?",
       "type": "text",
-	  "placeholder": "Individual user accounts, service accounts, local admin accounts",
       "mandatory": false
     },
     {
@@ -31,7 +16,6 @@
       "name": "accountApproveRole",
       "label": "What role approves new accounts and account modifications?",
       "type": "text",
-	  "placeholder": "ISSM",
       "mandatory": false
     },
     {
@@ -41,18 +25,18 @@
       "mandatory": false,
       "options": [
         {
-          "label": "(M)Ninety (90) days",
-          "value": "(M)Ninety (90) days"
+          "label": "ninety (90) days",
+          "value": "ninety (90) days"
         },
         {
-          "label": "(H)Thirty-five (35) days",
-          "value": "(H)Thirty-five (35) days"
+          "label": "thirty-five (35) days",
+          "value": "thirty-five (35) days"
         }
       ]
     },
     {
-      "name": "accountInactivityLockout",
-      "label": "Is the application itself configured for inactivity lockout, or will inactivity lockout be configured at the os level?",
+      "name": "accountInactivityTools",
+      "label": "What tools enforce account inactivity settings?",
       "type": "text",
       "mandatory": false
     },
@@ -63,211 +47,152 @@
       "mandatory": true,
       "options": [
         {
-          "label": "(M)Quarterly for privileged access, annually for non-privileged access",
-          "value": "(M)Quarterly for privileged access, annually for non-privileged access"
+          "label": "quarterly for privileged access, annually for non-privileged access",
+          "value": "quarterly for privileged access, annually for non-privileged access"
         },
         {
-          "label": "(H)Monthly for privileged access, every six (6) months for non-privileged access",
-          "value": "(H)Monthly for privileged access, every six (6) months for non-privileged access"
+          "label": "monthly for privileged access, every six (6) months for non-privileged access",
+          "value": "monthly for privileged access, every six (6) months for non-privileged access"
         }
-		]
+      ]
     },
     {
       "name": "accountAutomatedMechanisms",
-      "label": "Select all tools used to manage system accounts:",
+      "label": "automated mechanisms used to manage system accounts",
       "type": "checkbox",
       "mandatory": false,
       "options": [
         {
-          "label": "Microsoft Entra ID",
-          "value": "Microsoft Entra ID"
+          "label": "Microsoft Entra ID Services",
+          "value": "Microsoft Entra ID Services"
         },
         {
           "label": "GitLab ITSM Issues",
           "value": "GitLab ITSM Issues"
         },
         {
-          "label": "Azure AD B2C/B2B",
-          "value": "Azure AD B2C/B2B"
+          "label": "Splunk",
+          "value": "Splunk"
         },
         {
-          "label": "Entra ID Governance",
-          "value": "Entra ID Governance"
+          "label": "AWS Directory Services",
+          "value": "AWS Directory Services"
         },
         {
-          "label": "Azure RBAC",
-          "value": "Azure RBAC"
+          "label": "GCP Service Directory",
+          "value": "GCP Service Directory"
+        },
+        {
+          "label": "Azure Directory Services",
+          "value": "Azure Directory Services"
+        },
+        {
+          "label": "Okta",
+          "value": "Okta"
         }
-	    ]
+      ]
     },
-	    {
-		"name": "informationFlowTools",
-		"label": "Select all tools used for information flow enforcement:",
-		"type": "checkbox",
-		"mandatory": false,
-		"options": [
-			{
-			"label": "Microsoft Purview Information Protection",
-			"value": "Microsoft Purview Information Protection"
-			},
-			{
-			"label": "Azure Information Protection (AIP)",
-			"value": "Azure Information Protection (AIP)"
-			},
-			{
-			"label": "Data Loss Prevention (DLP)",
-			"value": "Data Loss Prevention (DLP)"
-			},
-			{
-			"label": "Network Security Groups (NSGs)",
-			"value": "Network Security Groups (NSGs)"
-			},
-			{
-			"label": "Azure Firewall",
-			"value": "Azure Firewall"
-			},
-			{
-			"label": "Application Gateway with WAF",
-			"value": "Application Gateway with WAF"
-			},
-			{
-			"label": "Azure Policy",
-			"value": "Azure Policy"
-			},
-			{
-			"label": "Conditional Access",
-			"value": "Conditional Access"
-			},
-			{
-			"label": "Microsoft Defender for Cloud",
-			"value": "Microsoft Defender for Cloud"
-			},
-			{
-			"label": "Azure Monitor",
-			"value": "Azure Monitor"
-			}
-			]
-		},
-		{
-		"name": "auditLogSIEM",
-		"label": "Select all tools used for log centralization, correlation, analysis, monitoring, reporting, alerting, and retention:",
-		"type": "checkbox",
-		"mandatory": false,
-		"options": [
-			{
-			"label": "Azure Sentinel SIEM",
-			"value": "Azure Sentinel SIEM"
-			},
-			{
-			"label": "Microsoft Defender for Cloud",
-			"value": "Microsoft Defender for Cloud"
-			},
-			{
-			"label": "Azure Monitor",
-			"value": "Azure Monitor"
-			},
-			{
-			"label": "Application Insights",
-			"value": "Application Insights"
-			},
-			{
-			"label": "Azure Activity Log",
-			"value": "Azure Activity Log"
-			},
-			{
-			"label": "Resource Logs",
-			"value": "Resource Logs"
-			},
-			{
-			"label": "Network Watcher",
-			"value": "Network Watcher"
-			},
-			{
-			"label": "Azure Storage Account",
-			"value": "Azure Storage Account"
-			},
-			{
-			"label": "Event Hubs",
-			"value": "Event Hubs"
-			},
-			{
-			"label": "Azure Data Explorer",
-			"value": "Azure Data Explorer"
-			}
-			]
-		},
-		{
-		"name": "mfaTool",
-		"label": "What tool provides MFA?",
-		"type": "text",
-		"mandatory": false
-		},
-		{
-		"name": "fedrampRulesOfBehavior",
-		"label": "Using FedRAMP rules of behavior?",
-		"type": "text",
-		"mandatory": false
-		},
-		{
-		"name": "accountLocalAdmin",
-		"label": "Where are credentials for account management maintained?",
-		"type": "text",
-		"placeholder": "Azure Key Vault",
-		"mandatory": false
-		},
-		{
-		  "name": "accountUsageConditions",
-		  "label": "(H)What usage conditions are defined for access?",
-		  "type": "text",
-		  "mandatory": false
-		},
-		{
-		  "name": "accountAtypicalUsage",
-		  "label": "List any additional atypical use cases?",
-		  "type": "text",
-		  "mandatory": false
-		},
-		{
-		  "name": "accountAccessEnforcement",
-		  "label": "What is the hardening baseline?",
-		  "type": "text",
-		  "mandatory": false
-		},
-		{
-		  "name": "accountInvalidAttempts",
-		  "label": "How many invalid login attempts are allowed?",
-		  "type": "text",
-		  "mandatory": false
-		},
-		{
-		  "name": "accountInvalidLock",
-		  "label": "What happens when the invalid login limit is reached?",
-		  "type": "text",
-		  "mandatory": false
-		},
-		{
-		  "name": "accountUnlock",
-		  "label": "How are accounts unlocked after the maximum number of invalid logins?",
-		  "type": "text",
-		  "mandatory": false
-		},
-		{
-		  "name": "applicationSessionTermination",
-		  "label": "Is there a maximum amount of time allowed before a user must reauthenticate, and what is the mechanism to enforce it?",
-		  "type": "text",
-		  "mandatory": false
-		},
-		{
-		  "name": "accountConcurrentSessions",
-		  "label": "Are concurrent sessions allowed?",
-		  "type": "text",
-		  "mandatory": false
-		},
-		{
-		  "name": "accessNoAuthentication",
-		  "label": "Are there any actions allowed that do not require identification and authentication?",
-		  "type": "text",
-		  "mandatory": false
-		}
-		]
+    {
+      "name": "mfaTool",
+      "label": "What tool provides MFA?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "fedrampRulesOfBehavior",
+      "label": "Using FedRAMP rules of behavior?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountMonitoringTools",
+      "label": "Tools used for account logging and monitoring",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountLocalAdmin",
+      "label": "Where are credentials for account management maintained?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountUsageConditions",
+      "label": "What usage conditions are defined for access?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountAtypicalUsage",
+      "label": "List any additional atypical use cases?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountAccessEnforcement",
+      "label": "What is the hardening baseline?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "informationFlowTools",
+      "label": "What tools are used to manage information flow?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountLoggingTools",
+      "label": "What tools are used for account logging?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountInvalidAttempts",
+      "label": "How many invalid login attempts are allowed",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountInvalidLock",
+      "label": "What happens when the invalid login limit is reached?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountConcurrentSessions",
+      "label": "Are concurrent sessions allowed?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "inactivityLockout",
+      "label": "Is the application itself configured for inactivity lockout, or will inactivity lockout be configured at the os level?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "applicationSessionTermination",
+      "label": "Is there a maximum amount of time allowed before a user must reauthenticate, and what is the mechanism to enforce it?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountUnlock",
+      "label": "How are accounts unlocked after the maximum number of invalid logins?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accessNoAuthentication",
+      "label": "Are there any actions allowed that do not require identification and authentication?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountAccessPoints",
+      "label": "What tools (VPN) are used to manage network perimeter access points?",
+      "type": "text",
+      "mandatory": false
+    }
+  ]
 }

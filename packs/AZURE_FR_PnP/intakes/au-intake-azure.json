@@ -1,53 +1,17 @@
 {
   "questions": [
-  {
-  "name": "controlFamilyName",
-  "label": "Control Family Name",
-  "type": "text",
-  "placeholder": "Audit and Accountability",
-  "mandatory": false
-  },
-{
-  "name": "controlFamilyAcronym",
-  "label": "Control Family Acronym",
-  "type": "text",
-  "placeholder": "AU",
-  "mandatory": false
-},
-{
-  "name": "auditConfigureRole",
-  "label": "What role is responsible for configuring auditable events?",
-  "type": "text",
-  "placeholder": "ISSM",
-  "mandatory": false
-},
-{
-  "name": "auditLogSIEM",
-  "label": "What logging tool is used for log centralization, correlation, analysis, monitoring, reporting, alerting, and retention?",
-  "type": "text",
-  "placeholder": "Azure Sentinel",
-  "mandatory": false
-},
-{
-  "name": "auditLogAccess",
-  "label": "What role manages audit log access?",
-  "type": "text",
-  "placeholder": "ISSM",
-  "mandatory": false
-},
-{
-  "name": "auditLogsSources",
-  "label": "List all components that provide logs",
-  "type": "text",
-  "placeholder": "OS, IDPs, intrusion detection, firewalls, identity management tools, VPN, etc.",
-  "mandatory": false
-},
-{
-  "name": "auditTimeStamp",
-  "label": "What time clock does the app syncronize to?",
-  "type": "text",
-  "placeholder": "Microsoft's internal NTP servers connected to Stratum 1 time sources",
-  "mandatory": false
-} 
+   
+     {
+      "name": "customerName",
+      "label": "Customer Name",
+      "type": "text",
+      "mandatory": true
+    },
+    {
+      "name": "customerAddress1",
+      "label": "Address Line 1",
+      "type": "text",
+      "mandatory": false
+    }
    ]
 }
