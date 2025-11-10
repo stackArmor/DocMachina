@@ -2,10 +2,16 @@
 name: "{{controlFamilyName}} Procedure - Azure"
 about: "{{controlFamilyAcronym}} Procedure Template for Azure"
 title: "{{controlFamilyName}} Procedure"
+tableHeaderColor: "{{customerColor1}}"
 ---
 <div align="center">
 
 {{customerName}}<br>
+{{customerAddress1}}  
+{{customerAddress2}}  
+{{customerAddress3}}  
+{{customerUrl}}
+
 {{customerSystemName}} ({{customerSystemAcronym}}) <br>
 {{systemAssuranceLevel}}
 
@@ -14,17 +20,12 @@ title: "{{controlFamilyName}} Procedure"
 **Version 1.0**  
 {{finalMonthYear}}
 
-{{customerName}}  
-{{customerAddress1}}  
-{{customerAddress2}}  
-{{customerAddress3}}  
-{{customerUrl}}
 
 © {{dateYear}} {{customerName}}. All rights reserved.
 
 </div>
 
----
+
 
 <div align="center">
 
@@ -37,15 +38,13 @@ Reston, VA 20190 <br>
 
 </div>
 
----
+
 
 #### Revision History  
-| Version    | Date     | Author     | Description of Changes and Reason |
+| Version    | Date     | Author     | Description |
 |------------|----------|------------|------------------|
 | 0.1        | {{draftMonthYear}}	| stackArmor | Initial Draft	|	
 | 1.0        | {{finalMonthYear}}	| stackArmor | Final		|
-
----
 
 ### Document Review and Modification Statement  
 All policies, procedures, plans, points of contact, personnel, identified roles and responsibilities, departments, storage locations, organizational structures, flowcharts, technical methods, processes, and related content must be reviewed {{reviewFrequency}}. Refer to the table below for specific review dates. 
@@ -62,9 +61,8 @@ The document owner is responsible for updating this document and all supporting 
   
 The latest version of this document must be kept in a central storage location, accessible by all personnel assigned per the Roles and Responsibilities. All previous versions of this document must be archived once the latest version has been approved for circulation, and all involved personnel must be notified of any new changes. Furthermore, training may be required for all personnel involved after a new version of this document has been published. 
 
----
-Document Properties
-|					|					|
+
+| Document Properties			|	
 |---------------------------------------|---------------------------------------|
 | Document Owner: 			| {{customerPnpOwner}} 			|
 | Document Approver:			| {{customerPnpApprover}}		|
@@ -72,10 +70,10 @@ Document Properties
 | Document Storage Location:		| {{customerDocumentStorage}}		|
 | Internal Document Classification:	| Proprietary and Confidential		|
 
----
+
 
 ### 1. Document Overview  
-This document defines the {{controlFamilyName}} ({{controlFamilyAcronym}})  requirements and mechanisms to be implemented across the {{customerSystemName}} ({{customerSystemAcronym}}) information system. Additionally, this document is consistent with all applicable laws, executive orders, directives, regulations, policies, standards, guidelines, and applicable Federal compliance requirements. 
+This document defines the {{controlFamilyName}} ({{controlFamilyAcronym}}) requirements and mechanisms to be implemented across the {{customerSystemName}} ({{customerSystemAcronym}}) information system. Additionally, this document is consistent with all applicable laws, executive orders, directives, regulations, policies, standards, guidelines, and applicable Federal compliance requirements. 
 
 Federal agencies and organizations must protect the confidentiality, integrity, and availability of information in today’s highly networked systems environment by ensuring that all people involved in using and managing IT resources entrusted to them:
 
@@ -100,12 +98,8 @@ This document also applies to all authorized {{customerName}} employees with pri
 ### 1.3 Locations  
 This document applies to the {{customerSystemAcronym}} environment within Azure.  
 
----
-
 ### 2. Roles and Responsibilities
 The Roles and Responsibilities of the {{customerSystemAcronym}} system can be found within Appendix R and Appendix S of the {{customerSystemAcronym}} SSP. These appendices provide direct guidance throughout the system documentation (policy, procedures, and plans).  Additional details are available within the Playbooks and Task Definitions stored in GitLab.
-
----
 
 ### 3. Management Commitment  
 The content of this document has been reviewed and determined to be acceptable and beneficial to the {{customerName}} mission for {{controlFamilyName}}. Management and senior leadership are fully committed to supporting and continually improving all aspects of the organization's {{controlFamilyName}} efforts. Specific managers have been assigned the responsibility for overseeing internal personnel and ensuring adherence to the roles, responsibilities, policies, and procedures outlined herein.
@@ -118,5 +112,5 @@ Requirements, laws, processes, team organizations, strategies, and technology su
 
 Guidance from senior management, and cross collaboration with affiliated departments within the {{customerName}} organization allows the document owner or delegate to further their efforts of upholding confidentiality, integrity, and availability of information. 
 
-<!-- CONTROL_SPECIFIC_CONTENT -->
+
 

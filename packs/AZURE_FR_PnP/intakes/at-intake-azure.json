@@ -5,25 +5,19 @@
   "name": "controlFamilyName",
   "label": "Control Family Name",
   "type": "text",
-  "default": "Awareness and Training"
+  "placeholder": "Awareness and Training",
   "mandatory": false
 },
 {
   "name": "controlFamilyAcronym",
   "label": "Control Family Acronym",
   "type": "text",
-  "default": "AT"
+  "placeholder": "AT",
   "mandatory": false
 },
 {
   "name": "trainingLMS",
   "label": "Learning Management System(s)",
-  "type": "text",
-  "mandatory": false
-},
-{
-  "name": "trainingLMS",
-  "label": "Training LMS",
   "type": "text",
   "mandatory": false
 },
@@ -107,4 +101,3 @@
 }  
    ]
 }
-

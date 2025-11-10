@@ -205,28 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function saveAndClose(navigate) {
         // 1. Get data
         const formData = new FormData(activeIntakeForm);
-        
-        // Handle checkboxes specially - need to collect all checked values
-        const data = {};
-        const checkboxFields = new Set();
-        
-        // First pass: identify checkbox fields and collect their values
-        activeIntakeForm.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-            checkboxFields.add(checkbox.name);
-        });
-        
-        // Second pass: collect all form data
-        for (const [key, value] of formData.entries()) {
-            if (checkboxFields.has(key)) {
-                // For checkboxes, collect all values as an array
-                if (!data[key]) {
-                    data[key] = formData.getAll(key);
-                }
-            } else {
-                // For other fields, just use the single value
-                data[key] = value;
-            }
-        }
+        const data = Object.fromEntries(formData.entries());
         
         // Validation check for mandatory fields (Customer Name only for general intake)
         if (activeIntakeKey === 'general') {
@@ -503,93 +482,22 @@ document.addEventListener('DOMContentLoaded', () => {
             if (question.required) {
                 label.classList.add('required-field');
             }
-            formGroup.appendChild(label);
+            label.setAttribute('for', question.name);
 
-            // Handle radio buttons differently
-            if (question.type === 'radio' && question.options) {
-                const radioContainer = document.createElement('div');
-                radioContainer.className = 'radio-group';
-                
-                question.options.forEach((option, index) => {
-                    const radioWrapper = document.createElement('div');
-                    radioWrapper.className = 'radio-option';
-                    
-                    const input = document.createElement('input');
-                    input.type = 'radio';
-                    input.id = `${question.name}-${index}`;
-                    input.name = question.name;
-                    input.value = option.value;
-                    input.required = question.mandatory || false;
-                    
-                    // Check if this option was previously saved
-                    if (savedData[question.name] === option.value) {
-                        input.checked = true;
-                    }
-                    
-                    const optionLabel = document.createElement('label');
-                    optionLabel.setAttribute('for', `${question.name}-${index}`);
-                    optionLabel.textContent = option.label;
-                    
-                    radioWrapper.appendChild(input);
-                    radioWrapper.appendChild(optionLabel);
-                    radioContainer.appendChild(radioWrapper);
-                });
-                
-                formGroup.appendChild(radioContainer);
-            } else if (question.type === 'checkbox' && question.options) {
-                // Handle checkboxes with multiple options
-                const checkboxContainer = document.createElement('div');
-                checkboxContainer.className = 'checkbox-group';
-                
-                // Saved data for checkboxes should be an array
-                const savedValues = Array.isArray(savedData[question.name]) 
-                    ? savedData[question.name] 
-                    : (savedData[question.name] ? [savedData[question.name]] : []);
-                
-                question.options.forEach((option, index) => {
-                    const checkboxWrapper = document.createElement('div');
-                    checkboxWrapper.className = 'checkbox-option';
-                    
-                    const input = document.createElement('input');
-                    input.type = 'checkbox';
-                    input.id = `${question.name}-${index}`;
-                    input.name = question.name;
-                    input.value = option.value;
-                    
-                    // Check if this option was previously saved
-                    if (savedValues.includes(option.value)) {
-                        input.checked = true;
-                    }
-                    
-                    const optionLabel = document.createElement('label');
-                    optionLabel.setAttribute('for', `${question.name}-${index}`);
-                    optionLabel.textContent = option.label;
-                    
-                    checkboxWrapper.appendChild(input);
-                    checkboxWrapper.appendChild(optionLabel);
-                    checkboxContainer.appendChild(checkboxWrapper);
-                });
-                
-                formGroup.appendChild(checkboxContainer);
-            } else {
-                // Handle regular input fields
-                label.setAttribute('for', question.name);
-                
-                const input = document.createElement('input');
-                input.type = question.type || 'text';
-                input.id = question.name;
-                input.name = question.name;
-                input.placeholder = question.placeholder || '';
-                input.required = question.mandatory || false;
-                
-                // Populate with saved data
-                if (savedData[question.name]) {
-                    input.value = savedData[question.name];
-                }
-                
-                formGroup.appendChild(input);
+            const input = document.createElement('input');
+            input.type = question.type || 'text';
+            input.id = question.name;
+            input.name = question.name;
+            input.placeholder = question.placeholder || '';
+            input.required = question.mandatory || false;
+            
+            // Populate with saved data
+            if (savedData[question.name]) {
+                input.value = savedData[question.name];
             }
 
+            formGroup.appendChild(label);
+            formGroup.appendChild(input);
             activeIntakeForm.appendChild(formGroup);
         });
     }

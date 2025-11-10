@@ -51,6 +51,18 @@
       "type": "text",
       "mandatory": false
     },
+	{
+      "name": "customerColor1",
+      "label": "Customer Color 1",
+      "type": "text",
+      "mandatory": false
+    },
+	{
+      "name": "customerColor2",
+      "label": "Customer Color 2",
+      "type": "text",
+      "mandatory": false
+    },
     {
       "name": "reviewFrequency",
       "label": "Review Frequency",
@@ -61,7 +73,7 @@
       "name": "customerDocumentStorage",
       "label": "Document Storage Location",
       "type": "text",
-      "default": "System Secure Document Repository",
+      "placeholder": "System Secure Document Repository",
       "mandatory": false
     },
     {

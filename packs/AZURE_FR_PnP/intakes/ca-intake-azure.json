@@ -1,17 +1,39 @@
 {
   "questions": [
-   
-     {
-      "name": "customerName",
-      "label": "Customer Name",
-      "type": "text",
-      "mandatory": true
-    },
     {
-      "name": "customerAddress1",
-      "label": "Address Line 1",
+	"name": "controlFamilyName",
+	"label": "Control Family Name",
+	"type": "text",
+	"placeholder": "assessment, Authorization, and Monitoring",
+	"mandatory": false
+	},
+	{		
+	"name": "controlFamilyAcronym",
+	"label": "Control Family Acronym",
+	"type": "text",
+	"placeholder": "CA",
+	"mandatory": false
+	},
+	{
+	"name": "connectionsApproveRole",
+      "label": "What role reviews and approves, connections with other systems?",
       "type": "text",
+	  "placeholder": "ISSM",
       "mandatory": false
-    }
+    },
+	{
+	"name": "authorizingOfficial",
+      "label": "Who will be the agency sponsor / AO?",
+      "type": "text",
+	  "placeholder": "",
+      "mandatory": false
+    },
+	{
+	"name": "poamApprover",
+      "label": "Who approves POAMs?",
+      "type": "text",
+	  "placeholder": "ISSM",
+      "mandatory": false
+    },
    ]
 }
