@@ -3,14 +3,14 @@
    
      {
       "name": "customerName",
-      "label": "Customer Name",
+      "label": Bidscale,
       "type": "text",
       "mandatory": true
     },
     {
       "name": "customerAddress1",
-      "label": "Address Line 1",
-      "type": "text",
+      "label": 2451 Crystal Dr # 600B, Arlington, VA 22202
+      "type": PH: (703) 468-8783 | https:// www.bidscale.com,
       "mandatory": false
     }
    ]
