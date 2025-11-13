@@ -1,17 +1,49 @@
 {
   "questions": [
-   
-     {
-      "name": "customerName",
-      "label": "Customer Name",
-      "type": "text",
-      "mandatory": true
-    },
-    {
-      "name": "customerAddress1",
-      "label": "Address Line 1",
-      "type": "text",
-      "mandatory": false
-    }
-   ]
+	{
+	  "name": "controlFamilyName",
+	  "label": "Control Family Name",
+	  "type": "text",
+	  "placeholder": "Configuration Management",
+	  "mandatory": false
+	},
+	{
+	  "name": "controlFamilyAcronym",
+	  "label": "Control Family Acronym",
+	  "type": "text",
+	  "placeholder": "CM",
+	  "mandatory": false
+	},
+	{
+	  "name": "configurationBaselineTools",
+	  "label": "List tools used for maintaining the baseline configuration.  ex:  TSP and AWS Config",
+	  "type": "text",
+	  "mandatory": false
+	},
+	{
+	  "name": "itsmTool",
+	  "label": "What tool is used for automated documentation, notification, and prohibition of changes.  ex:  TSP® GitLab Information Technology Service Management (ITSM)",
+	  "type": "text",
+	  "mandatory": false
+	},
+	{
+	  "name": "preventProgramExecution",
+	  "label": "What tool is configured to prevent program execution? ex: g the baseline configuration.  ex:  TSP Trend Micro Deep Security Manager whitelisting",
+	  "type": "text",
+	  "mandatory": false
+	},
+	{
+	  "name": "inventoryTool",
+	  "label": "What tool is used to genberate the inventory? ex: the inventory generation capability within TSP",
+	  "type": "text",
+	  "mandatory": false
+	},
+	{
+	  "name": "userSsoftwareInstall",
+	  "label": "What tool is used to maintain software installation policies? ex: AWS Identity and Access Management",
+	  "type": "text",
+	  "mandatory": false
+	}
+	]	
 }
+

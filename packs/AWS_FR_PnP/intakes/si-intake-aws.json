@@ -1,17 +1,39 @@
-{
-  "questions": [
+
+ {
+ "questions": [
    
-     {
-      "name": "customerName",
-      "label": "Customer Name",
-      "type": "text",
-      "mandatory": true
-    },
-    {
-      "name": "customerAddress1",
-      "label": "Address Line 1",
-      "type": "text",
-      "mandatory": false
-    }
-   ]
+{
+  "name": "controlFamilyName",
+  "label": "Control Family Name",
+  "type": "text",
+  "placeholder": "System and Information Integrity",
+  "mandatory": false
+},
+{
+  "name": "controlFamilyAcronym",
+  "label": "Control Family Acronym",
+  "type": "text",
+  "placeholder": "SI",
+  "mandatory": false
+},
+{
+  "name": "systemMonitoringTools",
+  "label": "List all system monitoring tools.  ex: AWS Guard Duty, AWS Config, CloudWatch agents, Trend Micro agents, AWS Firewall, ThreatAlert, Splunk, Tenable Security Center and Acunetix Web Scanner",
+  "type": "text",
+  "mandatory": false
+},
+{
+  "name": "systemMonitoringTools",
+  "label": "List all system monitoring tools.  ex: AWS Guard Duty, AWS Config, CloudWatch agents, Trend Micro agents, AWS Firewall, ThreatAlert, Splunk, Tenable Security Center and Acunetix Web Scanner",
+  "type": "text",
+  "mandatory": false
+},
+{
+  "name": "automatedAlertTools",
+  "label": "Security alert and advisory information shall be broadcasted throughout the organization using:  ex:  corporate email system and system distribution groups",
+  "type": "text",
+  "mandatory": false
 }
+  ]
+}
+  

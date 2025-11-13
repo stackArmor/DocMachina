@@ -1,17 +1,70 @@
 {
   "questions": [
-   
-     {
-      "name": "customerName",
-      "label": "Customer Name",
+    {
+      "name": "controlFamilyName",
+      "label": "Control Family Name",
       "type": "text",
-      "mandatory": true
+      "placeholder": "Access Control",
+      "mandatory": false
     },
     {
-      "name": "customerAddress1",
-      "label": "Address Line 1",
+      "name": "controlFamilyAcronym",
+      "label": "Control Family Acronym",
+      "type": "text",
+      "placeholder": "AC",
+      "mandatory": false
+    },
+    {
+      "name": "accountReviewFrequency",
+      "label": "How often are accounts reviewed?",
+     "type": "checkbox",
+			    "options": [
+				    { "label": "(H) Monthly for privileged accessed, every six (6) months for non-privileged access", "value": "monthly for privileged accessed, every six (6) months for non-privileged access" },
+					  { "label": "(M) Quarterly for privileged access, annually for non-privileged access", "value": "quarterly for privileged access, annually for non-privileged access" }
+          ]
+    },    
+    {
+      "name": "accountAutomatedMechanisms",
+      "label": "List all tools used to manage system accounts (AWS Directory Services, Okta IDaaS Regulated Cloud, TSP GitLab ITSM ticketing system, and TSP Splunk):",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountDisableInactivity",
+      "label": "Number of days an account can be inactive before being disabled?",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountInactivityLOGout",
+      "label": "It shall be required that users log out: inactivity is anticipated to exceed fifteen (15) minutes; for privileged users, it is the end of a user's standard work period ",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountLocalAdmin",
+      "label": "Where are credentials for account management maintained? ex: AWS Secrets Manager and AWS Systems Manager Parameter store",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "informationFlowTools",
+      "label": "What tools are used for information flow enforcement? Virtual Private Clouds (VPCs), AWS Security Groups, Firewall rules, Device Configurations, Routing Policies, IDS/IPS definitions, Access Control Lists (ACLs) and NAT Gateways",
+      "type": "text",
+      "mandatory": false
+    },
+    {
+      "name": "accountAtypicalUsage",
+      "label": "System accounts shall be monitored for signs of the following atypical usage:",
+      "type": "text",
+      "placeholder": "After hour logins, AWS out of area login, AWS root login, Linux console login alert...",
+      "mandatory": false
+    },
+    {
+      "name": "userSessionTermination",
+      "label": "Maximum amount of time allowed before a user must reauthenticate.  ex:  twenty-four (24) hours",
       "type": "text",
       "mandatory": false
     }
-   ]
+  ]
 }

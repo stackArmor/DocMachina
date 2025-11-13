@@ -1,17 +1,19 @@
 {
   "questions": [
    
-     {
-      "name": "customerName",
-      "label": "Customer Name",
-      "type": "text",
-      "mandatory": true
-    },
-    {
-      "name": "customerAddress1",
-      "label": "Address Line 1",
-      "type": "text",
-      "mandatory": false
-    }
+{
+  "name": "controlFamilyName",
+  "label": "Control Family Name",
+  "type": "text",
+  "placeholder": "Media Protection",
+  "mandatory": false
+},
+{
+  "name": "controlFamilyAcronym",
+  "label": "Control Family Acronym",
+  "type": "text",
+  "placeholder": "MP",
+  "mandatory": false
+}
    ]
 }

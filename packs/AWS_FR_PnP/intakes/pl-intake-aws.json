@@ -1,17 +1,32 @@
 {
   "questions": [
    
-     {
-      "name": "customerName",
-      "label": "Customer Name",
-      "type": "text",
-      "mandatory": true
-    },
-    {
-      "name": "customerAddress1",
-      "label": "Address Line 1",
-      "type": "text",
-      "mandatory": false
-    }
+{
+  "name": "controlFamilyName",
+  "label": "Control Family Name",
+  "type": "text",
+  "placeholder": "Planning",
+  "mandatory": false
+},
+{
+  "name": "controlFamilyAcronym",
+  "label": "Control Family Acronym",
+  "type": "text",
+  "placeholder": "PL",
+  "mandatory": false
+},
+{
+  "name": "sspDistro",
+  "label": "List all roles that receive a copy (or given access to) the SSP.  ex:  system stakeholders",
+  "type": "text",
+  "mandatory": false
+},
+{
+  "name": "robReviewFrequency",
+  "label": "How often are the Rules of Behavior reviewed?",
+  "type": "text",
+  "placeholder": "at least annually, at least every three years",
+  "mandatory": false
+}
    ]
 }

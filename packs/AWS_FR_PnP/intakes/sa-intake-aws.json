@@ -1,17 +1,38 @@
 {
   "questions": [
    
-     {
-      "name": "customerName",
-      "label": "Customer Name",
-      "type": "text",
-      "mandatory": true
-    },
-    {
-      "name": "customerAddress1",
-      "label": "Address Line 1",
-      "type": "text",
-      "mandatory": false
-    }
-   ]
+{
+  "name": "controlFamilyName",
+  "label": "Control Family Name",
+  "type": "text",
+  "placeholder": "System and Services Acquisition",
+  "mandatory": false
+},
+{
+  "name": "controlFamilyAcronym",
+  "label": "Control Family Acronym",
+  "type": "text",
+  "placeholder": "SA",
+  "mandatory": false
+},
+{
+  "name": "externalSystemBaseline",
+  "label": "What is the baseline external systems are required to meet?  ex:  FedRAMP Moderate; FedRAMP High",
+  "type": "text",
+  "mandatory": false
+},
+{
+  "name": "informationLocation",
+  "label": "The location of information processing, information or data, AND system services shall be restricted (H) to U.S./U.S. Territories or geographic locations where there is U.S. jurisdiction based on all High impact data, systems, or services. ; (M) to  organization-defined locations based on organization-defined requirements or conditions",
+  "type": "text",
+  "mandatory": false
+},
+{
+  "name": "threatModelingTools",
+  "label": "What tools are used for threat modeling and vuln analysis during develpment (customer must provide)?",
+  "type": "text",
+  "mandatory": false
+}
+
+  ]
 }

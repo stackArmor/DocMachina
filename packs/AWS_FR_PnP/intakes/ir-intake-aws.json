@@ -2,16 +2,37 @@
   "questions": [
    
      {
-      "name": "customerName",
-      "label": "Customer Name",
-      "type": "text",
-      "mandatory": true
-    },
-    {
-      "name": "customerAddress1",
-      "label": "Address Line 1",
-      "type": "text",
-      "mandatory": false
-    }
+  "name": "controlFamilyName",
+  "label": "Control Family Name",
+  "type": "text",
+  "placeholder": "Incident Response",
+  "mandatory": false
+},
+{
+  "name": "controlFamilyAcronym",
+  "label": "Control Family Acronym",
+  "type": "text",
+  "placeholder": "IR",
+  "mandatory": false
+},
+{
+  "name": "incidentResponseTestFrequency",
+  "label": "How often will the IR plan be tested?",
+  "type": "text",
+  "placeholder": "functionally at least annually.  Additional tests every six months.",
+  "mandatory": false
+}
+{
+  "name": "incidentTrainingEnvironment",
+  "label": "(H) What is the automated tool that provides the training environment?  ex:ThreatAlert Security Platform",
+  "type": "text",
+  "mandatory": false
+}
+{
+  "name": "incidentTrainingFrequency",
+  "label": "How often is the IRP tested?  ex:(H) at least every six (6) months, including functional at least annually; (M) functional, at least annually",
+  "type": "text",
+  "mandatory": false
+}
    ]
 }

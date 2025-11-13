@@ -1,17 +1,33 @@
 {
   "questions": [
    
-     {
-      "name": "customerName",
-      "label": "Customer Name",
-      "type": "text",
-      "mandatory": true
-    },
-    {
-      "name": "customerAddress1",
-      "label": "Address Line 1",
-      "type": "text",
-      "mandatory": false
-    }
-   ]
+{
+  "name": "controlFamilyName",
+  "label": "Control Family Name",
+  "type": "text",
+  "placeholder": "System and Communicaitons Protection",
+  "mandatory": false
+},
+{
+  "name": "controlFamilyAcronym",
+  "label": "Control Family Acronym",
+  "type": "text",
+  "placeholder": "SC",
+  "mandatory": false
+},
+{
+  "name": "trafficExceptionReview",
+  "label": "How often are exceptions to traffic flow policy reviewed?",
+  "type": "text",
+  "placeholder": "at least every (90) days, at least every 180 days",
+  "mandatory": false
+},
+{
+  "name": "mobileCode",
+  "label": "Is mobile code allowed?  If yes what are the requirements?",
+  "type": "text",
+  "placeholder": "",
+  "mandatory": false
+}
+  ]
 }
