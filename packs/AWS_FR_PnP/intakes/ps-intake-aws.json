@@ -17,9 +17,8 @@
 },
 {
   "name": "positionRiskReview",
-  "label": "What is the frequecy for position risk reviews?",
+  "label": "What is the frequecy for position risk reviews?  ex: at least annyally, at least every three years",
   "type": "text",
-  "placeholder": "at least annyally, at least every three years",
   "mandatory": false
 },
 {
@@ -31,9 +30,8 @@
 },
 {
   "name": "terminationNotified",
-  "label": "What roles are notified when someone is terminated?",
+  "label": "What roles are notified when someone is terminated?  ex: ISSM, Human Resources",
   "type": "text",
-  "placeholder": "ISSM",
   "mandatory": false
 }
    ]

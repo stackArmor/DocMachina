@@ -14,7 +14,7 @@
   "type": "text",
   "placeholder": "IA",
   "mandatory": false
-}
+},
 {
   "name": "accountAssignRole",
   "label": "What role assigns user identifiers?  ex; ISSM",

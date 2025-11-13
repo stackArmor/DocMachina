@@ -21,13 +21,13 @@
   "type": "text",
   "placeholder": "functionally at least annually.  Additional tests every six months.",
   "mandatory": false
-}
+},
 {
   "name": "incidentTrainingEnvironment",
   "label": "(H) What is the automated tool that provides the training environment?  ex:ThreatAlert Security Platform",
   "type": "text",
   "mandatory": false
-}
+},
 {
   "name": "incidentTrainingFrequency",
   "label": "How often is the IRP tested?  ex:(H) at least every six (6) months, including functional at least annually; (M) functional, at least annually",
