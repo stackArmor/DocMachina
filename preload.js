@@ -1,21 +1,26 @@
 const { contextBridge, ipcRenderer } = require('electron');
 
-// Expose protected methods that allow the renderer process to use
-// the ipcRenderer without exposing the entire object
 contextBridge.exposeInMainWorld('electronAPI', {
-    // Pack operations
+    // Get list of pack folders
     getPacks: () => ipcRenderer.invoke('get-packs'),
+    
+    // Get intake files from a specific pack
     getIntakes: (packFolder) => ipcRenderer.invoke('get-intakes', packFolder),
+    
+    // Get "other" intake files from a specific pack
     getOtherIntakes: (packFolder) => ipcRenderer.invoke('get-other-intakes', packFolder),
     
-    // File reading operations
+    // Read a specific intake JSON file
     readIntake: (intakePath) => ipcRenderer.invoke('read-intake', intakePath),
+    
+    // Read a template file
     readTemplate: (templatePath) => ipcRenderer.invoke('read-template', templatePath),
     
-    // Document saving
-    saveDocument: (filename, content) => ipcRenderer.invoke('save-document', { filename, content }),
+    // Save a generated document - UPDATED to pass customerName
+    saveDocument: (filename, content, customerName) => 
+        ipcRenderer.invoke('save-document', { filename, content, customerName }),
     
-    // Folder operations
+    // Open the customers folder in file explorer
     openCustomersFolder: () => ipcRenderer.invoke('open-customers-folder'),
     
     // Storage operations (replacing localStorage)

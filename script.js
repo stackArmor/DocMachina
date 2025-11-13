@@ -744,7 +744,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                  // ELECTRON: Save document instead of browser download
                  const finalFileName = `${systemAcronym}_${intakeKey.toUpperCase()}_${docType}.md`;
-                 const result = await window.electronAPI.saveDocument(finalFileName, content);
+                 const result = await window.electronAPI.saveDocument(finalFileName, content, currentCustomer.name);
                  
                  if (result.success) {
                      console.log(`Generated ${docType} successfully`);
@@ -895,7 +895,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         
                         // ELECTRON: Save document instead of browser download
                         const filename = `${systemAcronym}_${intakeKey.toUpperCase()}_${docType}.md`;
-                        const result = await window.electronAPI.saveDocument(filename, content);
+                        const result = await window.electronAPI.saveDocument(filename, content, currentCustomer.name);
                         
                         return result.success;
                     } catch (error) {

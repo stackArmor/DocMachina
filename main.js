@@ -139,10 +139,11 @@ ipcMain.handle('read-template', async (event, templatePath) => {
 });
 
 // Save a generated document
-ipcMain.handle('save-document', async (event, { filename, content }) => {
+ipcMain.handle('save-document', async (event, { filename, content, customerName }) => {
     try {
         console.log('=== SAVE DOCUMENT CALLED ===');
         console.log('Filename:', filename);
+        console.log('Customer Name:', customerName);
         console.log('Content length:', content?.length);
         console.log('__dirname:', __dirname);
         
@@ -159,9 +160,27 @@ ipcMain.handle('save-document', async (event, { filename, content }) => {
             console.log('Customers directory created');
         }
         
+        // Create customer-specific subfolder
+        let customerFolder = customersDir;
+        if (customerName) {
+            // Sanitize customer name for use in folder name
+            const sanitizedName = customerName.replace(/[^a-z0-9_-]/gi, '_');
+            customerFolder = path.join(customersDir, sanitizedName);
+            console.log('Customer folder:', customerFolder);
+            
+            try {
+                await fs.access(customerFolder);
+                console.log('Customer folder exists');
+            } catch {
+                console.log('Creating customer folder...');
+                await fs.mkdir(customerFolder, { recursive: true });
+                console.log('Customer folder created');
+            }
+        }
+        
         // Handle duplicate filenames
         let finalFilename = filename;
-        let filePath = path.join(customersDir, finalFilename);
+        let filePath = path.join(customerFolder, finalFilename);
         let counter = 1;
         
         // Parse filename into name and extension
@@ -171,7 +190,7 @@ ipcMain.handle('save-document', async (event, { filename, content }) => {
         // Check if file exists and increment counter
         while (fsSync.existsSync(filePath)) {
             finalFilename = `${nameWithoutExt}_${counter}${ext}`;
-            filePath = path.join(customersDir, finalFilename);
+            filePath = path.join(customerFolder, finalFilename);
             counter++;
         }
         
